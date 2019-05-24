@@ -7,6 +7,7 @@ import java.util.Map;
 // Id     : 169
 // Author : Fanlu Hai
 // Date   : 2018-05-24
+// Topic  : Divide and Conquer
 // Other  :
 // Tips   : boyer moore voting algorithm;
 //          take full advantage of the situation to get the best solution.

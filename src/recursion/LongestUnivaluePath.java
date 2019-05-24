@@ -1,6 +1,8 @@
-package com.fanlu.leetcode.recursion;// Source : https://leetcode.com/problems/powx-n/
+package recursion;
+// Source : https://leetcode.com/problems/powx-n/
 // Id     : 50
 // Author : Fanlu Hai
+// Topic  : Recursion
 // Date   : 2018-04-18
 
 /**

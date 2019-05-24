@@ -1,13 +1,14 @@
-package com.fanlu.leetcode.binarysearchtree;
+package binarysearchtree;
 // Source : https://leetcode.com/problems/minimum-distance-between-bst-nodes/
 //          or https://leetcode.com/problems/minimum-absolute-difference-in-bst/
 // Id     : 783 or 530
 // Author : Fanlu Hai
 // Date   : 2018-05-02
+// Topic  : Binary Search Tree
 // Other  : 783 and 530 are almost the same , below solution will ac both.
 // Tips   : This is a BST, which means the inorder traversal of its nodes results in a sorted list of values.
 //          good test case [7,3,9,1,6,8,11] , [11,3,13,1,7,null,null,null,null,5,10]
-// 如果是bst，那么深度优先中序遍历就能解决。不是bst的话， 就构造一个方便查询pre的顺序结构。
+//          如果是bst，那么深度优先中序遍历就能解决。不是bst的话， 就构造一个方便查询pre的顺序结构。
 
 public class MinimumDistanceBetweenBSTNodes {
     int min = Integer.MAX_VALUE;
@@ -88,5 +89,15 @@ public class MinimumDistanceBetweenBSTNodes {
 
         MinimumDistanceBetweenBSTNodes m = new MinimumDistanceBetweenBSTNodes();
         m.minDiffInBST(treeNode1);
+    }
+}
+
+class TreeNode {
+    int val;
+    TreeNode left;
+    TreeNode right;
+
+    TreeNode(int x) {
+        val = x;
     }
 }

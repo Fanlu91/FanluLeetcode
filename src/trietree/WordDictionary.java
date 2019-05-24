@@ -1,8 +1,9 @@
-package com.fanlu.leetcode.trietree;
+package trietree;
 
 // Source : https://leetcode.com/problems/add-and-search-word-data-structure-design/
 // Id     : 211
 // Author : Fanlu Hai
+// Topic  : Trie Tree
 // Date   : 2018-05-12
 // Other  :
 // Tips   :

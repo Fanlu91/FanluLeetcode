@@ -1,7 +1,8 @@
-package com.fanlu.leetcode.hashtable;
+package hashtable;
 // Source : https://leetcode.com/problems/valid-anagram/
 // Id     : 242
 // Author : Fanlu Hai
+// Topic  : Hashtable
 // Date   : 2018-04-22
 // Other  : anagram noun. a word, phrase, or name formed by rearranging the letters of another, such as cinema, formed from iceman.
 // Tips   : 1.Use int[] with ascii as hash table; 2.use 'for i certain numbers' instead of 'for reach'.

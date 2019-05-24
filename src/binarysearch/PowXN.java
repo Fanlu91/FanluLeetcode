@@ -1,9 +1,11 @@
-package com.fanlu.leetcode.binarysearch;
+package binarysearch;
 
 // Source : https://leetcode.com/problems/powx-n/
 // Id     : 50
 // Author : Fanlu Hai
 // Date   : 2018-04-17
+// Topic  : Binary Search
+
 public class PowXN {
 
     //Time Limit Exceeded, this should be O(n) which means I need O(log(n)) or better.

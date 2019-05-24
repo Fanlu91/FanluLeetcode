@@ -1,4 +1,4 @@
-package com.fanlu.leetcode.trietree;
+package trietree;
 
 import java.util.HashMap;
 import java.util.Stack;
@@ -6,6 +6,7 @@ import java.util.Stack;
 // Source : https://leetcode.com/problems/longest-word-in-dictionary/
 // Id     : 720
 // Author : Fanlu Hai
+// Topic  : Trie Tree
 // Date   : 2018-05-12
 // Other  : data structure of the children list will affect the performance significantly
 // Tips   : good test case ["gbra","jy","pl","zn","gb","j","jyh","jyhm","plr","znicn","p","gbr","zni","znic","aq"]

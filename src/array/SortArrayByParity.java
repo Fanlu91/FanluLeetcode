@@ -1,8 +1,9 @@
-package com.fanlu.leetcode.array;
+package array;
 // Source : https://leetcode.com/problems/sort-array-by-parity/
 // Id     : 905
 // Author : Fanlu Hai
 // Date   : 2018-04-15
+// Topic  : Array
 
 import java.util.Arrays;
 

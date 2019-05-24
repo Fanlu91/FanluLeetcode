@@ -1,7 +1,8 @@
-package com.fanlu.leetcode.hashtable;
+package hashtable;
 // Source : https://leetcode.com/problems/find-duplicate-file-in-system/
 // Id     : 609
 // Author : Fanlu Hai
+// Topic  : Hashtable
 // Date   : 2018-04-23
 // Other  :
 // Tips   :

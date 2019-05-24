@@ -1,10 +1,11 @@
-package com.fanlu.leetcode.heap;
+package heap;
 
 import java.util.PriorityQueue;
 
 // Source : https://leetcode.com/problems/kth-largest-element-in-a-stream/
 // Id     : 703
 // Author : Fanlu Hai
+// Topic  : Heap
 // Date   : 2018-05-05
 // Other  : should implement priority queue manually
 // Tips   :

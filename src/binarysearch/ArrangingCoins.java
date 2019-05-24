@@ -1,9 +1,10 @@
-package com.fanlu.leetcode.binarysearch;
+package binarysearch;
 
 // Source : https://leetcode.com/problems/arranging-coins/
 // Id     : 441
 // Author : Fanlu Hai
 // Date   : 2018-04-17
+// Topic  : Binary Search
 public class ArrangingCoins {
 
     public int arrangeCoinsWithLong(int n) {
