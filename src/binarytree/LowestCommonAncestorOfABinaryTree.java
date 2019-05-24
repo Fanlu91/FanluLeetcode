@@ -1,4 +1,4 @@
-package com.fanlu.leetcode.binarytree;
+package binarytree;
 // Source : https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/
 // Id     : 236
 // Author : Fanlu Hai
@@ -156,6 +156,8 @@ public class LowestCommonAncestorOfABinaryTree {
         dfsValue(treeNode.right, p, q, tmpQueue);
     }
 
+
+
     public static void main(String[] args) {
         TreeNode treeNode1 = new TreeNode(1);
         TreeNode treeNode2 = new TreeNode(2);
@@ -186,5 +188,14 @@ public class LowestCommonAncestorOfABinaryTree {
 
         System.out.println("result: " + lowestCommonAncestorOfABinaryTree.lowestCommonAncestorReturnInt(treeNode1, treeNode7, treeNode6));
     }
+}
 
+class TreeNode {
+    int val;
+    TreeNode left;
+    TreeNode right;
+
+    TreeNode(int x) {
+        val = x;
+    }
 }

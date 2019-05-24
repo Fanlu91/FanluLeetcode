@@ -1,4 +1,4 @@
-package com.fanlu.leetcode.binarytree;
+package binarytree;
 // Source : https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/
 // Id     : 236
 // Author : Fanlu Hai

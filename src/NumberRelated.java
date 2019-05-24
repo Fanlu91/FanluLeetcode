@@ -1,4 +1,3 @@
-package com.fanlu.leetcode;
 
 import java.math.BigInteger;
 import java.util.ArrayList;

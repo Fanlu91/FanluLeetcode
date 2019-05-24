@@ -1,4 +1,4 @@
-package com.fanlu.leetcode.binarytree;
+package binarytree;
 // Source : https://leetcode.com/problems/second-minimum-node-in-a-binary-tree/
 // Id     : 671
 // Author : Fanlu Hai
@@ -78,5 +78,14 @@ public class SecondMinimumNodeInABinaryTree {
         preorderTraverse(node.left);
         preorderTraverse(node.right);
 
+    }
+    class TreeNode {
+        int val;
+        TreeNode left;
+        TreeNode right;
+
+        TreeNode(int x) {
+            val = x;
+        }
     }
 }
