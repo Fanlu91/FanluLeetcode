@@ -9,6 +9,7 @@ package binarysearchtree;
 // Tips   : This is a BST, which means the inorder traversal of its nodes results in a sorted list of values.
 //          good test case [7,3,9,1,6,8,11] , [11,3,13,1,7,null,null,null,null,5,10]
 //          如果是bst，那么深度优先中序遍历就能解决。不是bst的话， 就构造一个方便查询pre的顺序结构。
+// Result : 100.00% 52.53%
 
 public class MinimumDistanceBetweenBSTNodes {
     int min = Integer.MAX_VALUE;

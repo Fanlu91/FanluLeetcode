@@ -5,6 +5,7 @@ package binarysearch;
 // Author : Fanlu Hai
 // Date   : 2018-04-17
 // Topic  : Binary Search
+// Result : 82.04% 100%
 public class ArrangingCoins {
 
     public int arrangeCoinsWithLong(int n) {

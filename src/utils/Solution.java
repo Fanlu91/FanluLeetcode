@@ -6,9 +6,10 @@ public class Solution {
     public String source;
     public String tips;
     public String solutionPath;
+    public String result;
 
     @Override
     public String toString() {
-        return String.join("|","",topic,id,source,solutionPath,"");
+        return String.join("|","",topic,id,source,solutionPath,result,"");
     }
 }

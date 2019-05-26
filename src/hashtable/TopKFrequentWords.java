@@ -6,6 +6,7 @@ package hashtable;
 // Date   : 2018-04-23
 // Other  : I used PriorityQueue which I suppose should be some other data structure implemented by myself.
 // Tips   :
+// Result : 99.50%  89.29%
 
 import java.util.*;
 

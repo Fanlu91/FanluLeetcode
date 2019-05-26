@@ -6,7 +6,7 @@ package divideandconquer;
 // Topic  : Divide and Conquer
 // Other  :
 // Tips   : "improvements" can make program run slower
-
+// Result : 100% 100%
 import java.util.*;
 
 public class DifferentWaysToAddParentheses {

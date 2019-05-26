@@ -1,9 +1,10 @@
 package recursion;
-// Source : https://leetcode.com/problems/powx-n/
-// Id     : 50
+// Source : https://leetcode.com/problems/longest-univalue-path/
+// Id     : 687
 // Author : Fanlu Hai
 // Topic  : Recursion
 // Date   : 2018-04-18
+
 
 /**
  * Definition for a binary tree node.
@@ -19,8 +20,37 @@ public class LongestUnivaluePath {
 
     public int longestUnivaluePath(TreeNode root) {
 
+        preOrderTraverse(root);
+        return maxLength;
+    }
 
-        return 0;
+    // get path count below each node
+    public int treePath(TreeNode root) {
+        int pathCountLeft = 0;
+        int pathCountRight = 0;
+
+        if (null == root)
+            return 0;
+        if (null != root.left && root.val == root.left.val) {
+            pathCountLeft += 1 + treePath(root.left);
+        }
+        if (null != root.right && root.val == root.right.val) {
+            pathCountRight += 1 + treePath(root.right);
+        }
+        return pathCountLeft > pathCountRight ? pathCountLeft : pathCountRight;
+    }
+
+    public void preOrderTraverse(TreeNode root) {
+
+        if (null == root)
+            return;
+        int tmp = treePath(root);
+//        System.out.println("node value: " + root.val + " | path count value: " + tmp);
+        if (tmp > maxLength) {
+            maxLength = tmp;
+        }
+        preOrderTraverse(root.left);
+        preOrderTraverse(root.right);
     }
 
 

@@ -4,6 +4,7 @@ package array;
 // Author : Fanlu Hai
 // Date   : 2018-04-15
 // Topic  : Array
+// Result : 51.52% 38.56%
 
 import java.util.Arrays;
 

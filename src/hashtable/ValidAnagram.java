@@ -6,7 +6,7 @@ package hashtable;
 // Date   : 2018-04-22
 // Other  : anagram noun. a word, phrase, or name formed by rearranging the letters of another, such as cinema, formed from iceman.
 // Tips   : 1.Use int[] with ascii as hash table; 2.use 'for i certain numbers' instead of 'for reach'.
-
+// Result : 90.46% 71.14%
 public class ValidAnagram {
 
     //38.34%  70.24%

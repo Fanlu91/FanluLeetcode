@@ -8,6 +8,7 @@ package binarytree;
 //          as the lowest node in T that has both p and q as descendants
 //          (where we allow a node to be a descendant of itself).
 // Tips   :
+// Result : 100.00% 44.21%
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -156,7 +157,6 @@ public class LowestCommonAncestorOfABinaryTree {
         dfsValue(treeNode.left, p, q, tmpQueue);
         dfsValue(treeNode.right, p, q, tmpQueue);
     }
-
 
 
     public static void main(String[] args) {

@@ -6,6 +6,7 @@ package graph;
 // Date   : 2018-05-03
 // Other  :
 // Tips   :
+// Result : 98.73% 100.00%
 
 
 public class FindTheTownJudge {

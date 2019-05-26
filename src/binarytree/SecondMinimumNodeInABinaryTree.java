@@ -6,7 +6,7 @@ package binarytree;
 // Topic  : Binary Tree
 // Other  : Long result =Long.valueOf(Integer.MAX_VALUE)+1; Long.valueOf(Integer.MAX_VALUE+1) will result in Integer.MIN
 // Tips   :
-
+// Result : 100.00% 93.19%
 import java.util.PriorityQueue;
 
 /**

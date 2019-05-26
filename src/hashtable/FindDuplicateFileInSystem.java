@@ -5,7 +5,7 @@ package hashtable;
 // Topic  : Hashtable
 // Date   : 2018-04-23
 // Other  :
-// Tips   :
+// Tips   : 68.55% 16.55%
 
 import java.util.*;
 

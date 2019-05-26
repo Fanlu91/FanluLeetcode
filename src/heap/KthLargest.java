@@ -9,6 +9,7 @@ import java.util.PriorityQueue;
 // Date   : 2018-05-05
 // Other  : should implement priority queue manually
 // Tips   :
+// Result : 99.55% 64.02%
 
 
 public class KthLargest {

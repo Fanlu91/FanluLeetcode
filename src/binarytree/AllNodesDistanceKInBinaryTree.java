@@ -6,6 +6,7 @@ package binarytree;
 // Topic  : Binary Tree
 // Other  :
 // Tips   :
+// Result : 100% 19.83%
 
 import java.util.*;
 

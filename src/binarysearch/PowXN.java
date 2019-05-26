@@ -5,7 +5,7 @@ package binarysearch;
 // Author : Fanlu Hai
 // Date   : 2018-04-17
 // Topic  : Binary Search
-
+// Result : 82.1 100%
 public class PowXN {
 
     //Time Limit Exceeded, this should be O(n) which means I need O(log(n)) or better.

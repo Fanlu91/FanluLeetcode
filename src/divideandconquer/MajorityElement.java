@@ -11,6 +11,7 @@ import java.util.Map;
 // Other  :
 // Tips   : boyer moore voting algorithm;
 //          take full advantage of the situation to get the best solution.
+// Result : 100.00% 50.94%
 
 public class MajorityElement {
     // straight forward way is to store appearance of number in a hashmap
