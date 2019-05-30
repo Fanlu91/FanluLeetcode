@@ -37,6 +37,7 @@ public class ReadMeGenerator {
                             List<String> list = Files.lines(path)
                                     .filter(line -> line.matches("^//[ ].*"))
                                     .collect(Collectors.toList());
+                            System.out.println(path);
                             Solution solution = new Solution();
                             solution.solutionPath = "[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src"
                                     + path.toString().split("src")[1].trim() + ")";
@@ -51,6 +52,7 @@ public class ReadMeGenerator {
                                                     + line.split(" : ")[1].trim() + ")";
                                         }
                                         if (line.contains("Result")) {
+
                                             solution.result = line.split(" : ")[1].trim();
                                             // Result is mandatory for a solution to be on the table.
                                             solutionList.add(solution);
