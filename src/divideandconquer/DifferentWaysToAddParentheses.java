@@ -3,7 +3,7 @@ package divideandconquer;
 // Id     : 241
 // Author : Fanlu Hai
 // Date   : 2018-05-24
-// Topic  : Divide and Conquer
+// Topic  : Divide & Conquer
 // Other  :
 // Tips   : "improvements" can make program run slower
 // Result : 100% 100%

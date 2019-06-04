@@ -7,7 +7,7 @@ package trietree;
 // Date   : 2018-05-12
 // Other  :
 // Tips   :
-// Result : 100.00%  76.32%
+// Result : 100.00% 76.32%
 
 public class WordDictionary {
     TrieNode root;

@@ -1,4 +1,4 @@
-package divideandconquer;
+package array;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -7,7 +7,7 @@ import java.util.Map;
 // Id     : 169
 // Author : Fanlu Hai
 // Date   : 2018-05-24
-// Topic  : Divide and Conquer
+// Topic  : Array, Divide & Conquer
 // Other  :
 // Tips   : boyer moore voting algorithm;
 //          take full advantage of the situation to get the best solution.

@@ -1,5 +1,5 @@
-package com.fanlu.leetcode.array;
-
+package array;
+// a very old file found is some workspace
 import java.util.HashMap;
 
 public class ArrayRelated {
