@@ -71,9 +71,16 @@ public class ReadMeGenerator {
         solutionList.sort(new Comparator<Solution>() {
             @Override
             public int compare(Solution o1, Solution o2) {
-                return o2.topic.compareTo(o1.topic);
+                return o1.source.compareTo(o2.topic);
             }
         });
+
+//        solutionList.sort(new Comparator<Solution>() {
+//            @Override
+//            public int compare(Solution o1, Solution o2) {
+//                return o2.topic.compareTo(o1.topic);
+//            }
+//        });
 
         System.out.println(readme);
         solutionList.forEach(System.out::println);
