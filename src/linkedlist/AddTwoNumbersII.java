@@ -57,14 +57,14 @@ public class AddTwoNumbersII {
     }
 
     // learned from leetcode submission
+    // use reversed linkedlist instead of stack
     // 99.96% 74.91%
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
 
-
+        // create two new reversed list
         ListNode pre1 = new ListNode(l1.val);
         ListNode pre2 = new ListNode(l2.val);
 
-        // reverse both list first
         ListNode cur = l1.next;
         while (cur != null) {
             ListNode next = cur.next;
@@ -81,8 +81,8 @@ public class AddTwoNumbersII {
             cur = next;
         }
 
+        ListNode node = new ListNode(0);
         int sum = 0;
-        ListNode rl = new ListNode(0);
 
         while (pre1 != null || pre2 != null) {
             if (pre1 != null) {
@@ -93,13 +93,14 @@ public class AddTwoNumbersII {
                 sum += pre2.val;
                 pre2 = pre2.next;
             }
-            rl.val = sum % 10;
-            ListNode rln = new ListNode(sum / 10);
-            rln.next = rl;
-            rl = rln;
+
+            node.val = sum % 10;
+            ListNode newHead = new ListNode(sum / 10);
+            newHead.next = node;
+            node = newHead;
             sum /= 10;
         }
-        return rl.val == 0 ? rl.next : rl;
+        return node.val == 0 ? node.next : node;
     }
 
     class ListNode {
