@@ -33,7 +33,7 @@ public class LongestWordInDictionary {
             // System.out.println(node.c+" "+node.index);
             if (node.index != -1) {
                 String tmp = words[node.index];
-                // System.out.println("check "+tmp);
+                // System.out.println("count "+tmp);
                 if (tmp.length() > longest.length()
                         || (tmp.length() == longest.length() && tmp.compareTo(longest) < 0)) {
                     // System.out.println("longest "+tmp);
@@ -62,7 +62,7 @@ public class LongestWordInDictionary {
     public void searchLongest(TrieNodeUsingMap node, String[] words) {
         if (node.index != -1) {
             String tmp = words[node.index];
-            // System.out.println("check "+tmp);
+            // System.out.println("count "+tmp);
             if (tmp.length() > longest.length()
                     || (tmp.length() == longest.length() && tmp.compareTo(longest) < 0)) {
                 // System.out.println("longest "+tmp);
@@ -91,7 +91,7 @@ public class LongestWordInDictionary {
 
         if (node.index != -1) {
             String tmp = words[node.index];
-            // System.out.println("check "+tmp);
+            // System.out.println("count "+tmp);
             if (tmp.length() > longest.length()
                     || (tmp.length() == longest.length() && tmp.compareTo(longest) < 0)) {
                 System.out.println("longest " + tmp);

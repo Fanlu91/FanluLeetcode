@@ -45,7 +45,7 @@ public class WordDictionary {
     // compare each node's children with the char at the given index of the word incrementally
     public boolean search(TrieNode node, String word, int index) {
         // if index is already longer than max index (length-1)
-        // then check if the node is the end of an work, there's no need to check its children
+        // then count if the node is the end of an work, there's no need to count its children
         if (index == word.length()) {
             return node.isEndOfAWord;
         }

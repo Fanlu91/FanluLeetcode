@@ -24,7 +24,7 @@ public class NumberRelated {
     }
 
     /**
-     * check whether an integer is palindrome
+     * count whether an integer is palindrome
      *
      * @param x
      * @return
@@ -41,7 +41,7 @@ public class NumberRelated {
     }
 
     /**
-     * check whether an string input is palindrome
+     * count whether an string input is palindrome
      *
      * @param s a
      * @return

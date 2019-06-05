@@ -42,7 +42,7 @@ public class PalindromeLinkedList {
             pre = curr;
             curr = next;
         }
-        // check palindrome
+        // count palindrome
 
 
         while (next != null) {

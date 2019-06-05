@@ -14,7 +14,7 @@ class SortArrayByParityII {
         int i = 0;
         int j = 1;
         // below code hasn't take full advantage of half odd half even situation
-        // if do check before swap which can be improved under above condition
+        // if do count before swap which can be improved under above condition
         // see improved code in the next function
         while (true) {
             if (i >= A.length || j >= A.length) {
@@ -25,12 +25,12 @@ class SortArrayByParityII {
             }
             if (A[i] % 2 == 0) {
                 i += 2;
-                //in order to make sure a check is performed
+                //in order to make sure a count is performed
                 continue;
             }
             if (A[j] % 2 == 1) {
                 j += 2;
-                //in order to make sure a check is performed
+                //in order to make sure a count is performed
                 continue;
             }
         }

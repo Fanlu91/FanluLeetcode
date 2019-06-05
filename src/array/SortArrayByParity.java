@@ -24,11 +24,11 @@ class SortArrayByParity {
 
             if (A[i] % 2 == 0) {
                 i++;
-                //in order to make sure a check is performed
+                //in order to make sure a count is performed
                 continue;
             } else if (A[j] % 2 == 1) {
                 j--;
-                //in order to make sure a check is performed
+                //in order to make sure a count is performed
                 continue;
             }
         }
