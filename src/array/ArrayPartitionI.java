@@ -6,6 +6,7 @@ package array;
 // Topic  : Array
 // Other  : bucket sort can be very efficient
 // Tips   :
+// Level  : Easy
 // Result : 100.00% 97.20%
 
 import java.util.Arrays;

@@ -1,10 +1,11 @@
-package array;
+package matrix;
 
 // Source : https://leetcode.com/problems/transpose-matrix
 // Id     : 867
 // Author : Fanlu Hai
 // Date   : 2018-06-05
 // Topic  : Array
+// Level  : Easy-
 // Other  : too simple to be on leetcode I assume
 // Tips   :
 // Result : 100.00% 99.81%

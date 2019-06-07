@@ -8,6 +8,7 @@ import java.util.Map;
 // Author : Fanlu Hai
 // Date   : 2018-05-24
 // Topic  : Array, Divide & Conquer
+// Level  : Easy
 // Other  :
 // Tips   : boyer moore voting algorithm;
 //          take full advantage of the situation to get the best solution.

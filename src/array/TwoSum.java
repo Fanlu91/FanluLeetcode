@@ -8,6 +8,7 @@ import java.util.Map;
 // Author : Fanlu Hai
 // Date   : 2018-06-04
 // Topic  : Array
+// Level  : Easy
 // Other  :
 // Tips   :
 // Result : 99.23%  99.75%

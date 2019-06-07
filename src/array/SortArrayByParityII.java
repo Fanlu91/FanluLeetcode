@@ -4,6 +4,7 @@ package array;
 // Author : Fanlu Hai
 // Date   : 2018-04-15
 // Topic  : Array
+// Level  : Easy
 // Result : 99.72% 99.43%
 
 

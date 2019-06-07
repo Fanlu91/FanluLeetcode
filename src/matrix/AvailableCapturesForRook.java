@@ -1,9 +1,10 @@
-package array;
+package matrix;
 // Source : https://leetcode.com/problems/available-captures-for-rook/
 // Id     : 999
 // Author : Fanlu Hai
 // Date   : 2018-06-05
-// Topic  : Array
+// Topic  : Matrix
+// Level  : Easy
 // Other  :
 // Tips   :
 // Result : 100.00% 99.95%

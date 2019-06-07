@@ -5,6 +5,7 @@ package array;
 // Author : Fanlu Hai
 // Date   : 2018-06-04
 // Topic  : Array
+// Level  : Easy
 // Other  : This is not a very nice described question. You can skip it I think.
 // Tips   :
 // Result : 96.41% 100.00%

@@ -4,9 +4,11 @@ package divideandconquer;
 // Author : Fanlu Hai
 // Date   : 2018-05-24
 // Topic  : Divide & Conquer
+// Level  : Medium
 // Other  :
 // Tips   : "improvements" can make program run slower
 // Result : 100% 100%
+
 import java.util.*;
 
 public class DifferentWaysToAddParentheses {
@@ -20,10 +22,8 @@ public class DifferentWaysToAddParentheses {
                 String part1 = input.substring(0, i);
                 String part2 = input.substring(i + 1);
 
-                List<Integer> resultPart1 = new LinkedList<>();
-                List<Integer> resultPart2 = new LinkedList<>();
-                resultPart1 = diffWaysToComputeSlow(part1);
-                resultPart2 = diffWaysToComputeSlow(part2);
+                List<Integer> resultPart1 = diffWaysToComputeSlow(part1);
+                List<Integer> resultPart2 = diffWaysToComputeSlow(part2);
 
                 // when either on is empty, nothing will be added to result
                 for (int res1 : resultPart1) {
@@ -66,10 +66,8 @@ public class DifferentWaysToAddParentheses {
                 String part1 = input.substring(0, i);
                 String part2 = input.substring(i + 1);
 
-                List<Integer> resultPart1 = new LinkedList<>();
-                List<Integer> resultPart2 = new LinkedList<>();
-                resultPart1 = diffWaysToCompute(part1);
-                resultPart2 = diffWaysToCompute(part2);
+                List<Integer> resultPart1 = diffWaysToCompute(part1);
+                List<Integer> resultPart2 = diffWaysToCompute(part2);
 
                 // when either on is empty, nothing will be added to result
                 for (int res1 : resultPart1) {
