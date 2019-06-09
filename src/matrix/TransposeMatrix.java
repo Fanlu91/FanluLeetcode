@@ -4,7 +4,7 @@ package matrix;
 // Id     : 867
 // Author : Fanlu Hai
 // Date   : 2018-06-05
-// Topic  : Array
+// Topic  : Matrix
 // Level  : Easy-
 // Other  : too simple to be on leetcode I assume
 // Tips   :

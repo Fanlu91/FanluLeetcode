@@ -4,16 +4,17 @@
 Below table is generated using this [class](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/utils/ReadMeGenerator.java)
  
  
-|Topic |Id | Title | Solution | Result |
+|Topic|Id|Title|Solution|Result|
 |---|---|---|---|---|
 |Array|977|[squares-of-a-sorted-array](https://leetcode.com/problems/squares-of-a-sorted-array/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/array/SquaresOfASortedArray.java)|100.00% 96.27%|
 |Array|1051|[height-checker](https://leetcode.com/problems/height-checker/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/array/HeightChecker.java)|96.41% 100.00%|
 |Array|905|[sort-array-by-parity](https://leetcode.com/problems/sort-array-by-parity/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/array/SortArrayByParity.java)|100.00% 96.91%|
-|Array|832|[flipping-an-image](https://leetcode.com/problems/flipping-an-image/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/array/FlippingAnImage.java)|100.00% 99.95%|
 |Array|561|[array-partition-i](https://leetcode.com/problems/array-partition-i/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/array/ArrayPartitionI.java)|100.00% 97.20%|
 |Array|509|[fibonacci-number](https://leetcode.com/problems/fibonacci-number/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/array/FibonacciNumber.java)|100.00% 50.46%|
 |Array|922|[sort-array-by-parity-ii](https://leetcode.com/problems/sort-array-by-parity-ii/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/array/SortArrayByParityII.java)|99.72% 99.43%|
-|Array, Divide & Conquer|169|[majority-element](https://leetcode.com/problems/majority-element/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/array/MajorityElement.java)|100.00% 50.94%|
+|Array|169|[majority-element](https://leetcode.com/problems/majority-element/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/array/MajorityElement.java)|100.00% 50.94%|
+|Array|1002|[find-common-characters](https://leetcode.com/problems/find-common-characters/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/array/FindCommonCharacters.java)|100.00%  98.16%|
+|Array|985|[sum-of-even-numbers-after-queries](https://leetcode.com/problems/sum-of-even-numbers-after-queries/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/array/SumOfEvenNumbersAfterQueries.java)|99.93% 86.35%|
 |Array|1|[two-sum](https://leetcode.com/problems/two-sum/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/array/TwoSum.java)|99.23%  99.75%|
 |Linked list|21|[merge-two-sorted-lists](https://leetcode.com/problems/merge-two-sorted-lists/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/linkedlist/MergeTwoSortedLists.java)|100.00% 56.90%|
 |Linked list|92|[reverse-linked-list-ii](https://leetcode.com/problems/reverse-linked-list-ii/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/linkedlist/ReverseLinkedListII.java)|100.00% 100.00%|
@@ -42,7 +43,10 @@ Below table is generated using this [class](https://github.com/Fanlu91/FanluLeet
 |Binary Tree|236|[lowest-common-ancestor-of-a-binary-tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/binarytree/LowestCommonAncestorOfABinaryTree.java)|100.00% 44.21%|
 |Binary Tree|671|[second-minimum-node-in-a-binary-tree](https://leetcode.com/problems/second-minimum-node-in-a-binary-tree/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/binarytree/SecondMinimumNodeInABinaryTree.java)|100.00% 93.19%|
 |Binary Tree|236|[lowest-common-ancestor-of-a-binary-tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/binarytree/AllNodesDistanceKInBinaryTree.java)|100% 19.83%|
+|Matrix|999|[available-captures-for-rook](https://leetcode.com/problems/available-captures-for-rook/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/matrix/AvailableCapturesForRook.java)|100.00% 99.95%|
+|Matrix|832|[flipping-an-image](https://leetcode.com/problems/flipping-an-image/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/matrix/FlippingAnImage.java)|100.00% 99.95%|
+|Matrix|766|[toeplitz-matrix](https://leetcode.com/problems/toeplitz-matrix/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/matrix/ToeplitzMatrix.java)|100.00% 73.60%|
+|Matrix|867|[transpose-matri](https://leetcode.com/problems/transpose-matrix)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/matrix/TransposeMatrix.java)|100.00% 99.81%|
+|Matrix|985|[reshape-the-matrix](https://leetcode.com/problems/reshape-the-matrix/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/matrix/ReshapeTheMatrix.java)|100.00% 100.00%|
 |Trie Tree|211|[add-and-search-word-data-structure-design](https://leetcode.com/problems/add-and-search-word-data-structure-design/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/trietree/WordDictionary.java)|100.00% 76.32%|
 |Trie Tree|720|[longest-word-in-dictionary](https://leetcode.com/problems/longest-word-in-dictionary/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/trietree/LongestWordInDictionary.java)|97.79% 97.18%|
-
-Process finished with exit code 0

@@ -1,4 +1,4 @@
-package utils;
+package helper;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -24,7 +24,7 @@ public class ReadMeGenerator {
                 "Below table is generated using this [class](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/utils/ReadMeGenerator.java)",
                 " ",
                 " ",
-                "|Topic |Id | Title | Solution | Result |",
+                "|Topic|Id|Title|Solution|Result|",
                 "|---|---|---|---|---|");
 
         List<Solution> solutionList = new LinkedList<>();

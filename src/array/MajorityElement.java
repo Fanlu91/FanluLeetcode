@@ -7,7 +7,7 @@ import java.util.Map;
 // Id     : 169
 // Author : Fanlu Hai
 // Date   : 2018-05-24
-// Topic  : Array, Divide & Conquer
+// Topic  : Array
 // Level  : Easy
 // Other  :
 // Tips   : boyer moore voting algorithm;

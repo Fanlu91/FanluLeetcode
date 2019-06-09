@@ -1,8 +1,9 @@
-package utils;
+package helper;
 
 public class Solution {
     public String id;
     public String topic;
+    public String level;
     public String source;
     public String tips;
     public String solutionPath;
@@ -10,6 +11,6 @@ public class Solution {
 
     @Override
     public String toString() {
-        return String.join("|","",topic,id,source,solutionPath,result,"");
+        return String.join("|", "", topic, id, source, solutionPath, result, "");
     }
 }
