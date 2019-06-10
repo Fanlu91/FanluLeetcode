@@ -37,7 +37,7 @@ public class ReadMeGenerator {
                             List<String> list = Files.lines(path)
                                     .filter(line -> line.matches("^//[ ].*"))
                                     .collect(Collectors.toList());
-//                            System.out.println(path);
+                            System.out.println(path);
                             Solution solution = new Solution();
                             solution.solutionPath = "[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src"
                                     + path.toString().split("src")[1].trim() + ")";
