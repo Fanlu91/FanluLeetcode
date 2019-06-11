@@ -5,6 +5,9 @@ package binarysearch;
 // Author : Fanlu Hai
 // Date   : 2018-04-17
 // Topic  : Binary Search
+// Level  : Medium
+// Other  :
+// Tips   :
 // Result : 82.1 100%
 public class PowXN {
 
