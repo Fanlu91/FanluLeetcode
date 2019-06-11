@@ -10,13 +10,15 @@ Below table is generated using this [class](https://github.com/Fanlu91/FanluLeet
 |Array|1051|[height-checker](https://leetcode.com/problems/height-checker/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/array/HeightChecker.java)|96.41% 100.00%|
 |Array|905|[sort-array-by-parity](https://leetcode.com/problems/sort-array-by-parity/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/array/SortArrayByParity.java)|100.00% 96.91%|
 |Array|1013|[partition-array-into-three-parts-with-equal-sum](https://leetcode.com/problems/partition-array-into-three-parts-with-equal-sum/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/array/PartitionArrayIntoThreePartsWithEqualSum.java)|100.00% 90.69%|
-|Array|896|[monotonic-array](https://leetcode.com/problems/monotonic-array/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/array/MonotonicArray.java)|100.00% 1ms 96.10%|
-|Array|485|[max-consecutive-ones](https://leetcode.com/problems/max-consecutive-ones/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/array/MaxConsecutiveOnes.java)|99.83% 2ms 99.97%|
+|Array|896|[monotonic-array](https://leetcode.com/problems/monotonic-array/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/array/MonotonicArray.java)|100.00% 96.10%|
+|Array|485|[max-consecutive-ones](https://leetcode.com/problems/max-consecutive-ones/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/array/MaxConsecutiveOnes.java)|99.83% 99.97%|
 |Array|283|[move-zeroes](https://leetcode.com/problems/move-zeroes/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/array/MoveZeroes.java)|100.00% 94.20%|
+|Array|217|[contains-duplicate](https://leetcode.com/problems/contains-duplicate/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/array/ContainsDuplicate.java)|99.06% 65.20%|
 |Array|561|[array-partition-i](https://leetcode.com/problems/array-partition-i/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/array/ArrayPartitionI.java)|100.00% 97.20%|
 |Array|888|[fair-candy-swap](https://leetcode.com/problems/fair-candy-swap/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/array/FairCandySwap.java)|100.00% 98.74%|
 |Array|509|[fibonacci-number](https://leetcode.com/problems/fibonacci-number/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/array/FibonacciNumber.java)|100.00% 50.46%|
 |Array|922|[sort-array-by-parity-ii](https://leetcode.com/problems/sort-array-by-parity-ii/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/array/SortArrayByParityII.java)|99.72% 99.43%|
+|Array|697|[degree-of-an-array](https://leetcode.com/problems/degree-of-an-array/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/array/DegreeOfAnArray.java)|100.00% 54.88%|
 |Array|169|[majority-element](https://leetcode.com/problems/majority-element/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/array/MajorityElement.java)|100.00% 50.94%|
 |Array|1002|[find-common-characters](https://leetcode.com/problems/find-common-characters/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/array/FindCommonCharacters.java)|100.00%  98.16%|
 |Array|985|[sum-of-even-numbers-after-queries](https://leetcode.com/problems/sum-of-even-numbers-after-queries/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/array/SumOfEvenNumbersAfterQueries.java)|99.93% 86.35%|
@@ -40,6 +42,7 @@ Below table is generated using this [class](https://github.com/Fanlu91/FanluLeet
 |Linked list|142|[linked-list-cycle-ii](https://leetcode.com/problems/linked-list-cycle-ii/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/linkedlist/PalindromeLinkedList.java)|96.51% 99.89%|
 |Binary Search|50|[powx-n](https://leetcode.com/problems/powx-n/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/binarysearch/PowXN.java)|82.1 100%|
 |Binary Search|441|[arranging-coins](https://leetcode.com/problems/arranging-coins/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/binarysearch/ArrangingCoins.java)|82.04% 100%|
+|Binary Search|167|[two-sum-ii-input-array-is-sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/binarysearch/TwoSumIIInputArrayIsSorted.java)|100.00% 63.39%|
 |Graph|997|[find-the-town-judge](https://leetcode.com/problems/find-the-town-judge/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/graph/FindTheTownJudge.java)|98.73% 100.00%|
 |Binary Search Tree|783 or 530|[minimum-distance-between-bst-nodes](https://leetcode.com/problems/minimum-distance-between-bst-nodes/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/binarysearchtree/MinimumDistanceBetweenBSTNodes.java)|100.00% 52.53%|
 |Heap|703|[kth-largest-element-in-a-stream](https://leetcode.com/problems/kth-largest-element-in-a-stream/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/heap/KthLargest.java)|99.55% 64.02%|

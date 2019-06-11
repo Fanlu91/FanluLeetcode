@@ -8,7 +8,7 @@ package array;
 // Level  : Easy-
 // Other  :
 // Tips   : Do not use for reach with array. It is much slower.
-// Result : 99.83% 2ms 99.97%
+// Result : 99.83% 99.97%
 public class MaxConsecutiveOnes {
     // 20.56% 4 ms 93.19%
     public int findMaxConsecutiveOnesOrigin(int[] nums) {

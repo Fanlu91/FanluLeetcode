@@ -7,7 +7,7 @@ package array;
 // Level  : Easy-
 // Other  :
 // Tips   :
-// Result : 100.00% 1ms 96.10%
+// Result : 100.00% 96.10%
 
 public class MonotonicArray {
     // 35.89% 3 ms 58.02%
