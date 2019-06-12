@@ -1,5 +1,8 @@
 package helper;
 
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
 
@@ -82,8 +85,20 @@ public class ReadMeGenerator {
 //            }
 //        });
 
-        System.out.println(readme);
-        solutionList.forEach(System.out::println);
+
+        StringBuilder stringBuilder = new StringBuilder(readme);
+
+        solutionList.forEach(string -> stringBuilder.append(string).append("\n"));
+//        solutionList.forEach(System.out::println);
 //        System.out.println(readme);
+
+
+        File file = new File(System.getProperty("user.dir") + "/README.md");
+        // try with resources, java 7 and above
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(file))) {
+            writer.write(stringBuilder.toString());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

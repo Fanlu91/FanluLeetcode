@@ -5,8 +5,7 @@ Below table is generated using this [class](https://github.com/Fanlu91/FanluLeet
  
  
 |Topic|Id|Title|Solution|Result|
-|---|---|---|---|---|
-|Array|977|[squares-of-a-sorted-array](https://leetcode.com/problems/squares-of-a-sorted-array/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/array/SquaresOfASortedArray.java)|100.00% 96.27%|
+|---|---|---|---|---||Array|977|[squares-of-a-sorted-array](https://leetcode.com/problems/squares-of-a-sorted-array/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/array/SquaresOfASortedArray.java)|100.00% 96.27%|
 |Array|1051|[height-checker](https://leetcode.com/problems/height-checker/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/array/HeightChecker.java)|96.41% 100.00%|
 |Array|905|[sort-array-by-parity](https://leetcode.com/problems/sort-array-by-parity/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/array/SortArrayByParity.java)|100.00% 96.91%|
 |Array|1013|[partition-array-into-three-parts-with-equal-sum](https://leetcode.com/problems/partition-array-into-three-parts-with-equal-sum/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/array/PartitionArrayIntoThreePartsWithEqualSum.java)|100.00% 90.69%|
