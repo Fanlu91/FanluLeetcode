@@ -55,7 +55,6 @@ public class ReadMeGenerator {
                                                     + line.split(" : ")[1].trim() + ")";
                                         }
                                         if (line.contains("Result")) {
-
                                             solution.result = line.split(" : ")[1].trim();
                                             // Result is mandatory for a solution to be on the table.
                                             solutionList.add(solution);
