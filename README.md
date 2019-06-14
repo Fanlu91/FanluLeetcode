@@ -5,7 +5,8 @@ Below table is generated using this [class](https://github.com/Fanlu91/FanluLeet
  
  
 |Topic|Id|Title|Solution|Result|
-|---|---|---|---|---||Array|977|[squares-of-a-sorted-array](https://leetcode.com/problems/squares-of-a-sorted-array/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/array/SquaresOfASortedArray.java)|100.00% 96.27%|
+|---|---|---|---|---||Design|146|[lru-cache](https://leetcode.com/problems/lru-cache/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/design/LRUCache.java)|91.27% 67.29%|
+|Array|977|[squares-of-a-sorted-array](https://leetcode.com/problems/squares-of-a-sorted-array/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/array/SquaresOfASortedArray.java)|100.00% 96.27%|
 |Array|1051|[height-checker](https://leetcode.com/problems/height-checker/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/array/HeightChecker.java)|96.41% 100.00%|
 |Array|905|[sort-array-by-parity](https://leetcode.com/problems/sort-array-by-parity/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/array/SortArrayByParity.java)|100.00% 96.91%|
 |Array|1013|[partition-array-into-three-parts-with-equal-sum](https://leetcode.com/problems/partition-array-into-three-parts-with-equal-sum/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/array/PartitionArrayIntoThreePartsWithEqualSum.java)|100.00% 90.69%|
@@ -44,10 +45,14 @@ Below table is generated using this [class](https://github.com/Fanlu91/FanluLeet
 |Binary Search|167|[two-sum-ii-input-array-is-sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/binarysearch/TwoSumIIInputArrayIsSorted.java)|100.00% 63.39%|
 |Graph|997|[find-the-town-judge](https://leetcode.com/problems/find-the-town-judge/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/graph/FindTheTownJudge.java)|98.73% 100.00%|
 |Binary Search Tree|783 or 530|[minimum-distance-between-bst-nodes](https://leetcode.com/problems/minimum-distance-between-bst-nodes/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/binarysearchtree/MinimumDistanceBetweenBSTNodes.java)|100.00% 52.53%|
+|Trie|211|[add-and-search-word-data-structure-design](https://leetcode.com/problems/add-and-search-word-data-structure-design/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/trie/AddAndSearchWordDataStructureSesign.java)|100.00% 76.32%|
+|Trie|720|[longest-word-in-dictionary](https://leetcode.com/problems/longest-word-in-dictionary/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/trie/LongestWordInDictionary.java)|97.79% 97.18%|
 |Heap|703|[kth-largest-element-in-a-stream](https://leetcode.com/problems/kth-largest-element-in-a-stream/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/heap/KthLargest.java)|99.55% 64.02%|
 |Divide & Conquer|241|[different-ways-to-add-parentheses](https://leetcode.com/problems/different-ways-to-add-parentheses/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/divideandconquer/DifferentWaysToAddParentheses.java)|100% 100%|
 |Hashtable|242|[valid-anagram](https://leetcode.com/problems/valid-anagram/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/hashtable/ValidAnagram.java)|90.46% 71.14%|
 |Hashtable|692|[top-k-frequent-words](https://leetcode.com/problems/top-k-frequent-words/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/hashtable/TopKFrequentWords.java)|99.50%  89.29%|
+|Stack|20|[valid-parentheses](https://leetcode.com/problems/valid-parentheses/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/stack/ValidParentheses.java)|98.69% 99.98%|
+|Stack,String|394|[decode-string](https://leetcode.com/problems/decode-string/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/stack/DecodeString.java)|100.00% 100.00%|
 |Binary Tree|236|[lowest-common-ancestor-of-a-binary-tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/binarytree/LowestCommonAncestorOfABinaryTree.java)|100.00% 44.21%|
 |Binary Tree|671|[second-minimum-node-in-a-binary-tree](https://leetcode.com/problems/second-minimum-node-in-a-binary-tree/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/binarytree/SecondMinimumNodeInABinaryTree.java)|100.00% 93.19%|
 |Binary Tree|236|[lowest-common-ancestor-of-a-binary-tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/binarytree/AllNodesDistanceKInBinaryTree.java)|100% 19.83%|
@@ -56,5 +61,3 @@ Below table is generated using this [class](https://github.com/Fanlu91/FanluLeet
 |Matrix|766|[toeplitz-matrix](https://leetcode.com/problems/toeplitz-matrix/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/matrix/ToeplitzMatrix.java)|100.00% 73.60%|
 |Matrix|867|[transpose-matri](https://leetcode.com/problems/transpose-matrix)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/matrix/TransposeMatrix.java)|100.00% 99.81%|
 |Matrix|985|[reshape-the-matrix](https://leetcode.com/problems/reshape-the-matrix/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/matrix/ReshapeTheMatrix.java)|100.00% 100.00%|
-|Trie Tree|211|[add-and-search-word-data-structure-design](https://leetcode.com/problems/add-and-search-word-data-structure-design/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/trietree/WordDictionary.java)|100.00% 76.32%|
-|Trie Tree|720|[longest-word-in-dictionary](https://leetcode.com/problems/longest-word-in-dictionary/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/trietree/LongestWordInDictionary.java)|97.79% 97.18%|

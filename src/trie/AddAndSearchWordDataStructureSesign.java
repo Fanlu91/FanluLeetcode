@@ -1,21 +1,22 @@
-package trietree;
+package trie;
 
 // Source : https://leetcode.com/problems/add-and-search-word-data-structure-design/
 // Id     : 211
 // Author : Fanlu Hai
-// Topic  : Trie Tree
+// Topic  : Trie
+// Level  : Medium
 // Date   : 2018-05-12
 // Other  :
 // Tips   :
 // Result : 100.00% 76.32%
 
-public class WordDictionary {
+public class AddAndSearchWordDataStructureSesign {
     TrieNode root;
 
     /**
      * Initialize your data structure here.
      */
-    public WordDictionary() {
+    public AddAndSearchWordDataStructureSesign() {
         root = new TrieNode();
     }
 
@@ -80,7 +81,7 @@ public class WordDictionary {
     }
 
     public static void main(String[] args) {
-        WordDictionary obj = new WordDictionary();
+        AddAndSearchWordDataStructureSesign obj = new AddAndSearchWordDataStructureSesign();
 //        obj.addWord("at");
         obj.addWord("and");
 //        obj.addWord("an");
@@ -98,8 +99,8 @@ public class WordDictionary {
 
 
 /**
- * Your WordDictionary object will be instantiated and called as such:
- * WordDictionary obj = new WordDictionary();
+ * Your AddAndSearchWordDataStructureSesign object will be instantiated and called as such:
+ * AddAndSearchWordDataStructureSesign obj = new AddAndSearchWordDataStructureSesign();
  * obj.addWord(word);
  * boolean param_2 = obj.search(word);
  */

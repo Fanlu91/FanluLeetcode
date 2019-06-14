@@ -1,8 +1,9 @@
-package trietree;
+package trie;
 // Source : https://leetcode.com/problems/longest-word-in-dictionary/
 // Id     : 720
 // Author : Fanlu Hai
-// Topic  : Trie Tree
+// Topic  : Trie
+// Level  : Easy
 // Date   : 2018-05-12
 // Other  : data structure of the children list will affect the performance significantly
 // Tips   : good test case ["gbra","jy","pl","zn","gb","j","jyh","jyhm","plr","znicn","p","gbr","zni","znic","aq"]
@@ -12,10 +13,10 @@ import java.util.HashMap;
 import java.util.Stack;
 
 public class LongestWordInDictionary {
+
     TrieNodeUsingMap rootNodeUsingMap = new TrieNodeUsingMap('/');
     TrieNodeUsingArray rootNodeUsingArray = new TrieNodeUsingArray('/');
     String longest = "";
-
 
     // 34.81%(22 ms) 97.45%
     public String longestWordSlow(String[] words) {
@@ -88,7 +89,6 @@ public class LongestWordInDictionary {
     }
 
     public void searchLongest2(TrieNodeUsingArray node, String[] words) {
-
         if (node.index != -1) {
             String tmp = words[node.index];
             // System.out.println("count "+tmp);
