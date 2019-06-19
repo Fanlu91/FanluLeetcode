@@ -28,7 +28,8 @@ public class ReadMeGenerator {
                 " ",
                 " ",
                 "|Topic|Id|Title|Solution|Result|",
-                "|---|---|---|---|---|");
+                "|---|---|---|---|---|",
+                "");
 
         List<Solution> solutionList = new LinkedList<>();
         try {
@@ -73,16 +74,17 @@ public class ReadMeGenerator {
         solutionList.sort(new Comparator<Solution>() {
             @Override
             public int compare(Solution o1, Solution o2) {
-                return o1.source.compareTo(o2.topic);
+                return Integer.valueOf(o2.id) - Integer.valueOf(o1.id);
             }
         });
 
-//        solutionList.sort(new Comparator<Solution>() {
-//            @Override
-//            public int compare(Solution o1, Solution o2) {
-//                return o2.topic.compareTo(o1.topic);
-//            }
-//        });
+        solutionList.sort(new Comparator<Solution>() {
+            @Override
+            public int compare(Solution o1, Solution o2) {
+                return o1.topic.compareTo(o2.topic);
+            }
+        });
+
 
 
         StringBuilder stringBuilder = new StringBuilder(readme);

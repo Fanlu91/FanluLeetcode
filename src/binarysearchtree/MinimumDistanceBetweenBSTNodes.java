@@ -1,7 +1,8 @@
 package binarysearchtree;
 // Source : https://leetcode.com/problems/minimum-distance-between-bst-nodes/
 //          or https://leetcode.com/problems/minimum-absolute-difference-in-bst/
-// Id     : 783 or 530
+// Id     : 530
+//          or 783
 // Author : Fanlu Hai
 // Date   : 2018-05-02
 // Topic  : Binary Search Tree
