@@ -35,6 +35,8 @@ Below table is generated using this [class](https://github.com/Fanlu91/FanluLeet
 |Divide & Conquer|241|[different-ways-to-add-parentheses](https://leetcode.com/problems/different-ways-to-add-parentheses/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/divideandconquer/DifferentWaysToAddParentheses.java)|100% 100%|
 |Graph|997|[find-the-town-judge](https://leetcode.com/problems/find-the-town-judge/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/graph/FindTheTownJudge.java)|98.73% 100.00%|
 |Hashtable|692|[top-k-frequent-words](https://leetcode.com/problems/top-k-frequent-words/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/hashtable/TopKFrequentWords.java)|99.50%  89.29%|
+|Hashtable|594|[longest-harmonious-subsequence](https://leetcode.com/problems/longest-harmonious-subsequence/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/hashtable/LongestHarmoniousSubsequence.java)|100.00% 13.99%|
+|Hashtable|389|[find-the-difference](https://leetcode.com/problems/find-the-difference/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/hashtable/FindTheDifference.java)|99.37% 19.48%|
 |Hashtable|242|[valid-anagram](https://leetcode.com/problems/valid-anagram/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/hashtable/ValidAnagram.java)|90.46% 71.14%|
 |Heap|703|[kth-largest-element-in-a-stream](https://leetcode.com/problems/kth-largest-element-in-a-stream/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/heap/KthLargest.java)|99.55% 64.02%|
 |Linked list|876|[middle-of-the-linked-list](https://leetcode.com/problems/middle-of-the-linked-list/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/linkedlist/MiddleOfTheLinkedList.java)|100.00% 100.00%|
@@ -60,5 +62,7 @@ Below table is generated using this [class](https://github.com/Fanlu91/FanluLeet
 |Matrix|766|[toeplitz-matrix](https://leetcode.com/problems/toeplitz-matrix/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/matrix/ToeplitzMatrix.java)|100.00% 73.60%|
 |Stack|20|[valid-parentheses](https://leetcode.com/problems/valid-parentheses/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/stack/ValidParentheses.java)|98.69% 99.98%|
 |Stack,String|394|[decode-string](https://leetcode.com/problems/decode-string/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/stack/DecodeString.java)|100.00% 100.00%|
-|Trie|720|[longest-word-in-dictionary](https://leetcode.com/problems/longest-word-in-dictionary/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/trie/LongestWordInDictionary.java)|97.79% 97.18%|
+|Trie|1023|[camelcase-matching](https://leetcode.com/problems/camelcase-matching/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/trie/CamelcaseMatching.java)|100.00% 99.58%|
+|Trie|720|[longest-word-in-dictionary](https://leetcode.com/problems/longest-word-in-dictionary/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/trie/LongestWordInDictionary.java)|100.00% 97.61%|
 |Trie|211|[add-and-search-word-data-structure-design](https://leetcode.com/problems/add-and-search-word-data-structure-design/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/trie/AddAndSearchWordDataStructureSesign.java)|100.00% 76.32%|
+|Trie|208|[implement-trie-prefix-tree](https://leetcode.com/problems/implement-trie-prefix-tree/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/trie/ImplementTriePrefixTree.java)|99.79% 98.24%|
