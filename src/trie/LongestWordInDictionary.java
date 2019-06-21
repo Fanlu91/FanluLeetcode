@@ -1,29 +1,27 @@
 package trie;
 // Source : https://leetcode.com/problems/longest-word-in-dictionary/
 // Id     : 720
-// Author : Fanlu Hai
+// Author : Fanlu Hai | https://github.com/Fanlu91/FanluLeetcode
 // Topic  : Trie
 // Level  : Easy
 // Date   : 2018-05-12
-// Other  : data structure of the children list will affect the performance significantly
-// Tips   : good test case ["gbra","jy","pl","zn","gb","j","jyh","jyhm","plr","znicn","p","gbr","zni","znic","aq"]
-// Result : 97.79% 97.18%
+// Other  :
+// Tips   : data structure of the children list will affect the performance significantly; lexicographical order 辞典序;
+// Cases  : ["gbra","jy","pl","zn","gb","j","jyh","jyhm","plr","znicn","p","gbr","zni","znic","aq"] ;
+// Result : 100.00% 97.61%
 
 import java.util.HashMap;
 import java.util.Stack;
 
 public class LongestWordInDictionary {
+    String longest = "";
 
     TrieNodeUsingMap rootNodeUsingMap = new TrieNodeUsingMap('/');
-    TrieNodeUsingArray rootNodeUsingArray = new TrieNodeUsingArray('/');
-    String longest = "";
 
     // 34.81%(22 ms) 97.45%
     public String longestWordSlow(String[] words) {
-        for (int i = 0; i < words.length; i++) {
+        for (int i = 0; i < words.length; i++)
             insertUsingMap(words[i], i);
-            // System.out.println("insertUsingMap: " + i + " " + words[i]);
-        }
 
         Stack<TrieNodeUsingMap> stack = new Stack();
         stack.addAll(rootNodeUsingMap.children.values());
@@ -31,76 +29,37 @@ public class LongestWordInDictionary {
         TrieNodeUsingMap node;
         while (!stack.isEmpty()) {
             node = stack.pop();
-            // System.out.println(node.c+" "+node.index);
             if (node.index != -1) {
                 String tmp = words[node.index];
-                // System.out.println("count "+tmp);
                 if (tmp.length() > longest.length()
                         || (tmp.length() == longest.length() && tmp.compareTo(longest) < 0)) {
-                    // System.out.println("longest "+tmp);
                     longest = tmp;
                 }
                 stack.addAll(node.children.values());
             }
-
         }
-
         return longest;
     }
 
     //51.26% (16 ms) 98.36%
     public String longestWordBetter(String[] words) {
-        for (int i = 0; i < words.length; i++) {
+        for (int i = 0; i < words.length; i++)
             insertUsingMap(words[i], i);
-            // System.out.println("insertUsingMap: " + i + " " + words[i]);
-        }
-        for (TrieNodeUsingMap child : rootNodeUsingMap.children.values()) {
+        for (TrieNodeUsingMap child : rootNodeUsingMap.children.values())
             searchLongest(child, words);
-        }
         return longest;
     }
 
     public void searchLongest(TrieNodeUsingMap node, String[] words) {
         if (node.index != -1) {
             String tmp = words[node.index];
-            // System.out.println("count "+tmp);
             if (tmp.length() > longest.length()
-                    || (tmp.length() == longest.length() && tmp.compareTo(longest) < 0)) {
-                // System.out.println("longest "+tmp);
+                    || (tmp.length() == longest.length() && tmp.compareTo(longest) < 0))
                 longest = tmp;
-            }
-            for (TrieNodeUsingMap child : node.children.values()) {
+
+            for (TrieNodeUsingMap child : node.children.values())
                 searchLongest(child, words);
-            }
-        }
-    }
 
-    //97.79% (6 ms) 97.18% (37.6 MB)
-    public String longestWord(String[] words) {
-        for (int i = 0; i < words.length; i++) {
-            insertUsingArray(words[i], i);
-            System.out.println("insert: " + i + " " + words[i]);
-        }
-        for (TrieNodeUsingArray child : rootNodeUsingArray.children) {
-            if (null != child)
-                searchLongest2(child, words);
-        }
-        return longest;
-    }
-
-    public void searchLongest2(TrieNodeUsingArray node, String[] words) {
-        if (node.index != -1) {
-            String tmp = words[node.index];
-            // System.out.println("count "+tmp);
-            if (tmp.length() > longest.length()
-                    || (tmp.length() == longest.length() && tmp.compareTo(longest) < 0)) {
-                System.out.println("longest " + tmp);
-                longest = tmp;
-            }
-            for (TrieNodeUsingArray child : node.children) {
-                if (null != child)
-                    searchLongest2(child, words);
-            }
         }
     }
 
@@ -126,8 +85,39 @@ public class LongestWordInDictionary {
             node.children.putIfAbsent(c, new TrieNodeUsingMap(c));
             node = node.children.get(c);
         }
-        // not only means this node is the end of a word,but also contains index information for this word.
+        // not only means this node is the end of a word,but also contains index information for the word.
         node.index = index;
+    }
+
+    /**
+     * use arrays to construct a trie
+     */
+
+    TrieNodeUsingArray rootNodeUsingArray = new TrieNodeUsingArray('/');
+
+    //100.00% (6 ms) 97.61% (37.8 MB)
+    public String longestWord(String[] words) {
+        for (int i = 0; i < words.length; i++)
+            insertUsingArray(words[i], i);
+        for (TrieNodeUsingArray child : rootNodeUsingArray.children) {
+            if (null != child)
+                searchLongest2(child, words);
+        }
+        return longest;
+    }
+
+    public void searchLongest2(TrieNodeUsingArray node, String[] words) {
+        if (node.index != -1) {
+            String tmp = words[node.index];
+            if (tmp.length() > longest.length()
+                    || (tmp.length() == longest.length() && tmp.compareTo(longest) < 0)) {
+                longest = tmp;
+            }
+            for (TrieNodeUsingArray child : node.children) {
+                if (null != child)
+                    searchLongest2(child, words);
+            }
+        }
     }
 
     class TrieNodeUsingArray {
