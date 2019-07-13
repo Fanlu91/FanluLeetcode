@@ -24,7 +24,9 @@ Below table is generated using this [class](https://github.com/Fanlu91/FanluLeet
 |Array|217|[contains-duplicate](https://leetcode.com/problems/contains-duplicate/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/array/ContainsDuplicate.java)|99.06% 65.20%|
 |Array|169|[majority-element](https://leetcode.com/problems/majority-element/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/array/MajorityElement.java)|100.00% 50.94%|
 |Array|1|[two-sum](https://leetcode.com/problems/two-sum/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/array/TwoSum.java)|99.23%  99.75%|
+|Backtracking|784|[letter-case-permutation](https://leetcode.com/problems/letter-case-permutation/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/backtracking/BinaryWatch.java)|89.19% 100.00%|
 |Backtracking|784|[letter-case-permutation](https://leetcode.com/problems/letter-case-permutation/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/backtracking/LetterCasePermutation.java)|100.00% 99.36%|
+|Backtracking|79|[word-search](https://leetcode.com/problems/word-search/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/backtracking/WordSearch.java)|99.91% 100.00%|
 |Backtracking|51|[n-queens](https://leetcode.com/problems/n-queens/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/backtracking/NQueens.java)|100% 100%|
 |Binary Search|441|[arranging-coins](https://leetcode.com/problems/arranging-coins/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/binarysearch/ArrangingCoins.java)|82.04% 100%|
 |Binary Search|167|[two-sum-ii-input-array-is-sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/binarysearch/TwoSumIIInputArrayIsSorted.java)|100.00% 63.39%|

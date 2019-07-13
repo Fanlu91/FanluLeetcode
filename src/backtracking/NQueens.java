@@ -9,7 +9,7 @@ import java.util.List;
 // Id     : 51
 // Author : Fanlu Hai | https://github.com/Fanlu91/FanluLeetcode
 // Topic  : Backtracking
-// Level  : Hard
+// Level  : Hard-
 // Date   : 2018-07-09
 // Other  :
 // Tips   :
