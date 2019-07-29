@@ -64,6 +64,7 @@ Below table is generated using this [class](https://github.com/Fanlu91/FanluLeet
 |Matrix|867|[transpose-matri](https://leetcode.com/problems/transpose-matrix)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/matrix/TransposeMatrix.java)|100.00% 99.81%|
 |Matrix|832|[flipping-an-image](https://leetcode.com/problems/flipping-an-image/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/matrix/FlippingAnImage.java)|100.00% 99.95%|
 |Matrix|766|[toeplitz-matrix](https://leetcode.com/problems/toeplitz-matrix/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/matrix/ToeplitzMatrix.java)|100.00% 73.60%|
+|Matrix|54|[spiral-matrix](https://leetcode.com/problems/spiral-matrix/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/matrix/SpiralMatrix.java)|100.00% 99.54%|
 |Stack|20|[valid-parentheses](https://leetcode.com/problems/valid-parentheses/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/stack/ValidParentheses.java)|98.69% 99.98%|
 |Stack,String|394|[decode-string](https://leetcode.com/problems/decode-string/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/stack/DecodeString.java)|100.00% 100.00%|
 |Trie|1023|[camelcase-matching](https://leetcode.com/problems/camelcase-matching/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/trie/CamelcaseMatching.java)|100.00% 99.58%|
