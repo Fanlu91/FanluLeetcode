@@ -2,8 +2,8 @@ package linkedlist;
 
 // Source : https://leetcode.com/problems/linked-list-cycle/
 // Id     : 141
-// Author : Fanlu Hai
-// Date   : 2018-05-29
+// Author : Fanlu Hai | https://github.com/Fanlu91/FanluLeetcode
+// Date   : 2019-05-29
 // Topic  : Linked list
 // Other  :
 // Tips   :

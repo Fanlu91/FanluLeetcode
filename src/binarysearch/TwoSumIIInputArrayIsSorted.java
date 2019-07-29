@@ -1,8 +1,8 @@
 package binarysearch;
 // Source : https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
 // Id     : 167
-// Author : Fanlu Hai
-// Date   : 2018-06-11
+// Author : Fanlu Hai | https://github.com/Fanlu91/FanluLeetcode
+// Date   : 2019-06-11
 // Topic  : Binary Search
 // Level  : Easy
 // Other  :

@@ -1,8 +1,8 @@
 package array;
 // Source : https://leetcode.com/problems/array-partition-i/
 // Id     : 561
-// Author : Fanlu Hai
-// Date   : 2018-06-04
+// Author : Fanlu Hai | https://github.com/Fanlu91/FanluLeetcode
+// Date   : 2019-06-04
 // Topic  : Array
 // Other  : bucket sort can be very efficient
 // Tips   :

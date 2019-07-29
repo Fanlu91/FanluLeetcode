@@ -1,8 +1,8 @@
 package array;
 // Source : https://leetcode.com/problems/fibonacci-number/
 // Id     : 509
-// Author : Fanlu Hai
-// Date   : 2018-06-04
+// Author : Fanlu Hai | https://github.com/Fanlu91/FanluLeetcode
+// Date   : 2019-06-04
 // Topic  : Array
 // Level  : Easy-
 // Other  :

@@ -2,8 +2,8 @@ package stack;
 
 // Source : https://leetcode.com/problems/valid-parentheses/
 // Id     : 20
-// Author : Fanlu Hai
-// Date   : 2018-06-12
+// Author : Fanlu Hai | https://github.com/Fanlu91/FanluLeetcode
+// Date   : 2019-06-12
 // Topic  : Stack
 // Level  : Easy
 // Other  :

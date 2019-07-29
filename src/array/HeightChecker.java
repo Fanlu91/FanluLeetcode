@@ -2,8 +2,8 @@ package array;
 
 // Source : https://leetcode.com/problems/height-checker/
 // Id     : 1051
-// Author : Fanlu Hai
-// Date   : 2018-06-04
+// Author : Fanlu Hai | https://github.com/Fanlu91/FanluLeetcode
+// Date   : 2019-06-04
 // Topic  : Array
 // Level  : Easy
 // Other  : This is not a very nice described question. You can skip it I think.

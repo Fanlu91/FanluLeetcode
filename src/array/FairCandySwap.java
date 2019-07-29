@@ -2,8 +2,8 @@ package array;
 
 // Source : https://leetcode.com/problems/fair-candy-swap/
 // Id     : 888
-// Author : Fanlu Hai
-// Date   : 2018-06-10
+// Author : Fanlu Hai | https://github.com/Fanlu91/FanluLeetcode
+// Date   : 2019-06-10
 // Topic  : Array
 // Level  : Easy
 // Other  :

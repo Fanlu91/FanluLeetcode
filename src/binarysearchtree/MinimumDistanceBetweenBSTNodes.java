@@ -3,8 +3,8 @@ package binarysearchtree;
 //          or https://leetcode.com/problems/minimum-absolute-difference-in-bst/
 // Id     : 530
 //          or 783
-// Author : Fanlu Hai
-// Date   : 2018-05-02
+// Author : Fanlu Hai | https://github.com/Fanlu91/FanluLeetcode
+// Date   : 2019-05-02
 // Topic  : Binary Search Tree
 // Other  : 783 and 530 are almost the same , below solution will ac both.
 // Tips   : This is a BST, which means the inorder traversal of its nodes results in a sorted list of values.

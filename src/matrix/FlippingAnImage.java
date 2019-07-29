@@ -1,8 +1,8 @@
 package matrix;
 // Source : https://leetcode.com/problems/flipping-an-image/
 // Id     : 832
-// Author : Fanlu Hai
-// Date   : 2018-06-04
+// Author : Fanlu Hai | https://github.com/Fanlu91/FanluLeetcode
+// Date   : 2019-06-04
 // Topic  : Matrix
 // Other  :
 // Tips   : int a[][] = new int[3][4]; //3行 4列

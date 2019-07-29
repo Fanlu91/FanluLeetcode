@@ -2,8 +2,8 @@ package array;
 
 // Source : https://leetcode.com/problems/degree-of-an-array/
 // Id     : 697
-// Author : Fanlu Hai
-// Date   : 2018-06-11
+// Author : Fanlu Hai | https://github.com/Fanlu91/FanluLeetcode
+// Date   : 2019-06-11
 // Topic  : Array
 // Level  : Easy
 // Other  :

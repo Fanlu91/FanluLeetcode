@@ -1,8 +1,8 @@
 package binarytree;
 // Source : https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/
 // Id     : 236
-// Author : Fanlu Hai
-// Date   : 2018-04-24
+// Author : Fanlu Hai | https://github.com/Fanlu91/FanluLeetcode
+// Date   : 2019-04-24
 // Topic  : Binary Tree
 // Other  : lowest common ancestor (LCA): The lowest common ancestor is defined between two nodes p and q
 //          as the lowest node in T that has both p and q as descendants

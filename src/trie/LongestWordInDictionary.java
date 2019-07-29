@@ -4,7 +4,7 @@ package trie;
 // Author : Fanlu Hai | https://github.com/Fanlu91/FanluLeetcode
 // Topic  : Trie
 // Level  : Easy
-// Date   : 2018-05-12
+// Date   : 2019-05-12
 // Other  :
 // Tips   : data structure of the children list will affect the performance significantly; lexicographical order 辞典序;
 // Cases  : ["gbra","jy","pl","zn","gb","j","jyh","jyhm","plr","znicn","p","gbr","zni","znic","aq"] ;

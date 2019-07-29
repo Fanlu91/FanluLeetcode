@@ -1,9 +1,9 @@
 package graph;
 // Source : https://leetcode.com/problems/find-the-town-judge/
 // Id     : 997
-// Author : Fanlu Hai
+// Author : Fanlu Hai | https://github.com/Fanlu91/FanluLeetcode
 // Topic  : Graph
-// Date   : 2018-05-03
+// Date   : 2019-05-03
 // Other  :
 // Tips   :
 // Result : 98.73% 100.00%

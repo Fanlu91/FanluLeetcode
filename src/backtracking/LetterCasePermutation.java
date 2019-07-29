@@ -4,7 +4,7 @@ package backtracking;
 // Author : Fanlu Hai | https://github.com/Fanlu91/FanluLeetcode
 // Topic  : Backtracking
 // Level  : Easy
-// Date   : 2018-07-09
+// Date   : 2019-07-09
 // Other  :
 // Tips   :
 // Result : 100.00% 99.36%

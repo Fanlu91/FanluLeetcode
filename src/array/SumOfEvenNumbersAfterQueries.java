@@ -2,8 +2,8 @@ package array;
 
 // Source : https://leetcode.com/problems/sum-of-even-numbers-after-queries/
 // Id     : 985
-// Author : Fanlu Hai
-// Date   : 2018-06-06
+// Author : Fanlu Hai | https://github.com/Fanlu91/FanluLeetcode
+// Date   : 2019-06-06
 // Topic  : Array
 // Level  : Easy
 // Other  :

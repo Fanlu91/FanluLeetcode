@@ -5,8 +5,8 @@ import java.util.Map;
 
 // Source : https://leetcode.com/problems/two-sum/
 // Id     : 1
-// Author : Fanlu Hai
-// Date   : 2018-06-04
+// Author : Fanlu Hai | https://github.com/Fanlu91/FanluLeetcode
+// Date   : 2019-06-04
 // Topic  : Array
 // Level  : Easy
 // Other  :

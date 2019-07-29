@@ -2,8 +2,8 @@ package linkedlist;
 
 // Source : https://leetcode.com/problems/add-two-numbers/
 // Id     : 2
-// Author : Fanlu Hai
-// Date   : 2018-06-03
+// Author : Fanlu Hai | https://github.com/Fanlu91/FanluLeetcode
+// Date   : 2019-06-03
 // Topic  : Linked list
 // Other  :
 // Tips   :

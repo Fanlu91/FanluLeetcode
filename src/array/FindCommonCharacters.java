@@ -2,8 +2,8 @@ package array;
 
 // Source : https://leetcode.com/problems/find-common-characters/
 // Id     : 1002
-// Author : Fanlu Hai
-// Date   : 2018-06-05
+// Author : Fanlu Hai | https://github.com/Fanlu91/FanluLeetcode
+// Date   : 2019-06-05
 // Topic  : Array
 // Level  : Easy
 // Other  :

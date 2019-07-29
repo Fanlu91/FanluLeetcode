@@ -4,9 +4,9 @@ import java.util.PriorityQueue;
 
 // Source : https://leetcode.com/problems/kth-largest-element-in-a-stream/
 // Id     : 703
-// Author : Fanlu Hai
+// Author : Fanlu Hai | https://github.com/Fanlu91/FanluLeetcode
 // Topic  : Heap
-// Date   : 2018-05-05
+// Date   : 2019-05-05
 // Other  : should implement priority queue manually
 // Tips   :
 // Result : 99.55% 64.02%

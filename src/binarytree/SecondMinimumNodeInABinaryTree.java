@@ -1,8 +1,8 @@
 package binarytree;
 // Source : https://leetcode.com/problems/second-minimum-node-in-a-binary-tree/
 // Id     : 671
-// Author : Fanlu Hai
-// Date   : 2018-04-23
+// Author : Fanlu Hai | https://github.com/Fanlu91/FanluLeetcode
+// Date   : 2019-04-23
 // Topic  : Binary Tree
 // Other  : Long result =Long.valueOf(Integer.MAX_VALUE)+1; Long.valueOf(Integer.MAX_VALUE+1) will result in Integer.MIN
 // Tips   :

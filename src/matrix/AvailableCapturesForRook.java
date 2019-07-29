@@ -1,8 +1,8 @@
 package matrix;
 // Source : https://leetcode.com/problems/available-captures-for-rook/
 // Id     : 999
-// Author : Fanlu Hai
-// Date   : 2018-06-05
+// Author : Fanlu Hai | https://github.com/Fanlu91/FanluLeetcode
+// Date   : 2019-06-05
 // Topic  : Matrix
 // Level  : Easy
 // Other  :

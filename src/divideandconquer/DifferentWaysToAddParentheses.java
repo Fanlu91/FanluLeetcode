@@ -1,8 +1,8 @@
 package divideandconquer;
 // Source : https://leetcode.com/problems/different-ways-to-add-parentheses/
 // Id     : 241
-// Author : Fanlu Hai
-// Date   : 2018-05-24
+// Author : Fanlu Hai | https://github.com/Fanlu91/FanluLeetcode
+// Date   : 2019-05-24
 // Topic  : Divide & Conquer
 // Level  : Medium
 // Other  :

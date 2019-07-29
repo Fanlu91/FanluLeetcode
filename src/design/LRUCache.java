@@ -2,8 +2,8 @@ package design;
 
 // Source : https://leetcode.com/problems/lru-cache/
 // Id     : 146
-// Author : Fanlu Hai
-// Date   : 2018-06-13
+// Author : Fanlu Hai | https://github.com/Fanlu91/FanluLeetcode
+// Date   : 2019-06-13
 // Topic  : Design
 // Level  : Medium
 // Other  :

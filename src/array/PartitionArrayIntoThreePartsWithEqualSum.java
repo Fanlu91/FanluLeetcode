@@ -2,8 +2,8 @@ package array;
 
 // Source : https://leetcode.com/problems/partition-array-into-three-parts-with-equal-sum/
 // Id     : 1013
-// Author : Fanlu Hai
-// Date   : 2018-06-10
+// Author : Fanlu Hai | https://github.com/Fanlu91/FanluLeetcode
+// Date   : 2019-06-10
 // Topic  : Array
 // Level  : Easy
 // Other  :

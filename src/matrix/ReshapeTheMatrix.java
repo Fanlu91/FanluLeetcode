@@ -1,8 +1,8 @@
 package matrix;
 // Source : https://leetcode.com/problems/reshape-the-matrix/
 // Id     : 985
-// Author : Fanlu Hai
-// Date   : 2018-06-09
+// Author : Fanlu Hai | https://github.com/Fanlu91/FanluLeetcode
+// Date   : 2019-06-09
 // Topic  : Matrix
 // Level  : Easy-
 // Other  : 托普利兹矩阵，简称为T型矩阵

@@ -1,9 +1,9 @@
 package hashtable;
 // Source : https://leetcode.com/problems/top-k-frequent-words/
 // Id     : 692
-// Author : Fanlu Hai
+// Author : Fanlu Hai | https://github.com/Fanlu91/FanluLeetcode
 // Topic  : Hashtable
-// Date   : 2018-04-23
+// Date   : 2019-04-23
 // Other  : I used PriorityQueue which I suppose should be some other data structure implemented by myself.
 // Tips   :
 // Result : 99.50%  89.29%

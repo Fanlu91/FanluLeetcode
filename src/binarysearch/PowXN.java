@@ -2,8 +2,8 @@ package binarysearch;
 
 // Source : https://leetcode.com/problems/powx-n/
 // Id     : 50
-// Author : Fanlu Hai
-// Date   : 2018-04-17
+// Author : Fanlu Hai | https://github.com/Fanlu91/FanluLeetcode
+// Date   : 2019-04-17
 // Topic  : Binary Search
 // Level  : Medium
 // Other  :

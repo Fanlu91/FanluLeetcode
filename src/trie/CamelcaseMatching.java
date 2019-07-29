@@ -5,7 +5,7 @@ package trie;
 // Author : Fanlu Hai | https://github.com/Fanlu91/FanluLeetcode
 // Topic  : Trie
 // Level  : Medium
-// Date   : 2018-05-12
+// Date   : 2019-05-12
 // Other  :
 // Tips   :
 // Result : 100.00% 99.58%

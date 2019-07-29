@@ -1,9 +1,9 @@
 package recursion;
 // Source : https://leetcode.com/problems/longest-univalue-path/
 // Id     : 687
-// Author : Fanlu Hai
+// Author : Fanlu Hai | https://github.com/Fanlu91/FanluLeetcode
 // Topic  : Recursion
-// Date   : 2018-04-18
+// Date   : 2019-04-18
 //!Result :
 
 

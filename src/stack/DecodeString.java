@@ -2,8 +2,8 @@ package stack;
 
 // Source : https://leetcode.com/problems/decode-string/
 // Id     : 394
-// Author : Fanlu Hai
-// Date   : 2018-06-13
+// Author : Fanlu Hai | https://github.com/Fanlu91/FanluLeetcode
+// Date   : 2019-06-13
 // Topic  : Stack,String
 // Level  : Medium
 // Other  : stack or recursive

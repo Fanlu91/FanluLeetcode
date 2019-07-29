@@ -1,8 +1,8 @@
 package binarytree;
 // Source : https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/
 // Id     : 236
-// Author : Fanlu Hai
-// Date   : 2018-04-26
+// Author : Fanlu Hai | https://github.com/Fanlu91/FanluLeetcode
+// Date   : 2019-04-26
 // Topic  : Binary Tree
 // Other  :
 // Tips   :

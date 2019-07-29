@@ -4,8 +4,8 @@ import java.util.*;
 
 // Source : https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/
 // Id     : 448
-// Author : Fanlu Hai
-// Date   : 2018-06-10
+// Author : Fanlu Hai | https://github.com/Fanlu91/FanluLeetcode
+// Date   : 2019-06-10
 // Topic  : Array
 // Level  : Easy
 // Other  :

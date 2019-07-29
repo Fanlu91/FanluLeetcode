@@ -4,8 +4,8 @@ import java.util.*;
 
 // Source : https://leetcode.com/problems/longest-harmonious-subsequence/
 // Id     : 594
-// Author : Fanlu Hai
-// Date   : 2018-06-20
+// Author : Fanlu Hai | https://github.com/Fanlu91/FanluLeetcode
+// Date   : 2019-06-20
 // Topic  : Hashtable
 // Level  : Easy+
 // Other  :

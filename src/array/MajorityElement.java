@@ -5,8 +5,8 @@ import java.util.Map;
 
 // Source : https://leetcode.com/problems/majority-element/
 // Id     : 169
-// Author : Fanlu Hai
-// Date   : 2018-05-24
+// Author : Fanlu Hai | https://github.com/Fanlu91/FanluLeetcode
+// Date   : 2019-05-24
 // Topic  : Array
 // Level  : Easy
 // Other  :

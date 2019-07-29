@@ -2,8 +2,8 @@ package linkedlist;
 
 // Source : https://leetcode.com/problems/remove-duplicates-from-sorted-list/
 // Id     : 83
-// Author : Fanlu Hai
-// Date   : 2018-06-01
+// Author : Fanlu Hai | https://github.com/Fanlu91/FanluLeetcode
+// Date   : 2019-06-01
 // Topic  : Linked list
 // Other  :
 // Tips   :

@@ -2,8 +2,8 @@ package hashtable;
 
 // Source : https://leetcode.com/problems/find-the-difference/
 // Id     : 389
-// Author : Fanlu Hai
-// Date   : 2018-06-15
+// Author : Fanlu Hai | https://github.com/Fanlu91/FanluLeetcode
+// Date   : 2019-06-15
 // Topic  : Hashtable
 // Level  : Easy
 // Other  :

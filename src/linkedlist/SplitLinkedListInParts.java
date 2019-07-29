@@ -1,8 +1,8 @@
 package linkedlist;
 // Source : https://leetcode.com/problems/split-linked-list-in-parts/
 // Id     : 725
-// Author : Fanlu Hai
-// Date   : 2018-06-04
+// Author : Fanlu Hai | https://github.com/Fanlu91/FanluLeetcode
+// Date   : 2019-06-04
 // Topic  : Linked list
 // Other  :
 // Tips   :

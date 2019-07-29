@@ -2,8 +2,8 @@ package linkedlist;
 
 // Source : https://leetcode.com/problems/design-linked-list/
 // Id     : 707
-// Author : Fanlu Hai
-// Date   : 2018-05-29
+// Author : Fanlu Hai | https://github.com/Fanlu91/FanluLeetcode
+// Date   : 2019-05-29
 // Topic  : Linked list
 // Other  : This question has some bad test cases in my opinion.
 // Tips   : I used the simplest singly linked list with a size attribute.

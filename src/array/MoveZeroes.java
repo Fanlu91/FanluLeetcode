@@ -5,8 +5,8 @@ import java.util.Queue;
 
 // Source : https://leetcode.com/problems/move-zeroes/
 // Id     : 283
-// Author : Fanlu Hai
-// Date   : 2018-06-10
+// Author : Fanlu Hai | https://github.com/Fanlu91/FanluLeetcode
+// Date   : 2019-06-10
 // Topic  : Array
 // Level  : Easy
 // Other  :

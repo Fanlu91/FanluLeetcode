@@ -1,8 +1,8 @@
 package array;
 // Source : https://leetcode.com/problems/sort-array-by-parity/
 // Id     : 905
-// Author : Fanlu Hai
-// Date   : 2018-04-15
+// Author : Fanlu Hai | https://github.com/Fanlu91/FanluLeetcode
+// Date   : 2019-04-15
 // Topic  : Array
 // Level  : Easy
 // Result : 100.00% 96.91%
