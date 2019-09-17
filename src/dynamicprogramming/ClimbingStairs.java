@@ -8,7 +8,7 @@ package dynamicprogramming;
 // Level  : Easy
 // Other  :
 // Tips   :
-// Result : 100.00% 5.06%
+// Result : 100.00% 5.26%
 
 import java.util.HashMap;
 import java.util.Map;
@@ -54,7 +54,14 @@ public class ClimbingStairs {
         }
     }
 
-    // 100.00% 5.06%
+    // 100.00% 5.26%
+
+    /**
+     * compact
+     *
+     * @param n
+     * @return
+     */
     public int climbStairs(int n) {
         if (n <= 1) {
             return n;
