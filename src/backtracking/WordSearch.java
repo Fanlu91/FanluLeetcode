@@ -140,7 +140,7 @@ public class WordSearch {
     }
 
     /***
-     * I am not that easy to give up so, it turns out I can use visited directly
+     * I am not that easy to give up. It turns out I can use visited directly
      * as long as I restore it back to false after recursion.
      *
      * finally it does improved a little : )
@@ -188,10 +188,11 @@ public class WordSearch {
     }
 
     /**
-     * if we can alter visited and restore it back,then we might actually don't need it
+     * if we can alter visited and restore it back,then we might not actually need it
+     *
      * alter the board directly!
      * <p>
-     * Further more, we don't actually need an extra queue, improve that as well
+     * Further more, we don't need an extra queue, improve that as well
      * <p>
      * Finally, we get the best result.
      * Cheers.

@@ -26,6 +26,7 @@ Below table is generated using this [class](https://github.com/Fanlu91/FanluLeet
 |Array|1|[two-sum](https://leetcode.com/problems/two-sum/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/array/TwoSum.java)|99.23%  99.75%|
 |Backtracking|784|[letter-case-permutation](https://leetcode.com/problems/letter-case-permutation/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/backtracking/BinaryWatch.java)|89.19% 100.00%|
 |Backtracking|784|[letter-case-permutation](https://leetcode.com/problems/letter-case-permutation/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/backtracking/LetterCasePermutation.java)|100.00% 99.36%|
+|Backtracking|212|[word-search-ii](https://leetcode.com/problems/word-search-ii/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/backtracking/WordSearchII.java)|99.98% 77.78%|
 |Backtracking|79|[word-search](https://leetcode.com/problems/word-search/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/backtracking/WordSearch.java)|99.91% 100.00%|
 |Backtracking|51|[n-queens](https://leetcode.com/problems/n-queens/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/backtracking/NQueens.java)|100% 100%|
 |Binary Search|441|[arranging-coins](https://leetcode.com/problems/arranging-coins/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/binarysearch/ArrangingCoins.java)|82.04% 100%|
@@ -43,6 +44,8 @@ Below table is generated using this [class](https://github.com/Fanlu91/FanluLeet
 |Dynamic Programming|877|[stone-game](https://leetcode.com/problems/stone-game/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/dynamicprogramming/StoneGame.java)|100.00% 100.00%|
 |Dynamic Programming|746|[min-cost-climbing-stairs](https://leetcode.com/problems/min-cost-climbing-stairs/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/dynamicprogramming/MinCostClimbingStairs.java)|99.86% 100.00%|
 |Dynamic Programming|714|[best-time-to-buy-and-sell-stock-with-transaction-fee](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/dynamicprogramming/BestTimeToBuyAndSellStockWithTransactionFee.java)|80.67% 100.00%|
+|Dynamic Programming|647|[palindromic-substrings](https://leetcode.com/problems/palindromic-substrings/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/dynamicprogramming/PalindromicSubstrings.java)|99.97% 100.00%|
+|Dynamic Programming|516|[longest-palindromic-subsequence](https://leetcode.com/problems/longest-palindromic-subsequence/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/dynamicprogramming/LongestPalindromicSubsequence.java)|100% 100%|
 |Dynamic Programming|338|[counting-bits](https://leetcode.com/problems/counting-bits/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/dynamicprogramming/CountingBits.java)|100.00% 5.88%|
 |Dynamic Programming|309|[best-time-to-buy-and-sell-stock-with-cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/dynamicprogramming/BestTimeToBuyAndSellStockWithCooldown.java)|100.00% 100.00%|
 |Dynamic Programming|303|[range-sum-query-immutable](https://leetcode.com/problems/range-sum-query-immutable/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/dynamicprogramming/RangeSumQueryImmutable.java)|95.71% 56.10%|
@@ -57,6 +60,7 @@ Below table is generated using this [class](https://github.com/Fanlu91/FanluLeet
 |Greedy|53|[maximum-subarray](https://leetcode.com/problems/maximum-subarray/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/greedy/MaximumSubarray.java)|100.00% 99.53%|
 |Hashtable|692|[top-k-frequent-words](https://leetcode.com/problems/top-k-frequent-words/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/hashtable/TopKFrequentWords.java)|99.50%  89.29%|
 |Hashtable|594|[longest-harmonious-subsequence](https://leetcode.com/problems/longest-harmonious-subsequence/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/hashtable/LongestHarmoniousSubsequence.java)|100.00% 13.99%|
+|Hashtable|409|[longest-palindrome](https://leetcode.com/problems/longest-palindrome/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/hashtable/LongestPalindrome.java)|100.00% 100%|
 |Hashtable|389|[find-the-difference](https://leetcode.com/problems/find-the-difference/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/hashtable/FindTheDifference.java)|99.37% 19.48%|
 |Hashtable|242|[valid-anagram](https://leetcode.com/problems/valid-anagram/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/hashtable/ValidAnagram.java)|90.46% 71.14%|
 |Heap|703|[kth-largest-element-in-a-stream](https://leetcode.com/problems/kth-largest-element-in-a-stream/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/heap/KthLargest.java)|99.55% 64.02%|
@@ -76,6 +80,7 @@ Below table is generated using this [class](https://github.com/Fanlu91/FanluLeet
 |Linked list|21|[merge-two-sorted-lists](https://leetcode.com/problems/merge-two-sorted-lists/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/linkedlist/MergeTwoSortedLists.java)|100.00% 56.90%|
 |Linked list|2|[add-two-numbers](https://leetcode.com/problems/add-two-numbers/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/linkedlist/AddTwoNumbers.java)|94.51% 90.73%|
 |Linked list , Binary Tree|109|[convert-sorted-list-to-binary-search-tree](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/linkedlist/ConvertSortedListToBinarySearchTree.java)|97.35% 100.00%|
+|Math|9|[palindrome-number](https://leetcode.com/problems/palindrome-number/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/math/PalindromeNumber.java)|100.00% 5.02%|
 |Matrix|999|[available-captures-for-rook](https://leetcode.com/problems/available-captures-for-rook/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/matrix/AvailableCapturesForRook.java)|100.00% 99.95%|
 |Matrix|985|[reshape-the-matrix](https://leetcode.com/problems/reshape-the-matrix/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/matrix/ReshapeTheMatrix.java)|100.00% 100.00%|
 |Matrix|867|[transpose-matri](https://leetcode.com/problems/transpose-matrix)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/matrix/TransposeMatrix.java)|100.00% 99.81%|
@@ -84,6 +89,8 @@ Below table is generated using this [class](https://github.com/Fanlu91/FanluLeet
 |Matrix|54|[spiral-matrix](https://leetcode.com/problems/spiral-matrix/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/matrix/SpiralMatrix.java)|100.00% 99.54%|
 |Stack|20|[valid-parentheses](https://leetcode.com/problems/valid-parentheses/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/stack/ValidParentheses.java)|98.69% 99.98%|
 |Stack,String|394|[decode-string](https://leetcode.com/problems/decode-string/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/stack/DecodeString.java)|100.00% 100.00%|
+|String|680|[valid-palindrome-ii](https://leetcode.com/problems/valid-palindrome-ii/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/string/ValidPalindromeII.java)|99.68% 94.44%|
+|String|125|[valid-palindrome](https://leetcode.com/problems/valid-palindrome/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/string/ValidPalindrome.java)|100% 100%|
 |Trie|1023|[camelcase-matching](https://leetcode.com/problems/camelcase-matching/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/trie/CamelcaseMatching.java)|100.00% 99.58%|
 |Trie|720|[longest-word-in-dictionary](https://leetcode.com/problems/longest-word-in-dictionary/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/trie/LongestWordInDictionary.java)|100.00% 97.61%|
 |Trie|211|[add-and-search-word-data-structure-design](https://leetcode.com/problems/add-and-search-word-data-structure-design/)|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/trie/AddAndSearchWordDataStructureSesign.java)|100.00% 76.32%|
