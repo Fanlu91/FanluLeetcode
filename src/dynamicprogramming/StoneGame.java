@@ -31,6 +31,7 @@ public class StoneGame {
         return 2 * findMax(0, piles.length - 1, piles, mem) >= sum;
     }
 
+    // 7, 12, 16, 41, 48, 41, 48, 11, 9
     private int findMax(int left, int right, int[] piles, int[][] mem) {
         if (left < 0 || right < 0 || left > right)
             return 0;
@@ -41,8 +42,14 @@ public class StoneGame {
             return piles[left];
         }
 
-        int max = Math.max(piles[left] + Math.min(findMax(left + 2, right, piles, mem), findMax(left + 1, right - 1, piles, mem)),
-                piles[right] + Math.min(findMax(left + 1, right - 1, piles, mem), findMax(left, right - 2, piles, mem)));
+        int max = Math.max(
+                piles[left] +
+                        Math.min(findMax(left + 2, right, piles, mem),
+                                findMax(left + 1, right - 1, piles, mem)),
+                piles[right] +
+                        Math.min(findMax(left + 1, right - 1, piles, mem),
+                                findMax(left, right - 2, piles, mem)));
+
         mem[left][right] = max;
         return max;
     }

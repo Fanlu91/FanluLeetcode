@@ -8,7 +8,7 @@ package dynamicprogramming;
 // Level  : Easy-
 // Other  :
 // Tips   :
-// Result : 94.81% 96.19%
+// Result : 100.00% 100.00%
 
 public class BestTimeToBuyAndSellStockII {
 

@@ -47,8 +47,6 @@ public class BestTimeToBuyAndSellStockWithTransactionFee {
             preBuy = buy;
             preSell = sell;
         }
-
         return preSell;
     }
-
 }

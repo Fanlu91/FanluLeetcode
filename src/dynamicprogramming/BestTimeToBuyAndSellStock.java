@@ -13,14 +13,14 @@ package dynamicprogramming;
 public class BestTimeToBuyAndSellStock {
     // 10.12% 98.23%
     public int maxProfitOrigin(int[] prices) {
-        int res = 0;
+        int max = 0;
         for (int i = prices.length - 1; i > 0; i--) {
             for (int j = i - 1; j >= 0; j--) {
-                if (prices[i] - prices[j] > res)
-                    res = prices[i] - prices[j];
+                if (prices[i] - prices[j] > max)
+                    max = prices[i] - prices[j];
             }
         }
-        return res;
+        return max;
     }
 
     // 100.00% 100.00%
