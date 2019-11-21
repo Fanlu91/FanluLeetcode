@@ -40,11 +40,11 @@ public class BestTimeToBuyAndSellStockIII {
             dp.put(i, new int[prices.length + 1]);
         }
 
-        for (int k = 1; k <= totalTrans; k++) {
+        for (int i = 1; i <= totalTrans; i++) {
             int min = prices[0];
-            for (int i = 1; i < prices.length; i++) {
-                min = Math.min(min, prices[i] - dp.get(k - 1)[i - 1]);
-                dp.get(k)[i] = Math.max(dp.get(k)[i - 1], prices[i] - min);
+            for (int j = 1; j < prices.length; j++) {
+                min = Math.min(min, prices[j] - dp.get(i - 1)[j - 1]);
+                dp.get(i)[j] = Math.max(dp.get(i)[j - 1], prices[j] - min);
             }
         }
         return dp.get(totalTrans)[prices.length - 1];

@@ -12,7 +12,35 @@ package dynamicprogramming;
 
 import java.util.Arrays;
 
+
 public class BestTimeToBuyAndSellStockIV {
+
+    // 97.82% 4ms 50.49%
+    public int maxProfitSlow(int k, int[] prices) {
+        if (prices == null || prices.length < 2) {
+            return 0;
+        }
+
+        if (k > prices.length / 2 + 1) {
+            int ans = 0;
+            for (int i = 1; i < prices.length; i++) {
+                if (prices[i] - prices[i - 1] > 0)
+                    ans += prices[i] - prices[i - 1];
+            }
+            return ans;
+        }
+
+        int[][] dp = new int[k + 1][prices.length + 1];
+
+        for (int i = 1; i <= k; i++) {
+            int min = prices[0];
+            for (int j = 1; j < prices.length; j++) {
+                min = Math.min(min, prices[j] - dp[i - 1][j - 1]);
+                dp[i][j] = Math.max(dp[i][j - 1], prices[j] - min);
+            }
+        }
+        return dp[k][prices.length - 1];
+    }
 
     // 100.00% 1 ms, 100.00%
     public int maxProfit(int k, int[] prices) {

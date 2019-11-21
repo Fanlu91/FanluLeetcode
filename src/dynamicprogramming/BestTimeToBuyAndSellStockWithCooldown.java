@@ -19,7 +19,7 @@ public class BestTimeToBuyAndSellStockWithCooldown {
      * E.g "buy, sell, buy" or "buy, cooldown, cooldown"
      * sell[i]: The maximum profit can be made if the first i days end with sell or wait.
      * E.g "buy, sell, buy, sell" or "buy, sell, cooldown, cooldown"
-     * price: prices[i - 1], which is the stock price of the i-th day
+     * price: prices[i], which is the stock price of the i-th day
      * <p>
      * ###sell[i] >= cooldown[i] >= buy[i]###
      * <p>
