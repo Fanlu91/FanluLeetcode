@@ -10,9 +10,6 @@ package dynamicprogramming;
 // Tips   :
 // Result : 100.00% 5.26%
 
-import java.util.HashMap;
-import java.util.Map;
-
 public class ClimbingStairs {
 
     //! TLE
@@ -29,7 +26,6 @@ public class ClimbingStairs {
             return stepCount.get(n);
         return climbStairs(n - 1) + climbStairs(n - 2);
     }*/
-
 
     int[] count;
 
@@ -54,14 +50,13 @@ public class ClimbingStairs {
         }
     }
 
-    // 100.00% 5.26%
-
     /**
-     * compact
+     * compact storage
      *
      * @param n
      * @return
      */
+    // 100.00% 5.26%
     public int climbStairs(int n) {
         if (n <= 1) {
             return n;

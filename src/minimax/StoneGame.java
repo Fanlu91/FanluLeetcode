@@ -1,10 +1,10 @@
-package dynamicprogramming;
+package minimax;
 
 // Source : https://leetcode.com/problems/stone-game/
 // Id     : 877
 // Author : Fanlu Hai | https://github.com/Fanlu91/FanluLeetcode
 // Date   : 2019-09-18
-// Topic  : Dynamic Programming
+// Topic  : Minimax
 // Level  : Medium
 // Other  :
 // Tips   :

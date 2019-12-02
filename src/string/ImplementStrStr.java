@@ -8,7 +8,7 @@ package string;
 // Level  : Easy
 // Other  :
 // Tips   :
-// Result :
+// Result : 53.86% 64.88%
 
 public class ImplementStrStr {
 

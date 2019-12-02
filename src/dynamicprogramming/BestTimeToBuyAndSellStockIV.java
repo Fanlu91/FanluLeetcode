@@ -30,13 +30,13 @@ public class BestTimeToBuyAndSellStockIV {
             return ans;
         }
 
-        int[][] dp = new int[k + 1][prices.length + 1];
+        int[][] dp = new int[k + 1][prices.length];
 
         for (int i = 1; i <= k; i++) {
-            int min = prices[0];
+            int minPrice = prices[0];
             for (int j = 1; j < prices.length; j++) {
-                min = Math.min(min, prices[j] - dp[i - 1][j - 1]);
-                dp[i][j] = Math.max(dp[i][j - 1], prices[j] - min);
+                minPrice = Math.min(minPrice, prices[j] - dp[i - 1][j - 1]);
+                dp[i][j] = Math.max(dp[i][j - 1], prices[j] - minPrice);
             }
         }
         return dp[k][prices.length - 1];
@@ -58,15 +58,15 @@ public class BestTimeToBuyAndSellStockIV {
             return ans;
         }
 
-        int[] min = new int[k + 1];
-        Arrays.fill(min, prices[0]);
+        int[] minPrice = new int[k + 1];
+        Arrays.fill(minPrice, prices[0]);
 
         int[] dp = new int[k + 1];
 
         for (int i = 1; i < prices.length; i++) {
             for (int j = 1; j <= k; j++) {
-                min[j] = Math.min(min[j], prices[i] - dp[j - 1]);
-                dp[j] = Math.max(dp[j], prices[i] - min[j]);
+                minPrice[j] = Math.min(minPrice[j], prices[i] - dp[j - 1]);
+                dp[j] = Math.max(dp[j], prices[i] - minPrice[j]);
             }
         }
         return dp[k];
@@ -75,6 +75,6 @@ public class BestTimeToBuyAndSellStockIV {
     public static void main(String[] args) {
         int[] a = {3, 3, 5, 0, 0, 3, 1, 4};
         BestTimeToBuyAndSellStockIV b = new BestTimeToBuyAndSellStockIV();
-//        System.out.print(b.maxProfit(a));
+        System.out.print(b.maxProfitSlow(2, a));
     }
 }
