@@ -46,12 +46,10 @@ public class MajorityElement {
         for (int num : nums) {
             if (num == major)
                 count++;
+            else if (count == 0)
+                major = num;
             else
                 count--;
-            if (count == -1) {
-                major = nums[0];
-                count = 0;
-            }
         }
         return major;
     }

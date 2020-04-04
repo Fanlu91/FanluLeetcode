@@ -1,19 +1,18 @@
 package heap;
 
 import java.util.PriorityQueue;
-
 // Source : https://leetcode.com/problems/kth-largest-element-in-a-stream/
 // Id     : 703
 // Author : Fanlu Hai | https://github.com/Fanlu91/FanluLeetcode
 // Topic  : Heap
 // Date   : 2019-05-05
-// Other  : should implement priority queue manually
+// Other  : should implement priority queue manually;
+//          The head of priority queue is the least element with respect to the specified ordering
 // Tips   :
 // Result : 99.55% 64.02%
 
 
 public class KthLargest {
-
     private PriorityQueue<Integer> minHeap = new PriorityQueue<>();
     private int size;
 
@@ -34,11 +33,6 @@ public class KthLargest {
         }
         return minHeap.peek();
     }
-
-    public static void main(String[] args) {
-        System.out.println();
-    }
-
 }
 
 /**

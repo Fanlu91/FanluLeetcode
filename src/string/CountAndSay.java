@@ -135,8 +135,20 @@ public class CountAndSay {
         return null;
     }
 
+    public static double fact(int n){
+        if(n == 1 || n==0){
+            return 1;
+        }else{
+            return n*fact(n-1);
+        }
+    }
+
     public static void main(String[] args) {
         CountAndSay countAndSay = new CountAndSay();
-        System.out.println(countAndSay.countAndSay(15));
+        for (int i = 0; i < 40; i++) {
+            double x = i*i;
+            System.out.println(i+ " "+x+" "+ countAndSay.countAndSay(i).length()/x);
+        }
+
     }
 }

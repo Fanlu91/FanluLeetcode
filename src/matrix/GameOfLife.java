@@ -41,7 +41,6 @@ public class GameOfLife {
             return preState;
     }
 
-
     private int getNeighborCount(int i, int j) {
 
         int count = 0;
@@ -177,6 +176,7 @@ public class GameOfLife {
             }
             return;
         }
+
         for(int i = 0; i< beforeBoard.length;i++){
             for (int j = 0; j<beforeBoard[i].length;j++){
                 int status = beforeBoard[i][j];

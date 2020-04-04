@@ -92,6 +92,7 @@ public class MinimumDistanceBetweenBSTNodes {
         MinimumDistanceBetweenBSTNodes m = new MinimumDistanceBetweenBSTNodes();
         m.minDiffInBST(treeNode1);
     }
+
 }
 
 class TreeNode {
@@ -103,3 +104,4 @@ class TreeNode {
         val = x;
     }
 }
+
