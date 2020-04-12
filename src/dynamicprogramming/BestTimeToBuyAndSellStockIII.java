@@ -30,9 +30,8 @@ public class BestTimeToBuyAndSellStockIII {
      */
     // 22.08% 4ms 100.00%
     public int maxProfitOrigin(int[] prices) {
-        if (prices == null || prices.length < 2) {
+        if (prices == null || prices.length < 2)
             return 0;
-        }
         int totalTrans = 2;
         Map<Integer, int[]> dp = new HashMap<>();
         // dp.0 helps the calculation

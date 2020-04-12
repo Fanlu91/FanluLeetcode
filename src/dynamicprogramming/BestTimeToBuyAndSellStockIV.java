@@ -17,6 +17,7 @@ public class BestTimeToBuyAndSellStockIV {
 
     // 97.82% 4ms 50.49%
     public int maxProfitSlow(int k, int[] prices) {
+//        public int maxProfit(int k, int[] prices) {
         if (prices == null || prices.length < 2) {
             return 0;
         }
@@ -44,11 +45,9 @@ public class BestTimeToBuyAndSellStockIV {
 
     // 100.00% 1 ms, 100.00%
     public int maxProfit(int k, int[] prices) {
-        if (prices == null || prices.length < 2) {
+        if (prices == null || prices.length < 2)
             return 0;
-        }
 
-        // quick case
         if (k > prices.length / 2 + 1) {
             int ans = 0;
             for (int i = 1; i < prices.length; i++) {

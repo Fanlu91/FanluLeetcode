@@ -12,7 +12,6 @@ package minimax;
 
 public class StoneGame {
 
-
     /**
      * explained below:
      * https://leetcode.com/problems/stone-game/discuss/384891
@@ -22,18 +21,15 @@ public class StoneGame {
      */
     // 51.82% 5 ms 84.85%
     public boolean stoneGame(int[] piles) {
-
         int sum = 0;
-        for (int i : piles) {
+        for (int i : piles)
             sum += i;
-        }
         int[][] mem = new int[piles.length][piles.length];
         return 2 * findMax(0, piles.length - 1, piles, mem) >= sum;
     }
 
-    // 7, 12, 16, 41, 48, 41, 48, 11, 9
     private int findMax(int left, int right, int[] piles, int[][] mem) {
-        if (left < 0 || right < 0 || left > right)
+        if (left < 0 || left > right)
             return 0;
         if (mem[left][right] != 0)
             return mem[left][right];

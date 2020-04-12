@@ -74,7 +74,7 @@ public class ReadMeGenerator {
         solutionList.sort(new Comparator<Solution>() {
             @Override
             public int compare(Solution o1, Solution o2) {
-                return Integer.valueOf(o2.id) - Integer.valueOf(o1.id);
+                return Integer.valueOf(o1.id) - Integer.valueOf(o2.id);
             }
         });
 
@@ -84,7 +84,6 @@ public class ReadMeGenerator {
                 return o1.topic.compareTo(o2.topic);
             }
         });
-
 
 
         StringBuilder stringBuilder = new StringBuilder(readme);

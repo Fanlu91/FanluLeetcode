@@ -14,9 +14,8 @@ public class BestTimeToBuyAndSellStockWithTransactionFee {
 
     // 12.18% 8 ms 100.00%
     public int maxProfitOrigin(int[] prices, int fee) {
-        if (prices == null || prices.length < 2) {
+        if (prices == null || prices.length < 2)
             return 0;
-        }
 
         int[] buy = new int[prices.length], sell = new int[prices.length];
         buy[0] = -prices[0];
@@ -33,9 +32,8 @@ public class BestTimeToBuyAndSellStockWithTransactionFee {
     // improve performance
     // 80.67% 5 ms 100.00%
     public int maxProfit(int[] prices, int fee) {
-        if (prices == null || prices.length < 2) {
+        if (prices == null || prices.length < 2)
             return 0;
-        }
 
         int preBuy = -prices[0];
         int preSell = 0;
