@@ -1,9 +1,10 @@
-package linkedlist;
+package twopointers;
 // Source : https://leetcode.com/problems/linked-list-cycle-ii/
 // Id     : 142
 // Author : Fanlu Hai | https://github.com/Fanlu91/FanluLeetcode
 // Date   : 2019-05-29
-// Topic  : Linked list
+// Topic  : Two Pointers
+// Level  : Medium
 // Other  :
 // Tips   :
 // Result : 100.00% 5.04%

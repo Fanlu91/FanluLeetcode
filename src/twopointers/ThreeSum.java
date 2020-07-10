@@ -5,7 +5,7 @@ package twopointers;
 // Author : Fanlu Hai | https://github.com/Fanlu91/FanluLeetcode
 // Date   : 2020-01-01
 // Topic  : Two Pointers
-// Level  : medium
+// Level  : Medium
 // Other  :
 // Tips   :
 // Result : 98.79% 91.35%
@@ -14,7 +14,7 @@ import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
-public class threesum {
+public class ThreeSum {
     // 98.79% 22 ms 91.35%
     public List<List<Integer>> threeSum(int[] nums) {
         if (nums.length < 3)

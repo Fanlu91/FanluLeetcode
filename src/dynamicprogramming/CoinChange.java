@@ -13,6 +13,7 @@ import java.util.Map;
 // Other  :
 // Tips   :
 // Result : 99.99% 100%
+
 public class CoinChange {
     Map<Integer, Integer> map = new HashMap<>();
 
@@ -29,7 +30,7 @@ public class CoinChange {
 
             if (amount < coins[i])
                 continue;
-            // too many steps wasted here, as a lot function should not be called.
+            // too many steps repeated/wasted here
             int step = 1 + coinChange(coins, amount - coins[i]);
             if (step > 0)
                 leastStep = Math.min(leastStep, step);
