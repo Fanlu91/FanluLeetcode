@@ -1,0 +1,17 @@
+#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME};#end
+#parse("File Header.java")
+
+// Source : https://leetcode.com/problems/
+// Id     :
+// Author : Fanlu Hai | https://github.com/Fanlu91/FanluLeetcode
+// Date   : ${DATE}
+// Topic  : ${PACKAGE_NAME}
+// Level  : Easy Hard Medium
+// Other  :
+// Tips   :
+// Links  :
+// Result :
+
+public class ${NAME} {
+
+}

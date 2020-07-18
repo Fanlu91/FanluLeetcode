@@ -1,6 +1,6 @@
 package unionfind;
-// Source : https://leetcode.com/problems/friend-circles/
-// Id     : 547
+// Source : https://leetcode.com/problems/satisfiability-of-equality-equations/
+// Id     : 990
 // Author : Fanlu Hai | https://github.com/Fanlu91/FanluLeetcode
 // Date   : 2020-01-01
 // Topic  : Union Find

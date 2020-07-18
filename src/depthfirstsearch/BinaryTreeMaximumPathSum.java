@@ -15,17 +15,26 @@ public class BinaryTreeMaximumPathSum {
 
     public int maxPathSum(TreeNode root) {
         ans = Integer.MIN_VALUE;
-        dfs(root);
+        oneSideMax(root);
         return ans;
     }
 
-    private int dfs(TreeNode root) {
+    /**
+     * dfs returns the max value a root and one of its two child can be
+     *
+     * the max path however can be a root with both children
+     * so we calculate ans separately.
+     *
+     * @param root
+     * @return
+     */
+    private int oneSideMax(TreeNode root) {
         if (root == null)
             return 0;
 
         // you can give up child if they are less than 0
-        int maxLeft = Math.max(dfs(root.left), 0);
-        int maxRight = Math.max(dfs(root.right), 0);
+        int maxLeft = Math.max(oneSideMax(root.left), 0);
+        int maxRight = Math.max(oneSideMax(root.right), 0);
         ans = Math.max(ans, maxLeft + maxRight + root.val);
 
         return root.val + Math.max(maxLeft, maxRight);
