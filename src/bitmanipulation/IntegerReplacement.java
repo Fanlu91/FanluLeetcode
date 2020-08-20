@@ -10,7 +10,10 @@ import java.util.Map;
 // Topic  : Bit Manipulation
 // Level  : Medium
 // Other  :
-// Tips   : 100% 8.00%
+// Tips   :
+// Links  :
+// Result : 100% 8.00%
+
 public class IntegerReplacement {
 
     // 25.85% 8 ms 16.67%

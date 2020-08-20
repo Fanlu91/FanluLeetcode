@@ -7,7 +7,10 @@ package bitmanipulation;
 // Topic  : Bit Manipulation
 // Level  : Easy
 // Other  :
-// Tips   : 100% 100%
+// Tips   :
+// Links  :
+// Result : 100% 100%
+
 public class NumberOf1Bits {
     /**
      * In Java, there is no unsigned integer type.

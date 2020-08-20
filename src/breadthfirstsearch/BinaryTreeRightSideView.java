@@ -4,7 +4,7 @@ package breadthfirstsearch;
 // Author : Fanlu Hai | https://github.com/Fanlu91/FanluLeetcode
 // Date   : 2020/8/17
 // Topic  : Breadth First Search
-// Level  : Medium -
+// Level  : Medium-
 // Other  :
 // Tips   :
 // Links  :

@@ -9,7 +9,9 @@ import java.util.Arrays;
 // Topic  : Bit Manipulation
 // Level  : Medium
 // Other  :
-// Tips   : 100% 100%
+// Tips   :
+// Links  :
+// Result : 100% 100%
 public class SingleNumberII {
     // 5.04% 10 ms 14.29%
     public int singleNumber(int[] nums) {

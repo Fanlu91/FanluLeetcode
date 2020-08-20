@@ -7,7 +7,9 @@ package bitmanipulation;
 // Topic  : Bit Manipulation
 // Level  : Easy
 // Other  :
-// Tips   : 100% 8.00%
+// Tips   :
+// Links  :
+// Result : 100% 8.00%
 public class SumOfTwoIntegers {
     /**
      * 二进制每位相加就相当于各位做异或操作 a1

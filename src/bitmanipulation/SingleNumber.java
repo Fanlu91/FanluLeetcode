@@ -11,7 +11,10 @@ import java.util.Map;
 // Topic  : Bit Manipulation
 // Level  : Easy
 // Other  :
-// Tips   : 100% 100%
+// Tips   :
+// Links  :
+// Result : 100% 100%
+
 public class SingleNumber {
     // 10.44% 13 ms 5.71%
     public int singleNumber0(int[] nums) {
@@ -23,6 +26,7 @@ public class SingleNumber {
                 return num;
         return 0;
     }
+
     // 20.17% 9 ms 7.14%
     public int singleNumber1(int[] nums) {
         int distinctSum = Arrays.stream(nums).distinct().sum();

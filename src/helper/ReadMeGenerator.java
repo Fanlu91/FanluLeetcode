@@ -9,6 +9,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Comparator;
+import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -20,63 +21,105 @@ import java.util.stream.Collectors;
  * finally creates the index table.
  */
 public class ReadMeGenerator {
-    public static void main(String[] args) throws IOException {
-/*        String readme = String.join("\n",
-                "# FanluLeetcode ",
-                "",
-                "## Leetcode solutions written in Java ",
-                "Below table is generated using this [class](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/utils/ReadMeGenerator.java)",
-                " ",
-                " ",
-                "|Topic|Id|Title|Solution|Result|",
-                "|---|---|---|---|---|",
-                "");*/
+    final public static HashMap<String, String> wordMap = new HashMap<String, String>() {
+        {
+            put("tree", "Tree");
+            put("design", "Design");
+            put("breadthfirstsearch", "Breadth-first Search");
+            put("bitmanipulation", "Bit Manipulation");
+            put("stringmatch", "String Match");
+            put("orderedmap", "Ordered Map");
+            put("twopointers", "Two Pointers");
+            put("array", "Array");
+            put("recursion", "Recursion");
+            put("jianzhioffer", "Jianzhi Offer");
+            put("unionfind", "Union Find");
+            put("linkedlist", "Linked List");
+            put("depthfirstsearch", "Depth-First Search");
+            put("hashfunction", "Hash Function");
+            put("binarysearch", "Binary Search");
+            put("backtracking", "Backtracking");
+            put("graph", "Graph");
+            put("slidingwindow", "Sliding Window");
+            put("details", "Details");
+            put("minimax", "Minimax");
+            put("gcd", "Greatest Common Divisor");
+            put("binarysearchtree", "Binary Search Tree");
+            put("math", "Math");
+            put("concurrency", "Concurrency");
+            put("trie", "Trie");
+            put("heap", "Heap");
+            put("greedy", "Greedy");
+            put("divideandconquer", "Divide & Conquer");
+            put("hashtable", "Hashtable");
+            put("string", "String");
+            put("geometry", "Geometry");
+            put("stack", "Stack");
+            put("dynamicprogramming", "Dynamic Programming");
+            put("binarytree", "Binary Tree");
+            put("matrix", "Matrix");
+            put("morristraversal", "Morris Traversal");
+        }
+    };
 
-        String readme = String.join("\n",
-                "# FanluLeetcode ",
-                "",
-                "## Leetcode solutions written in Java ",
-                "Below table is generated using this [class](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/utils/ReadMeGenerator.java)",
-                " ",
-                " ",
-                "");
+    final public static String readme = String.join("\n",
+            "# FanluLeetcode ",
+            "",
+            "Leetcode 解题记录。主要根据标签进行了归档和总结。 ",
+            " ",
+            " ",
+            "");
+
+    public static void main(String[] args) throws IOException {
 
         StringBuilder stringBuilder = new StringBuilder(readme);
-        List<Solution> solutionList = new LinkedList<>();
 
         // 得到package list
         List<Path> packagesPathList = new LinkedList<>();
         Files.walk(Paths.get(System.getProperty("user.dir") + "/src/")).filter(Files::isDirectory).forEach(packagesPathList::add);
 
+        /**
+         * 通过总结的长度排展示权重
+         */
+        packagesPathList.sort(new Comparator<Path>() {
+            @Override
+            public int compare(Path o1, Path o2) {
+                File readmeFile1 = new File(o1.toAbsolutePath() + "/README.md");
+                File readmeFile2 = new File(o2.toAbsolutePath() + "/README.md");
+                return (int) (readmeFile2.length() - readmeFile1.length());
+            }
+        });
 
         for (Path packagePath : packagesPathList) {
-            System.out.println(packagePath.getFileName());
-            if (packagePath.getFileName().endsWith("src")) {
+            System.out.println(packagePath.getFileName().toString());
+            /**
+             * 排除部分包
+             */
+            if (packagePath.getFileName().endsWith("src")
+                    || packagePath.getFileName().endsWith("helper")
+                    || packagePath.getFileName().endsWith("jianzhioffer")) {
                 continue;
             }
-
-
-            stringBuilder.append(packagePath.getFileName()).append("\n");
-            File readmeFile = new File(packagePath.toAbsolutePath() + "/README.md");
             /**
-             * 如果没有 readme 则创建
+             * 打印包名，即标签名
              */
-            if (readmeFile.exists()) {
-                System.out.println(readmeFile.length());
-            } else {
-                readmeFile.createNewFile();
-            }
+            stringBuilder.append("### ").append(wordMap.get(packagePath.getFileName().toString())).append("\n");
+            File readmeFile = new File(packagePath.toAbsolutePath() + "/README.md");
+
             /**
+             * 如果没有readme， 创建空文件
              * 如果readme为空，提示暂无总结
              */
+            if (!readmeFile.exists())
+                readmeFile.createNewFile();
             String summary = "暂无总结";
             if (readmeFile.length() != 0) {
                 summary = "[主题总结](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/" + packagePath.toAbsolutePath() + "/README.md" + ")";
             }
             stringBuilder.append(summary).append("\n");
+            stringBuilder.append("\n").append("|题号|题目（官网）|题目（中国）|难度|解法代码|结果|标签|").append("\n").append("|---|---|---|---|---|---|---|").append("\n");
 
-            stringBuilder.append("\n").append("|Topic|Id|Title|Solution|Result|").append("\n").append("|---|---|---|---|---|").append("\n");
-
+            List<Solution> solutionList = new LinkedList<>();
             Files.walk(packagePath).filter(Files::isRegularFile).filter(f -> f.toString().endsWith(".java")).forEach(path -> {
                 List<String> list = null;
                 try {
@@ -87,20 +130,21 @@ public class ReadMeGenerator {
                     e.printStackTrace();
                 }
                 System.out.println(path);
+
                 Solution solution = new Solution();
                 solution.solutionPath = "[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src"
                         + path.toString().split("src")[1].trim() + ")";
                 list.forEach(line -> {
                             if (line.contains("Id"))
                                 solution.id = line.split(" : ")[1].trim();
-                            if (line.contains("Topic"))
-                                solution.topic = line.split(" : ")[1].trim();
-                            if (line.contains("Source")) {
+                            else if (line.contains("Topic")) {
+                                String topic = line.split(" : ")[1].trim();
+                                solution.topic = wordMap.getOrDefault(topic, topic);
+                            } else if (line.contains("Source")) {
                                 String sourceUri = line.split(" : ")[1].split("problems/")[1].trim();
                                 solution.source = "[" + sourceUri.substring(0, sourceUri.length() - 1) + "]("
                                         + line.split(" : ")[1].trim() + ")";
-                            }
-                            if (line.contains("Result")) {
+                            } else if (line.contains("Result")) {
                                 solution.result = line.split(" : ")[1].trim();
                                 // Result is mandatory for a solution to be on the table.
                                 solutionList.add(solution);
@@ -120,66 +164,13 @@ public class ReadMeGenerator {
             });
             solutionList.forEach(string -> stringBuilder.append(string).append("\n"));
 
+            stringBuilder.append("\n");
         }
 
-
-
-        /*Files.walk(Paths.get(System.getProperty("user.dir")))
-                .filter(Files::isRegularFile)
-                .filter(f -> f.toString().endsWith(".java"))
-                .forEach(path -> {
-                    List<String> list = null;
-                    try {
-                        list = Files.lines(path)
-                                .filter(line -> line.matches("^//[ ].*"))
-                                .collect(Collectors.toList());
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
-                    System.out.println(path);
-                    Solution solution = new Solution();
-                    solution.solutionPath = "[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src"
-                            + path.toString().split("src")[1].trim() + ")";
-                    list.forEach(line -> {
-                                if (line.contains("Id"))
-                                    solution.id = line.split(" : ")[1].trim();
-                                if (line.contains("Topic"))
-                                    solution.topic = line.split(" : ")[1].trim();
-                                if (line.contains("Source")) {
-                                    String sourceUri = line.split(" : ")[1].split("problems/")[1].trim();
-                                    solution.source = "[" + sourceUri.substring(0, sourceUri.length() - 1) + "]("
-                                            + line.split(" : ")[1].trim() + ")";
-                                }
-                                if (line.contains("Result")) {
-                                    solution.result = line.split(" : ")[1].trim();
-                                    // Result is mandatory for a solution to be on the table.
-                                    solutionList.add(solution);
-                                }
-                            }
-                    );
-//                            System.out.println(solution);
-
-                });*/
-
-//        solutionList.sort(new Comparator<Solution>() {
-//            @Override
-//            public int compare(Solution o1, Solution o2) {
-//                return Integer.valueOf(o1.id) - Integer.valueOf(o2.id);
-//            }
-//        });
-//
-//        solutionList.sort(new Comparator<Solution>() {
-//            @Override
-//            public int compare(Solution o1, Solution o2) {
-//                return o1.topic.compareTo(o2.topic);
-//            }
-//        });
-
-
-//        solutionList.forEach(string -> stringBuilder.append(string).append("\n"));
-//        solutionList.forEach(System.out::println);
-//        System.out.println(readme);
-
+        /**
+         * 结尾
+         */
+        stringBuilder.append("## Helper").append("\n").append("README 文件通过[此类](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/utils/ReadMeGenerator.java)生成。");
 
         File file = new File(System.getProperty("user.dir") + "/README.md");
         // try with resources, java 7 and above

@@ -9,8 +9,20 @@ public class Solution {
     public String solutionPath;
     public String result;
 
+    private String getCNSource() {
+        if (source.contains("leetcode.com"))
+            return source.replace("leetcode.com", "leetcode-cn.com");
+        return source;
+    }
+
+    private String getENSource() {
+        if (source.contains("leetcode-cn.com"))
+            return source.replace("leetcode-cn", "leetcode.com");
+        return source;
+    }
+
     @Override
     public String toString() {
-        return String.join("|", "", topic, id, source, solutionPath, result, "");
+        return String.join("|", "", id, getENSource(), getCNSource(), level, solutionPath, result, topic, "");
     }
 }
