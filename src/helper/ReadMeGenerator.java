@@ -65,7 +65,12 @@ public class ReadMeGenerator {
     final public static String readme = String.join("\n",
             "# FanluLeetcode ",
             "",
-            "Leetcode 解题记录。主要根据标签进行了归档和总结。 ",
+            "Leetcode 解题记录。根据标签进行了题目的归档和解题方法总结。",
+            "- 主题总结：以当前标签或主题为单位总结理论知识及解题套路和心得。",
+            "- 题目地址：包括leetcode.com 和 leetcode-cn.com",
+            "- 难度：作者对当前题目难度的定义（主观），有明显差距的会在官方给定难度等级之上通过`+`,`-`进行标记。",
+            "- 代码：`Java` 解法的代码，一般会包含最符合题意的解及效率最高解。并会给出每种解的排名数据反馈",
+            "- 结果：最优解的排名反馈数据。",
             " ",
             " ",
             "");
@@ -117,7 +122,7 @@ public class ReadMeGenerator {
                 summary = "[主题总结](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/" + packagePath.toAbsolutePath() + "/README.md" + ")";
             }
             stringBuilder.append(summary).append("\n");
-            stringBuilder.append("\n").append("|题号|题目（官网）|题目（中国）|难度|解法代码|结果|标签|").append("\n").append("|---|---|---|---|---|---|---|").append("\n");
+            stringBuilder.append("\n").append("|题号|题目（官网）|题目（中国）|难度|实现代码|结果|标签|").append("\n").append("|---|---|---|---|---|---|---|").append("\n");
 
             List<Solution> solutionList = new LinkedList<>();
             Files.walk(packagePath).filter(Files::isRegularFile).filter(f -> f.toString().endsWith(".java")).forEach(path -> {
@@ -140,6 +145,8 @@ public class ReadMeGenerator {
                             else if (line.contains("Topic")) {
                                 String topic = line.split(" : ")[1].trim();
                                 solution.topic = wordMap.getOrDefault(topic, topic);
+                            } else if (line.contains("Level")) {
+                                solution.level = line.split(" : ")[1].trim();
                             } else if (line.contains("Source")) {
                                 String sourceUri = line.split(" : ")[1].split("problems/")[1].trim();
                                 solution.source = "[" + sourceUri.substring(0, sourceUri.length() - 1) + "]("
