@@ -1,16 +1,15 @@
 # FanluLeetcode 
 
 Leetcode 解题记录。根据标签进行了题目的归档和解题方法总结。
-
 - 主题总结：以当前标签或主题为单位总结理论知识及解题套路和心得。
 - 题目地址：包括leetcode.com 和 leetcode-cn.com
 - 难度：作者对当前题目难度的定义（主观），有明显差距的会在官方给定难度等级之上通过`+`,`-`进行标记。
 - 代码：`Java` 解法的代码，一般会包含最符合题意的解及效率最高解。并会给出每种解的排名数据反馈
 - 结果：最优解的排名反馈数据。
-
-
+ 
+ 
 ### Linked List
-[主题总结](https://github.com/Fanlu91/FanluLeetcode/blob/master/src//Users/fanlu/workspace/java/FanluLeetcode/src/linkedlist/README.md)
+[主题总结](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/linkedlist/README.md)
 
 |题号|题目（官网）|题目（中国）|难度|实现代码|结果|标签|
 |---|---|---|---|---|---|---|
@@ -30,7 +29,7 @@ Leetcode 解题记录。根据标签进行了题目的归档和解题方法总�
 |876|[middle-of-the-linked-list](https://leetcode.com/problems/middle-of-the-linked-list/)|[middle-of-the-linked-list](https://leetcode-cn.com/problems/middle-of-the-linked-list/)|null|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/linkedlist/MiddleOfTheLinkedList.java)|100.00% 100.00%|Linked list|
 
 ### Dynamic Programming
-[主题总结](https://github.com/Fanlu91/FanluLeetcode/blob/master/src//Users/fanlu/workspace/java/FanluLeetcode/src/dynamicprogramming/README.md)
+[主题总结](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/dynamicprogramming/README.md)
 
 |题号|题目（官网）|题目（中国）|难度|实现代码|结果|标签|
 |---|---|---|---|---|---|---|
@@ -60,7 +59,7 @@ Leetcode 解题记录。根据标签进行了题目的归档和解题方法总�
 |1449|[form-largest-integer-with-digits-that-add-up-to-target](https://leetcode.com/problems/form-largest-integer-with-digits-that-add-up-to-target/)|[form-largest-integer-with-digits-that-add-up-to-target](https://leetcode-cn.com/problems/form-largest-integer-with-digits-that-add-up-to-target/)|Hard|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/dynamicprogramming/FormLargestIntegerWithDigitsThatAddUpToTarget.java)|100.00% 100.00%|Dynamic Programming|
 
 ### Morris Traversal
-[主题总结](https://github.com/Fanlu91/FanluLeetcode/blob/master/src//Users/fanlu/workspace/java/FanluLeetcode/src/morristraversal/README.md)
+[主题总结](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/morristraversal/README.md)
 
 |题号|题目（官网）|题目（中国）|难度|实现代码|结果|标签|
 |---|---|---|---|---|---|---|
@@ -68,7 +67,7 @@ Leetcode 解题记录。根据标签进行了题目的归档和解题方法总�
 |501|[find-mode-in-binary-search-tree](https://leetcode.com/problems/find-mode-in-binary-search-tree/)|[find-mode-in-binary-search-tree](https://leetcode-cn.com/problems/find-mode-in-binary-search-tree/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/morristraversal/FindModeInBinarySearchTree.java)|100% 100%|Morris Traversal|
 
 ### Binary Search Tree
-[主题总结](https://github.com/Fanlu91/FanluLeetcode/blob/master/src//Users/fanlu/workspace/java/FanluLeetcode/src/binarysearchtree/README.md)
+[主题总结](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/binarysearchtree/README.md)
 
 |题号|题目（官网）|题目（中国）|难度|实现代码|结果|标签|
 |---|---|---|---|---|---|---|
@@ -84,7 +83,7 @@ Leetcode 解题记录。根据标签进行了题目的归档和解题方法总�
 |700|[search-in-a-binary-search-tree](https://leetcode.com/problems/search-in-a-binary-search-tree/)|[search-in-a-binary-search-tree](https://leetcode-cn.com/problems/search-in-a-binary-search-tree/)|Easy-|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/binarysearchtree/SearchInABinarySearchTree.java)|100.00% 9.09%|Binary Search Tree|
 
 ### Binary Tree
-[主题总结](https://github.com/Fanlu91/FanluLeetcode/blob/master/src//Users/fanlu/workspace/java/FanluLeetcode/src/binarytree/README.md)
+[主题总结](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/binarytree/README.md)
 
 |题号|题目（官网）|题目（中国）|难度|实现代码|结果|标签|
 |---|---|---|---|---|---|---|
@@ -107,7 +106,7 @@ Leetcode 解题记录。根据标签进行了题目的归档和解题方法总�
 |671|[second-minimum-node-in-a-binary-tree](https://leetcode.com/problems/second-minimum-node-in-a-binary-tree/)|[second-minimum-node-in-a-binary-tree](https://leetcode-cn.com/problems/second-minimum-node-in-a-binary-tree/)|null|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/binarytree/SecondMinimumNodeInABinaryTree.java)|100.00% 93.19%|Binary Tree|
 
 ### Ordered Map
-[主题总结](https://github.com/Fanlu91/FanluLeetcode/blob/master/src//Users/fanlu/workspace/java/FanluLeetcode/src/orderedmap/README.md)
+[主题总结](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/orderedmap/README.md)
 
 |题号|题目（官网）|题目（中国）|难度|实现代码|结果|标签|
 |---|---|---|---|---|---|---|
@@ -117,7 +116,7 @@ Leetcode 解题记录。根据标签进行了题目的归档和解题方法总�
 |731|[my-calendar-ii](https://leetcode.com/problems/my-calendar-ii/)|[my-calendar-ii](https://leetcode-cn.com/problems/my-calendar-ii/)|Medium+|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/orderedmap/MyCalendarII.java)|100.00% 70.83%|Ordered Map|
 
 ### Breadth-first Search
-[主题总结](https://github.com/Fanlu91/FanluLeetcode/blob/master/src//Users/fanlu/workspace/java/FanluLeetcode/src/breadthfirstsearch/README.md)
+[主题总结](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/breadthfirstsearch/README.md)
 
 |题号|题目（官网）|题目（中国）|难度|实现代码|结果|标签|
 |---|---|---|---|---|---|---|
@@ -130,7 +129,7 @@ Leetcode 解题记录。根据标签进行了题目的归档和解题方法总�
 |752|[open-the-lock](https://leetcode.com/problems/open-the-lock/)|[open-the-lock](https://leetcode-cn.com/problems/open-the-lock/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/breadthfirstsearch/OpenTheLock.java)|100% 83.33%|Breadth First Search|
 
 ### Array
-[主题总结](https://github.com/Fanlu91/FanluLeetcode/blob/master/src//Users/fanlu/workspace/java/FanluLeetcode/src/array/README.md)
+[主题总结](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/array/README.md)
 
 |题号|题目（官网）|题目（中国）|难度|实现代码|结果|标签|
 |---|---|---|---|---|---|---|
@@ -151,7 +150,7 @@ Leetcode 解题记录。根据标签进行了题目的归档和解题方法总�
 |509|[fibonacci-number](https://leetcode.com/problems/fibonacci-number/)|[fibonacci-number](https://leetcode-cn.com/problems/fibonacci-number/)|Easy-|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/array/FibonacciNumber.java)|100.00% 50.46%|Array|
 |561|[array-partition-i](https://leetcode.com/problems/array-partition-i/)|[array-partition-i](https://leetcode-cn.com/problems/array-partition-i/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/array/ArrayPartitionI.java)|100.00% 97.20%|Array|
 |697|[degree-of-an-array](https://leetcode.com/problems/degree-of-an-array/)|[degree-of-an-array](https://leetcode-cn.com/problems/degree-of-an-array/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/array/DegreeOfAnArray.java)|100.00% 54.88%|Array|
-|849|[maximize-distance-to-closest-person](https://leetcode.com/problems/maximize-distance-to-closest-person/)|[maximize-distance-to-closest-person](https://leetcode-cn.com/problems/maximize-distance-to-closest-person/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/array/MaximizeDistanceToClosestPerson.java)|100.00% 91.67%|Minimax|
+|849|[maximize-distance-to-closest-person](https://leetcode.com/problems/maximize-distance-to-closest-person/)|[maximize-distance-to-closest-person](https://leetcode-cn.com/problems/maximize-distance-to-closest-person/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/array/MaximizeDistanceToClosestPerson.java)|100.00% 91.67%|Array|
 |888|[fair-candy-swap](https://leetcode.com/problems/fair-candy-swap/)|[fair-candy-swap](https://leetcode-cn.com/problems/fair-candy-swap/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/array/FairCandySwap.java)|100.00% 98.74%|Array|
 |896|[monotonic-array](https://leetcode.com/problems/monotonic-array/)|[monotonic-array](https://leetcode-cn.com/problems/monotonic-array/)|Easy-|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/array/MonotonicArray.java)|100.00% 96.10%|Array|
 |905|[sort-array-by-parity](https://leetcode.com/problems/sort-array-by-parity/)|[sort-array-by-parity](https://leetcode-cn.com/problems/sort-array-by-parity/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/array/SortArrayByParity.java)|100.00% 96.91%|Array|

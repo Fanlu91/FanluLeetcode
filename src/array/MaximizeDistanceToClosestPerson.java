@@ -4,7 +4,7 @@ package array;
 // Id     : 849
 // Author : Fanlu Hai | https://github.com/Fanlu91/FanluLeetcode
 // Date   : 2019-11-26
-// Topic  : Minimax
+// Topic  : Array
 // Level  : Easy
 // Other  :
 // Tips   :

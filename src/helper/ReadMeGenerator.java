@@ -119,7 +119,7 @@ public class ReadMeGenerator {
                 readmeFile.createNewFile();
             String summary = "暂无总结";
             if (readmeFile.length() != 0) {
-                summary = "[主题总结](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/" + packagePath.toAbsolutePath() + "/README.md" + ")";
+                summary = "[主题总结](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/" + packagePath.getFileName().toString() + "/README.md" + ")";
             }
             stringBuilder.append(summary).append("\n");
             stringBuilder.append("\n").append("|题号|题目（官网）|题目（中国）|难度|实现代码|结果|标签|").append("\n").append("|---|---|---|---|---|---|---|").append("\n");
