@@ -132,4 +132,7 @@ address = base_address + ( i * n + j) * type_size
 6. 多写多练，没有捷径
    孰能生巧，不管是什么算法，只有经过反复的练习，才能信手拈来。
 
-所以到底要练什么呢？ 下一节是我收集的所有需要掌握的链表题目及java代码
+java 反转链表的操作：
+```
+Collections.reverse(list);
+```

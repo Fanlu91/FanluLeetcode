@@ -8,7 +8,7 @@ package binarytree;
 // Level  : Easy
 // Other  :
 // Tips   :
-// Result : 00.00% 17.28%
+// Result : 100.00% 17.28%
 
 public class MergeTwoBinaryTrees {
     TreeNode root;

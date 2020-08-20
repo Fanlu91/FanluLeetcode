@@ -6,7 +6,7 @@ package binarysearchtree;
 // Date   : 2020-01-01
 // Topic  : Binary Search Tree
 // Level  : Easy
-// Other  : n
+// Other  :
 // Tips   : 二叉搜索树的中序遍历刚好可以输出一个升序数组
 // Result : 100.00% 5.06%
 
@@ -24,6 +24,16 @@ public class ConvertSortedArraytoBinarySearchTree {
         root.left = divide(nums, left, mid - 1);
         root.right = divide(nums, mid + 1, right);
         return root;
+    }
+
+    class TreeNode {
+        int val;
+        TreeNode left;
+        TreeNode right;
+
+        TreeNode(int x) {
+            val = x;
+        }
     }
 }
 
