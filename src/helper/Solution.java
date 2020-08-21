@@ -21,8 +21,12 @@ public class Solution {
         return source;
     }
 
+    private String getFourDigitId() {
+        return String.format("%04d", Integer.valueOf(id));
+    }
+
     @Override
     public String toString() {
-        return String.join("|", "", id, getENSource(), getCNSource(), level, solutionPath, result, topic, "");
+        return String.join("|", "", getFourDigitId(), getENSource(), getCNSource(), level, solutionPath, result, topic, "");
     }
 }

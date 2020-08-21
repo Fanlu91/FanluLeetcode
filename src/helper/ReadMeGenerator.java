@@ -16,8 +16,8 @@ import java.util.stream.Collectors;
 
 /***
  * This is a readme generator.
- * What it mainly does is walking through all java files to get information from each one's description
- * sorts all of them by some order(topic as for now)
+ * What it mainly does is walking through all java files to get information
+ * sorts all of them by some order(id as for now)
  * finally creates the index table.
  */
 public class ReadMeGenerator {
@@ -66,25 +66,26 @@ public class ReadMeGenerator {
             "# FanluLeetcode ",
             "",
             "Leetcode 解题记录。根据标签进行了题目的归档和解题方法总结。",
-            "- 主题总结：以当前标签或主题为单位总结理论知识及解题套路和心得。",
+            "- 题号： 四位数字方便搜索定位",
+            "- 主题总结：以当前标签或主题为单位总结理论知识及解题套路和心得",
             "- 题目地址：包括leetcode.com 和 leetcode-cn.com",
-            "- 难度：作者对当前题目难度的定义（主观），有明显差距的会在官方给定难度等级之上通过`+`,`-`进行标记。",
+            "- 难度：作者对当前题目难度的定义（主观），有明显差距的会在官方给定难度等级之上通过`+`,`-`进行标记",
             "- 代码：`Java` 解法的代码，一般会包含最符合题意的解及效率最高解。并会给出每种解的排名数据反馈",
-            "- 结果：最优解的排名反馈数据。",
+            "- 结果：最优解的排名反馈数据",
             " ",
             " ",
             "");
 
     public static void main(String[] args) throws IOException {
-
         StringBuilder stringBuilder = new StringBuilder(readme);
-
         // 得到package list
         List<Path> packagesPathList = new LinkedList<>();
-        Files.walk(Paths.get(System.getProperty("user.dir") + "/src/")).filter(Files::isDirectory).forEach(packagesPathList::add);
+        Files.walk(Paths.get(System.getProperty("user.dir") + "/src/"))
+                .filter(Files::isDirectory)
+                .forEach(packagesPathList::add);
 
         /**
-         * 通过总结的长度排展示权重
+         * 通过总结文章的长度决定展示的权重（先后）
          */
         packagesPathList.sort(new Comparator<Path>() {
             @Override
@@ -122,10 +123,19 @@ public class ReadMeGenerator {
                 summary = "[主题总结](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/" + packagePath.getFileName().toString() + "/README.md" + ")";
             }
             stringBuilder.append(summary).append("\n");
+
+            /**
+             * 构建题解表
+             */
             stringBuilder.append("\n").append("|题号|题目（官网）|题目（中国）|难度|实现代码|结果|标签|").append("\n").append("|---|---|---|---|---|---|---|").append("\n");
 
             List<Solution> solutionList = new LinkedList<>();
-            Files.walk(packagePath).filter(Files::isRegularFile).filter(f -> f.toString().endsWith(".java")).forEach(path -> {
+            Files.walk(packagePath).filter(Files::isRegularFile)
+                    .filter(f -> f.toString().endsWith(".java")).forEach(path -> {
+                Solution solution = new Solution();
+                solution.solutionPath = "[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src"
+                        + path.toString().split("src")[1].trim() + ")";
+
                 List<String> list = null;
                 try {
                     list = Files.lines(path)
@@ -135,10 +145,6 @@ public class ReadMeGenerator {
                     e.printStackTrace();
                 }
                 System.out.println(path);
-
-                Solution solution = new Solution();
-                solution.solutionPath = "[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src"
-                        + path.toString().split("src")[1].trim() + ")";
                 list.forEach(line -> {
                             if (line.contains("Id"))
                                 solution.id = line.split(" : ")[1].trim();
@@ -153,7 +159,7 @@ public class ReadMeGenerator {
                                         + line.split(" : ")[1].trim() + ")";
                             } else if (line.contains("Result")) {
                                 solution.result = line.split(" : ")[1].trim();
-                                // Result is mandatory for a solution to be on the table.
+                                // Result is mandatory for a solution to be add on the table.
                                 solutionList.add(solution);
                             }
                         }
@@ -161,7 +167,7 @@ public class ReadMeGenerator {
             });
 
             /**
-             * 给solution排序
+             * solution 按 id 排序
              */
             solutionList.sort(new Comparator<Solution>() {
                 @Override
@@ -175,7 +181,7 @@ public class ReadMeGenerator {
         }
 
         /**
-         * 结尾
+         * 增加结尾
          */
         stringBuilder.append("## Helper").append("\n").append("README 文件通过[此类](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/utils/ReadMeGenerator.java)生成。");
 
