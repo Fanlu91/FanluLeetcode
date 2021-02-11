@@ -5,8 +5,10 @@ package linkedlist;
 // Author : Fanlu Hai | https://github.com/Fanlu91/FanluLeetcode
 // Date   : 2019-06-03
 // Topic  : Linked list
+// Level  : Medium
 // Other  :
 // Tips   :
+// Links  :
 // Result : 94.51% 90.73%
 public class AddTwoNumbers {
 

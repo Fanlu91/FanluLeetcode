@@ -12,40 +12,41 @@ package morristraversal;
 
 public class FindModeInBinarySearchTree {
 
-    private TreeNode pre = null;
-    private int[] ans;
-    private int retCount = 0;
-    private int maxCount = 0;
-    private int currCount = 0;
+//    public int[] findMode(TreeNode root) {
+//
+//    }
 
-    public int[] findMode(TreeNode root) {
-        inOrder(root);
-        pre = null;
-        ans = new int[retCount];
-        retCount = 0;
-        currCount = 0;
-        inOrder(root);
-        return ans;
+    public void morrisTraversal(TreeNode node) {
+        while (node != null) {
+            if (node.left == null) { // 完成了左子树的遍历
+                // 则打印当前节点，然后进入右孩子。
+                System.out.print(node.val);
+                node = node.right;
+            } else { // 未完成左子树的遍历
+                TreeNode pre = getPredecessor(node); // 查找当前节点的前序节点
+                if (pre.right == null) { //前序节点的右孩子是空
+                    // 则把前序节点的右孩子指向当前节点 进入当前节点的左孩子
+                    pre.right = node;
+                    node = node.left;
+                } else if (pre.right == node) { //前序节点的右孩子指向了它
+                    // 则把前序节点的右孩子设置为空，打印当前节点，然后进入右孩子
+                    pre.right = null;
+                    System.out.print(node.val);
+                    node = node.right;
+                }
+            }
+        }
     }
 
-    private void inOrder(TreeNode root) {
-        if (root == null)
-            return;
-        inOrder(root.left);
-        if (pre != null && pre.val == root.val)
-            currCount++;
-        else
-            currCount = 1;
-        if (currCount > maxCount) {
-            maxCount = currCount;
-            retCount = 1;
-        } else if (currCount == maxCount) {
-            if (ans != null)
-                ans[retCount] = root.val;
-            retCount++;
+    private TreeNode getPredecessor(TreeNode node) {
+        TreeNode pre = node;
+        if (node.left != null) {
+            pre = pre.left;
+            while (pre.right != null && pre.right != node) {
+                pre = pre.right;
+            }
         }
-        pre = root;
-        inOrder(root.right);
+        return pre;
     }
 
     class TreeNode {

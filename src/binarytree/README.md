@@ -8,6 +8,7 @@ pre 前 / in 中 / post 后 corresponds to the order of root visiting.
 
 Preorder (Root, Left, Right) 
 Inorder (Left, Root, Right)
+
 - 对于二叉搜索树，我们可以通过中序遍历得到一个递增的有序序列。
 Postorder (Left, Right, Root) 
 - 当你删除树中的节点时，删除过程将按照后序遍历的顺序进行。
