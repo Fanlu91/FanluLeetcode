@@ -2,12 +2,12 @@
 
 Leetcode 解题记录。根据题目的标签进行了题目的归档和解题方法总结。
 - 题号： 四位数字方便搜索定位
-- 主题总结：以当前标签或主题为单位总结理论知识及解题套路和心得
-- 题目地址：包括leetcode.com 和 leetcode-cn.com
-- 难度：作者对当前题目难度的定义（主观），有明显差距的会在官方给定难度等级之上通过`+`,`-`进行标记
-- 代码：`Java` 解法的代码，一般会包含最符合题意的解及效率最高解。并会给出每种解的排名数据反馈
+- 总结：当前标签/主题相关的理论知识及解题套路和心得总结
+- 地址：包括leetcode.com 和 leetcode-cn.com
+- 难度：作者对题目难度的定义，有明显差距的会在官方给定难度等级之上通过`+`,`-`进行标记
+- 代码：`Java`解法的代码，一般会包含最符合题意的解及效率最高解。并会给出每种解的排名数据反馈
 - 结果：最优解的排名反馈数据
-- 标签：和本题直接相关的标签，可能超出官方给出的标签范围。
+- 标签：相关标签，一般是最优或者最直观解法使用的算法思想
  
  
 ### Helper
@@ -26,7 +26,7 @@ README 文件通过[此类](https://github.com/Fanlu91/FanluLeetcode/blob/master
 |0142|[linked-list-cycle-ii](https://leetcode.com/problems/linked-list-cycle-ii/)|[linked-list-cycle-ii](https://leetcode-cn.com/problems/linked-list-cycle-ii/)|null|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/linkedlist/PalindromeLinkedList.java)|96.51% 99.89%|Linked list|
 |0160|[intersection-of-two-linked-lists](https://leetcode.com/problems/intersection-of-two-linked-lists/)|[intersection-of-two-linked-lists](https://leetcode-cn.com/problems/intersection-of-two-linked-lists/)|null|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/linkedlist/IntersectionOfTwoLinkedLists.java)|97.33%  53.55%|Linked list|
 |0203|[remove-linked-list-elements](https://leetcode.com/problems/remove-linked-list-elements/)|[remove-linked-list-elements](https://leetcode-cn.com/problems/remove-linked-list-elements/)|null|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/linkedlist/RemoveLinkedListElements.java)|99.37% 99.72%|Linked list|
-|0206|[reverse-linked-list](https://leetcode.com/problems/reverse-linked-list/)|[reverse-linked-list](https://leetcode-cn.com/problems/reverse-linked-list/)|null|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/linkedlist/ReverseLinkedList.java)|100.00% 99.87%|Linked list|
+|0206|[reverse-linked-list](https://leetcode.com/problems/reverse-linked-list/)|[reverse-linked-list](https://leetcode-cn.com/problems/reverse-linked-list/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/linkedlist/ReverseLinkedList.java)|100.00% 99.87%|Double Pointers, Recursive|
 |0237|[delete-node-in-a-linked-list](https://leetcode.com/problems/delete-node-in-a-linked-list/)|[delete-node-in-a-linked-list](https://leetcode-cn.com/problems/delete-node-in-a-linked-list/)|null|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/linkedlist/DeleteNodeInALinkedList.java)|100% 100%|Linked list|
 |0445|[add-two-numbers-ii](https://leetcode.com/problems/add-two-numbers-ii/)|[add-two-numbers-ii](https://leetcode-cn.com/problems/add-two-numbers-ii/)|null|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/linkedlist/AddTwoNumbersII.java)|99.96% 74.91%|Linked list|
 |0707|[design-linked-list](https://leetcode.com/problems/design-linked-list/)|[design-linked-list](https://leetcode-cn.com/problems/design-linked-list/)|null|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/linkedlist/MyLinkedList.java)|80.06% 88.98%|Linked list|
@@ -85,6 +85,7 @@ README 文件通过[此类](https://github.com/Fanlu91/FanluLeetcode/blob/master
 |0169|[majority-element](https://leetcode.com/problems/majority-element/)|[majority-element](https://leetcode-cn.com/problems/majority-element/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/array/MajorityElement.java)|100.00% 50.94%|Array|
 |0189|[rotate-array](https://leetcode.com/problems/rotate-array/)|[rotate-array](https://leetcode-cn.com/problems/rotate-array/)|easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/array/RotateArray.java)|100% 100%%|Array|
 |0217|[contains-duplicate](https://leetcode.com/problems/contains-duplicate/)|[contains-duplicate](https://leetcode-cn.com/problems/contains-duplicate/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/array/ContainsDuplicate.java)|99.06% 65.20%|Array|
+|0228|[summary-ranges](https://leetcode.com/problems/summary-ranges/)|[summary-ranges](https://leetcode-cn.com/problems/summary-ranges/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/array/SummaryRanges.java)|8.88% 26.69%|Array|
 |0283|[move-zeroes](https://leetcode.com/problems/move-zeroes/)|[move-zeroes](https://leetcode-cn.com/problems/move-zeroes/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/array/MoveZeroes.java)|100.00% 94.20%|Array|
 |0349|[intersection-of-two-arrays](https://leetcode.com/problems/intersection-of-two-arrays/)|[intersection-of-two-arrays](https://leetcode-cn.com/problems/intersection-of-two-arrays/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/array/IntersectionOfTwoArrays.java)|100% 50%|Array|
 |0448|[find-all-numbers-disappeared-in-an-array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/)|[find-all-numbers-disappeared-in-an-array](https://leetcode-cn.com/problems/find-all-numbers-disappeared-in-an-array/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/array/FindAllNumbersDisappearedInAnArray.java)|99.93% 61.97%|Array|
@@ -130,6 +131,16 @@ README 文件通过[此类](https://github.com/Fanlu91/FanluLeetcode/blob/master
 |0720|[longest-word-in-dictionary](https://leetcode.com/problems/longest-word-in-dictionary/)|[longest-word-in-dictionary](https://leetcode-cn.com/problems/longest-word-in-dictionary/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/trie/LongestWordInDictionary.java)|100.00% 97.61%|Trie|
 |1023|[camelcase-matching](https://leetcode.com/problems/camelcase-matching/)|[camelcase-matching](https://leetcode-cn.com/problems/camelcase-matching/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/trie/CamelcaseMatching.java)|100.00% 99.58%|Trie|
 
+### Design
+[主题总结](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/design/README.md)
+
+|题号|题目（官网）|题目（中国）|难度|代码|结果|标签|
+|---|---|---|---|---|---|---|
+|0146|[lru-cache](https://leetcode.com/problems/lru-cache/)|[lru-cache](https://leetcode-cn.com/problems/lru-cache/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/design/LRUCache.java)|91.27% 67.29%|Design|
+|0155|[min-stack](https://leetcode.com/problems/min-stack/)|[min-stack](https://leetcode-cn.com/problems/min-stack/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/design/MinStack.java)|78.13% 14.46%|Design|
+|0225|[implement-stack-using-queues](https://leetcode.com/problems/implement-stack-using-queues/)|[implement-stack-using-queues](https://leetcode-cn.com/problems/implement-stack-using-queues/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/design/MyStack.java)|100% 100%|Stack, Queue|
+|Offer09|[yong-liang-ge-zhan-shi-xian-dui-lie-lcof](https://leetcode.com/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/)|[yong-liang-ge-zhan-shi-xian-dui-lie-lcof](https://leetcode-cn.com/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/design/CQueue.java)|69.99% 40.92%|Queue, Stack|
+
 ### Binary Search Tree
 [主题总结](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/binarysearchtree/README.md)
 
@@ -158,12 +169,6 @@ README 文件通过[此类](https://github.com/Fanlu91/FanluLeetcode/blob/master
 |0594|[longest-harmonious-subsequence](https://leetcode.com/problems/longest-harmonious-subsequence/)|[longest-harmonious-subsequence](https://leetcode-cn.com/problems/longest-harmonious-subsequence/)|Easy+|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/hashtable/LongestHarmoniousSubsequence.java)|100.00% 13.99%|Hashtable|
 |0692|[top-k-frequent-words](https://leetcode.com/problems/top-k-frequent-words/)|[top-k-frequent-words](https://leetcode-cn.com/problems/top-k-frequent-words/)|null|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/hashtable/TopKFrequentWords.java)|99.50%  89.29%|Hashtable|
 |1160|[find-words-that-can-be-formed-by-characters](https://leetcode.com/problems/find-words-that-can-be-formed-by-characters/)|[find-words-that-can-be-formed-by-characters](https://leetcode-cn.com/problems/find-words-that-can-be-formed-by-characters/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/hashtable/FindWordsThatCanBeFormedbyCharacters.java)|84.18% 5.08%|Hashtable|
-
-### null
-[主题总结](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/sql/README.md)
-
-|题号|题目（官网）|题目（中国）|难度|代码|结果|标签|
-|---|---|---|---|---|---|---|
 
 ### Binary Search
 [主题总结](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/binarysearch/README.md)
@@ -236,82 +241,56 @@ README 文件通过[此类](https://github.com/Fanlu91/FanluLeetcode/blob/master
 |---|---|---|---|---|---|---|
 |0997|[find-the-town-judge](https://leetcode.com/problems/find-the-town-judge/)|[find-the-town-judge](https://leetcode-cn.com/problems/find-the-town-judge/)|null|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/graph/FindTheTownJudge.java)|98.73% 100.00%|Graph|
 
-### Tree
-暂无总结
-
-|题号|题目（官网）|题目（中国）|难度|代码|结果|标签|
-|---|---|---|---|---|---|---|
-|0589|[n-ary-tree-preorder-traversal](https://leetcode.com/problems/n-ary-tree-preorder-traversal/)|[n-ary-tree-preorder-traversal](https://leetcode-cn.com/problems/n-ary-tree-preorder-traversal/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/tree/NaryTreePreorderTraversal.java)|100.00% 17.07%|Tree|
-
-### Design
-暂无总结
-
-|题号|题目（官网）|题目（中国）|难度|代码|结果|标签|
-|---|---|---|---|---|---|---|
-|0146|[lru-cache](https://leetcode.com/problems/lru-cache/)|[lru-cache](https://leetcode-cn.com/problems/lru-cache/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/design/LRUCache.java)|91.27% 67.29%|Design|
-|0155|[min-stack](https://leetcode.com/problems/min-stack/)|[min-stack](https://leetcode-cn.com/problems/min-stack/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/design/MinStack.java)|78.13% 14.46%|Design|
-
-### Bit Manipulation
-暂无总结
-
-|题号|题目（官网）|题目（中国）|难度|代码|结果|标签|
-|---|---|---|---|---|---|---|
-|0136|[single-number](https://leetcode.com/problems/single-number/)|[single-number](https://leetcode-cn.com/problems/single-number/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/bitmanipulation/SingleNumber.java)|100% 100%|Bit Manipulation|
-|0137|[single-number-ii](https://leetcode.com/problems/single-number-ii/)|[single-number-ii](https://leetcode-cn.com/problems/single-number-ii/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/bitmanipulation/SingleNumberII.java)|100% 100%|Bit Manipulation|
-|0191|[number-of-1-bits](https://leetcode.com/problems/number-of-1-bits/)|[number-of-1-bits](https://leetcode-cn.com/problems/number-of-1-bits/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/bitmanipulation/NumberOf1Bits.java)|100% 100%|Bit Manipulation|
-|0260|[single-number-iii](https://leetcode.com/problems/single-number-iii/)|[single-number-iii](https://leetcode-cn.com/problems/single-number-iii/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/bitmanipulation/SingleNumberIII.java)|100% 16.67%|Bit Manipulation|
-|0371|[sum-of-two-integers](https://leetcode.com/problems/sum-of-two-integers/)|[sum-of-two-integers](https://leetcode-cn.com/problems/sum-of-two-integers/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/bitmanipulation/SumOfTwoIntegers.java)|100% 8.00%|Bit Manipulation|
-|0397|[integer-replacement](https://leetcode.com/problems/integer-replacement/)|[integer-replacement](https://leetcode-cn.com/problems/integer-replacement/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/bitmanipulation/IntegerReplacement.java)|100% 8.00%|Bit Manipulation|
-
-### String Match
-暂无总结
-
-|题号|题目（官网）|题目（中国）|难度|代码|结果|标签|
-|---|---|---|---|---|---|---|
-|0758|[bold-words-in-string](https://leetcode.com/problems/bold-words-in-string/)|[bold-words-in-string](https://leetcode-cn.com/problems/bold-words-in-string/)|Easy +|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/stringmatch/BoldWordsInString.java)|96.18% 100.00%|String Match|
-
-### Two Pointers
-暂无总结
-
-|题号|题目（官网）|题目（中国）|难度|代码|结果|标签|
-|---|---|---|---|---|---|---|
-|0003|[longest-substring-without-repeating-characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)|[longest-substring-without-repeating-characters](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/twopointers/LongestSubstringWithoutRepeatingCharacters.java)|99.83% 80.19%|Two Pointers|
-|0011|[container-with-most-water](https://leetcode.com/problems/container-with-most-water/)|[container-with-most-water](https://leetcode-cn.com/problems/container-with-most-water/)|medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/twopointers/ContainerWithMostWater.java)|71.02% 7.14%|Two Pointers|
-|0015|[3sum](https://leetcode.com/problems/3sum/)|[3sum](https://leetcode-cn.com/problems/3sum/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/twopointers/ThreeSum.java)|98.79% 91.35%|Two Pointers|
-|0088|[merge-sorted-array](https://leetcode.com/problems/merge-sorted-array/)|[merge-sorted-array](https://leetcode-cn.com/problems/merge-sorted-array/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/twopointers/MergSortedArray.java)|100.00% 5.24%|Two Pointers|
-|0141|[linked-list-cycle](https://leetcode.com/problems/linked-list-cycle/)|[linked-list-cycle](https://leetcode-cn.com/problems/linked-list-cycle/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/twopointers/LinkedListCycle.java)|100.00%  99.88%|Two Pointers|
-|0142|[linked-list-cycle-ii](https://leetcode.com/problems/linked-list-cycle-ii/)|[linked-list-cycle-ii](https://leetcode-cn.com/problems/linked-list-cycle-ii/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/twopointers/LinkedListCycleII.java)|100.00% 5.04%|Two Pointers|
-
-### null
-暂无总结
-
-|题号|题目（官网）|题目（中国）|难度|代码|结果|标签|
-|---|---|---|---|---|---|---|
-
-### Recursion
-暂无总结
-
-|题号|题目（官网）|题目（中国）|难度|代码|结果|标签|
-|---|---|---|---|---|---|---|
-
 ### Union Find
+[主题总结](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/unionfind/README.md)
+
+|题号|题目（官网）|题目（中国）|难度|代码|结果|标签|
+|---|---|---|---|---|---|---|
+|0547|[friend-circles](https://leetcode.com/problems/friend-circles/)|[friend-circles](https://leetcode-cn.com/problems/friend-circles/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/unionfind/FriendCircles.java)|99.93% 96.00%|Union Find|
+|0990|[satisfiability-of-equality-equations](https://leetcode.com/problems/satisfiability-of-equality-equations/)|[satisfiability-of-equality-equations](https://leetcode-cn.com/problems/satisfiability-of-equality-equations/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/unionfind/SatisfiabilityOfEqualityEquations.java)|100.00% 16.67%|Union Find|
+
+### Stack
+[主题总结](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/stack/README.md)
+
+|题号|题目（官网）|题目（中国）|难度|代码|结果|标签|
+|---|---|---|---|---|---|---|
+|0020|[valid-parentheses](https://leetcode.com/problems/valid-parentheses/)|[valid-parentheses](https://leetcode-cn.com/problems/valid-parentheses/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/stack/ValidParentheses.java)|98.69% 99.98%|Stack|
+|0394|[decode-string](https://leetcode.com/problems/decode-string/)|[decode-string](https://leetcode-cn.com/problems/decode-string/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/stack/DecodeString.java)|100.00% 100.00%|Stack,String|
+
+### Math
 暂无总结
 
 |题号|题目（官网）|题目（中国）|难度|代码|结果|标签|
 |---|---|---|---|---|---|---|
-|0547|[friend-circles](https://leetcode.com/problems/friend-circles/)|[friend-circles](https://leetcode-cn.com/problems/friend-circles/)|medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/unionfind/FriendCircles.java)|99.93% 96.00%|Union Find|
-|0990|[satisfiability-of-equality-equations](https://leetcode.com/problems/satisfiability-of-equality-equations/)|[satisfiability-of-equality-equations](https://leetcode-cn.com/problems/satisfiability-of-equality-equations/)|medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/unionfind/SatisfiabilityOfEqualityEquations.java)|100.00% 16.67%|Union Find|
+|0007|[reverse-integer](https://leetcode.com/problems/reverse-integer/)|[reverse-integer](https://leetcode-cn.com/problems/reverse-integer/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/math/ReverseInteger.java)|100.00% 11.11%|Math|
+|0009|[palindrome-number](https://leetcode.com/problems/palindrome-number/)|[palindrome-number](https://leetcode-cn.com/problems/palindrome-number/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/math/PalindromeNumber.java)|100.00% 5.02%|Math|
+|0012|[integer-to-roman](https://leetcode.com/problems/integer-to-roman/)|[integer-to-roman](https://leetcode-cn.com/problems/integer-to-roman/)|Medium-|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/math/IntegerToRoman.java)|100.00% 100.00%|Math|
+|0013|[roman-to-integer](https://leetcode.com/problems/roman-to-integer/)|[roman-to-integer](https://leetcode-cn.com/problems/roman-to-integer/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/math/RomanToInteger.java)|75.64% 100.00%|Math|
+|0168|[excel-sheet-column-title](https://leetcode.com/problems/excel-sheet-column-title/)|[excel-sheet-column-title](https://leetcode-cn.com/problems/excel-sheet-column-title/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/math/ExcelSheetColumnTitle.java)|100.00% 14.29%|Math|
+|0171|[excel-sheet-column-number](https://leetcode.com/problems/excel-sheet-column-number/)|[excel-sheet-column-number](https://leetcode-cn.com/problems/excel-sheet-column-number/)|Easy -|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/math/ExcelSheetColumnNumber.java)|100.00% 5.55%|Math|
+|0172|[factorial-trailing-zeroes](https://leetcode.com/problems/factorial-trailing-zeroes/)|[factorial-trailing-zeroes](https://leetcode-cn.com/problems/factorial-trailing-zeroes/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/math/FactorialTrailingZeroes.java)|100.00% 100.00%|Math|
+|0202|[happy-number](https://leetcode.com/problems/happy-number/)|[happy-number](https://leetcode-cn.com/problems/happy-number/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/math/HappyNumber.java)|47.92% 8.33%|Math|
+|0204|[count-primes](https://leetcode.com/problems/count-primes/)|[count-primes](https://leetcode-cn.com/problems/count-primes/)|Easy+|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/math/CountPrime.java)|80% 80%|Math|
+|0223|[rectangle-area](https://leetcode.com/problems/rectangle-area/)|[rectangle-area](https://leetcode-cn.com/problems/rectangle-area/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/math/RectangleArea.java)|98.16% 25.00%|Math|
+|0365|[water-and-jug-problem](https://leetcode.com/problems/water-and-jug-problem/)|[water-and-jug-problem](https://leetcode-cn.com/problems/water-and-jug-problem/)|Medium +|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/math/WaterAndJugProblem.java)|100.00% 13.93%|Math, BFS|
+|0492|[construct-the-rectangle](https://leetcode.com/problems/construct-the-rectangle/)|[construct-the-rectangle](https://leetcode-cn.com/problems/construct-the-rectangle/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/math/ConstructTheRectangle.java)|100.00% 14.29%|Math|
+|0836|[rectangle-overlap](https://leetcode.com/problems/rectangle-overlap/)|[rectangle-overlap](https://leetcode-cn.com/problems/rectangle-overlap/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/math/RectangleOverlap.java)|100.00% 50.00%|Math|
 
-### Depth-First Search
+### String
 暂无总结
 
 |题号|题目（官网）|题目（中国）|难度|代码|结果|标签|
 |---|---|---|---|---|---|---|
-|0112|[path-sum](https://leetcode.com/problems/path-sum/)|[path-sum](https://leetcode-cn.com/problems/path-sum/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/depthfirstsearch/PathSum.java)|100.00% 6.52%|Depth-First Search|
-|0113|[path-sum-ii](https://leetcode.com/problems/path-sum-ii/)|[path-sum-ii](https://leetcode-cn.com/problems/path-sum-ii/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/depthfirstsearch/PathSumII.java)|65.46% 5.26%|Depth-First Search|
-|0113|[path-sum-ii](https://leetcode.com/problems/path-sum-ii/)|[path-sum-ii](https://leetcode-cn.com/problems/path-sum-ii/)|Hard|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/depthfirstsearch/BinaryTreeMaximumPathSum.java)|99.67% 1ms 7.69%|Depth-First Search|
-|0129|[sum-root-to-leaf-numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/)|[sum-root-to-leaf-numbers](https://leetcode-cn.com/problems/sum-root-to-leaf-numbers/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/depthfirstsearch/SumRootToLeafNumbers.java)|100.00% 87.92%|Depth-First Search|
-|0257|[binary-tree-paths](https://leetcode.com/problems/binary-tree-paths/)|[binary-tree-paths](https://leetcode-cn.com/problems/binary-tree-paths/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/depthfirstsearch/BinaryTreePaths.java)|93.46% 37.08%|Depth-First Search|
+|0005|[longest-palindromic-substring](https://leetcode.com/problems/longest-palindromic-substring/)|[longest-palindromic-substring](https://leetcode-cn.com/problems/longest-palindromic-substring/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/string/LongestPalindromicSubstring.java)|98.90% 100%|String|
+|0006|[zigzag-conversion](https://leetcode.com/problems/zigzag-conversion/)|[zigzag-conversion](https://leetcode-cn.com/problems/zigzag-conversion/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/string/ZigZagConversion.java)|94.85% 93.46%|String|
+|0014|[longest-common-prefix](https://leetcode.com/problems/longest-common-prefix/)|[longest-common-prefix](https://leetcode-cn.com/problems/longest-common-prefix/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/string/LongestCommonPrefix.java)|74.35% 100%|String|
+|0028|[implement-strstr](https://leetcode.com/problems/implement-strstr/)|[implement-strstr](https://leetcode-cn.com/problems/implement-strstr/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/string/ImplementStrStr.java)|53.86% 64.88%|String|
+|0038|[count-and-say](https://leetcode.com/problems/count-and-say/)|[count-and-say](https://leetcode-cn.com/problems/count-and-say/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/string/CountAndSay.java)|100 % 100 %|String|
+|0058|[length-of-last-word](https://leetcode.com/problems/length-of-last-word/)|[length-of-last-word](https://leetcode-cn.com/problems/length-of-last-word/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/string/LengthOfLastWord.java)|100.00% 5.32%|String|
+|0067|[add-binary](https://leetcode.com/problems/add-binary/)|[add-binary](https://leetcode-cn.com/problems/add-binary/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/string/AddBinary.java)|97.15% 5.12%|String|
+|0125|[valid-palindrome](https://leetcode.com/problems/valid-palindrome/)|[valid-palindrome](https://leetcode-cn.com/problems/valid-palindrome/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/string/ValidPalindrome.java)|100% 100%|String|
+|0205|[isomorphic-strings](https://leetcode.com/problems/isomorphic-strings/)|[isomorphic-strings](https://leetcode-cn.com/problems/isomorphic-strings/)|Easy-|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/string/IsomorphicStrings.java)|81.95% 34.68%|String|
+|0680|[valid-palindrome-ii](https://leetcode.com/problems/valid-palindrome-ii/)|[valid-palindrome-ii](https://leetcode-cn.com/problems/valid-palindrome-ii/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/string/ValidPalindromeII.java)|99.68% 94.44%|String|
 
 ### Backtracking
 暂无总结
@@ -328,128 +307,6 @@ README 文件通过[此类](https://github.com/Fanlu91/FanluLeetcode/blob/master
 |0784|[letter-case-permutation](https://leetcode.com/problems/letter-case-permutation/)|[letter-case-permutation](https://leetcode-cn.com/problems/letter-case-permutation/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/backtracking/BinaryWatch.java)|89.19% 100.00%|Backtracking|
 |0784|[letter-case-permutation](https://leetcode.com/problems/letter-case-permutation/)|[letter-case-permutation](https://leetcode-cn.com/problems/letter-case-permutation/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/backtracking/LetterCasePermutation.java)|100.00% 99.36%|Backtracking|
 
-### Sliding Window
-暂无总结
-
-|题号|题目（官网）|题目（中国）|难度|代码|结果|标签|
-|---|---|---|---|---|---|---|
-|0076|[minimum-window-substring](https://leetcode.com/problems/minimum-window-substring/)|[minimum-window-substring](https://leetcode-cn.com/problems/minimum-window-substring/)|Hard|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/slidingwindow/MinimumWindowSubstring.java)|42.34% 13.33%|Sliding Window|
-|0239|[sliding-window-maximum](https://leetcode.com/problems/sliding-window-maximum/)|[sliding-window-maximum](https://leetcode-cn.com/problems/sliding-window-maximum/)|Hard|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/slidingwindow/SlidingWindowMaximum.java)|39.53% 6.67%|Sliding Window|
-|0424|[longest-repeating-character-replacement](https://leetcode.com/problems/longest-repeating-character-replacement/)|[longest-repeating-character-replacement](https://leetcode-cn.com/problems/longest-repeating-character-replacement/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/slidingwindow/LongestRepeatingCharacterReplacement.java)|33.67% 100.00%|Sliding Window|
-|0567|[permutation-in-string](https://leetcode.com/problems/permutation-in-string/)|[permutation-in-string](https://leetcode-cn.com/problems/permutation-in-string/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/slidingwindow/PermutationInString.java)|58.10% 18.75%|Sliding Window|
-
-### Details
-暂无总结
-
-|题号|题目（官网）|题目（中国）|难度|代码|结果|标签|
-|---|---|---|---|---|---|---|
-|1360|[number-of-days-between-two-dates](https://leetcode.com/problems/number-of-days-between-two-dates/)|[number-of-days-between-two-dates](https://leetcode-cn.com/problems/number-of-days-between-two-dates/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/details/NumberOfDaysBetweenTwoDates.java)|100% 100%|Details|
-
-### Minimax
-暂无总结
-
-|题号|题目（官网）|题目（中国）|难度|代码|结果|标签|
-|---|---|---|---|---|---|---|
-|0292|[nim-game](https://leetcode.com/problems/nim-game/)|[nim-game](https://leetcode-cn.com/problems/nim-game/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/minimax/NimGame.java)|100.00% 100.00%|Minimax|
-|0375|[guess-number-higher-or-lower-ii](https://leetcode.com/problems/guess-number-higher-or-lower-ii/)|[guess-number-higher-or-lower-ii](https://leetcode-cn.com/problems/guess-number-higher-or-lower-ii/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/minimax/GuessNumberHigherOrLowerII.java)|99.47% 5.41%|Minimax|
-|0486|[predict-the-winner](https://leetcode.com/problems/predict-the-winner/)|[predict-the-winner](https://leetcode-cn.com/problems/predict-the-winner/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/minimax/PredictTheWinner.java)|100.00% 5.45%|Minimax|
-|0877|[stone-game](https://leetcode.com/problems/stone-game/)|[stone-game](https://leetcode-cn.com/problems/stone-game/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/minimax/StoneGame.java)|100.00% 100.00%|Minimax|
-|1140|[stone-game-ii](https://leetcode.com/problems/stone-game-ii/)|[stone-game-ii](https://leetcode-cn.com/problems/stone-game-ii/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/minimax/StoneGameII.java)|100.00% 100.00%|Minimax|
-
-### Greatest Common Divisor
-暂无总结
-
-|题号|题目（官网）|题目（中国）|难度|代码|结果|标签|
-|---|---|---|---|---|---|---|
-|1071|[greatest-common-divisor-of-strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/)|[greatest-common-divisor-of-strings](https://leetcode-cn.com/problems/greatest-common-divisor-of-strings/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/gcd/GreatestCommonDivisorOfStrings.java)|97.81% 100.00%|Greatest Common Divisor|
-
-### Math
-暂无总结
-
-|题号|题目（官网）|题目（中国）|难度|代码|结果|标签|
-|---|---|---|---|---|---|---|
-|0007|[reverse-integer](https://leetcode.com/problems/reverse-integer/)|[reverse-integer](https://leetcode-cn.com/problems/reverse-integer/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/math/ReverseInteger.java)|100.00% 11.11%|Math|
-|0009|[palindrome-number](https://leetcode.com/problems/palindrome-number/)|[palindrome-number](https://leetcode-cn.com/problems/palindrome-number/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/math/PalindromeNumber.java)|100.00% 5.02%|Math|
-|0012|[integer-to-roman](https://leetcode.com/problems/integer-to-roman/)|[integer-to-roman](https://leetcode-cn.com/problems/integer-to-roman/)|Medium-|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/math/IntegerToRoman.java)|100.00% 100.00%|Math|
-|0013|[roman-to-integer](https://leetcode.com/problems/roman-to-integer/)|[roman-to-integer](https://leetcode-cn.com/problems/roman-to-integer/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/math/RomanToInteger.java)|75.64% 100.00%|Math|
-|0168|[excel-sheet-column-title](https://leetcode.com/problems/excel-sheet-column-title/)|[excel-sheet-column-title](https://leetcode-cn.com/problems/excel-sheet-column-title/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/math/ExcelSheetColumnTitle.java)|100.00% 14.29%|Math|
-|0171|[excel-sheet-column-number](https://leetcode.com/problems/excel-sheet-column-number/)|[excel-sheet-column-number](https://leetcode-cn.com/problems/excel-sheet-column-number/)|Easy -|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/math/ExcelSheetColumnNumber.java)|100.00% 5.55%|Math|
-|0172|[factorial-trailing-zeroes](https://leetcode.com/problems/factorial-trailing-zeroes/)|[factorial-trailing-zeroes](https://leetcode-cn.com/problems/factorial-trailing-zeroes/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/math/FactorialTrailingZeroes.java)|100.00% 100.00%|Math|
-|0202|[happy-number](https://leetcode.com/problems/happy-number/)|[happy-number](https://leetcode-cn.com/problems/happy-number/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/math/HappyNumber.java)|47.92% 8.33%|Math|
-|0223|[rectangle-area](https://leetcode.com/problems/rectangle-area/)|[rectangle-area](https://leetcode-cn.com/problems/rectangle-area/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/math/RectangleArea.java)|98.16% 25.00%|Math|
-|0365|[water-and-jug-problem](https://leetcode.com/problems/water-and-jug-problem/)|[water-and-jug-problem](https://leetcode-cn.com/problems/water-and-jug-problem/)|Medium +|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/math/WaterAndJugProblem.java)|100.00% 13.93%|Math, BFS|
-|0492|[construct-the-rectangle](https://leetcode.com/problems/construct-the-rectangle/)|[construct-the-rectangle](https://leetcode-cn.com/problems/construct-the-rectangle/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/math/ConstructTheRectangle.java)|100.00% 14.29%|Math|
-|0836|[rectangle-overlap](https://leetcode.com/problems/rectangle-overlap/)|[rectangle-overlap](https://leetcode-cn.com/problems/rectangle-overlap/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/math/RectangleOverlap.java)|100.00% 50.00%|Math|
-
-### Concurrency
-暂无总结
-
-|题号|题目（官网）|题目（中国）|难度|代码|结果|标签|
-|---|---|---|---|---|---|---|
-|1114|[print-in-order](https://leetcode.com/problems/print-in-order/)|[print-in-order](https://leetcode-cn.com/problems/print-in-order/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/concurrency/PrintInOrder.java)|100% 100%|Concurrency|
-
-### null
-暂无总结
-
-|题号|题目（官网）|题目（中国）|难度|代码|结果|标签|
-|---|---|---|---|---|---|---|
-
-### null
-暂无总结
-
-|题号|题目（官网）|题目（中国）|难度|代码|结果|标签|
-|---|---|---|---|---|---|---|
-
-### Greedy
-暂无总结
-
-|题号|题目（官网）|题目（中国）|难度|代码|结果|标签|
-|---|---|---|---|---|---|---|
-|0053|[maximum-subarray](https://leetcode.com/problems/maximum-subarray/)|[maximum-subarray](https://leetcode-cn.com/problems/maximum-subarray/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/greedy/MaximumSubarray.java)|100.00% 99.53%|Greedy|
-|0392|[is-subsequence](https://leetcode.com/problems/is-subsequence/)|[is-subsequence](https://leetcode-cn.com/problems/is-subsequence/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/greedy/IsSubsequence.java)|100.00% 100.00%|Greedy|
-|0751|[ip-to-cidr](https://leetcode.com/problems/ip-to-cidr/)|[ip-to-cidr](https://leetcode-cn.com/problems/ip-to-cidr/)|Easy+|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/greedy/IPToCIDR.java)|100.00% 100.00%|Greedy|
-
-### Divide & Conquer
-暂无总结
-
-|题号|题目（官网）|题目（中国）|难度|代码|结果|标签|
-|---|---|---|---|---|---|---|
-|0023|[merge-k-sorted-lists](https://leetcode.com/problems/merge-k-sorted-lists/)|[merge-k-sorted-lists](https://leetcode-cn.com/problems/merge-k-sorted-lists/)|Hard|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/divideandconquer/MergeKSortedLists.java)|84.07% 48.81%|Divide & Conquer|
-|0215|[kth-largest-element-in-an-array](https://leetcode.com/problems/kth-largest-element-in-an-array/)|[kth-largest-element-in-an-array](https://leetcode-cn.com/problems/kth-largest-element-in-an-array/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/divideandconquer/KthLargestElementInAnArray.java)|99.87% 5.15%|Divide & Conquer, Heap|
-|0241|[different-ways-to-add-parentheses](https://leetcode.com/problems/different-ways-to-add-parentheses/)|[different-ways-to-add-parentheses](https://leetcode-cn.com/problems/different-ways-to-add-parentheses/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/divideandconquer/DifferentWaysToAddParentheses.java)|100% 100%|Divide & Conquer|
-
-### String
-暂无总结
-
-|题号|题目（官网）|题目（中国）|难度|代码|结果|标签|
-|---|---|---|---|---|---|---|
-|0005|[longest-palindromic-substring](https://leetcode.com/problems/longest-palindromic-substring/)|[longest-palindromic-substring](https://leetcode-cn.com/problems/longest-palindromic-substring/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/string/LongestPalindromicSubstring.java)|98.90% 100%|String|
-|0006|[zigzag-conversion](https://leetcode.com/problems/zigzag-conversion/)|[zigzag-conversion](https://leetcode-cn.com/problems/zigzag-conversion/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/string/ZigZagConversion.java)|94.85% 93.46%|String|
-|0014|[longest-common-prefix](https://leetcode.com/problems/longest-common-prefix/)|[longest-common-prefix](https://leetcode-cn.com/problems/longest-common-prefix/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/string/LongestCommonPrefix.java)|74.35% 100%|String|
-|0028|[implement-strstr](https://leetcode.com/problems/implement-strstr/)|[implement-strstr](https://leetcode-cn.com/problems/implement-strstr/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/string/ImplementStrStr.java)|53.86% 64.88%|String|
-|0038|[count-and-say](https://leetcode.com/problems/count-and-say/)|[count-and-say](https://leetcode-cn.com/problems/count-and-say/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/string/CountAndSay.java)|100 % 100 %|String|
-|0058|[length-of-last-word](https://leetcode.com/problems/length-of-last-word/)|[length-of-last-word](https://leetcode-cn.com/problems/length-of-last-word/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/string/LengthOfLastWord.java)|100.00% 5.32%|String|
-|0067|[add-binary](https://leetcode.com/problems/add-binary/)|[add-binary](https://leetcode-cn.com/problems/add-binary/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/string/AddBinary.java)|97.15% 5.12%|String|
-|0125|[valid-palindrome](https://leetcode.com/problems/valid-palindrome/)|[valid-palindrome](https://leetcode-cn.com/problems/valid-palindrome/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/string/ValidPalindrome.java)|100% 100%|String|
-|0680|[valid-palindrome-ii](https://leetcode.com/problems/valid-palindrome-ii/)|[valid-palindrome-ii](https://leetcode-cn.com/problems/valid-palindrome-ii/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/string/ValidPalindromeII.java)|99.68% 94.44%|String|
-
-### Geometry
-暂无总结
-
-|题号|题目（官网）|题目（中国）|难度|代码|结果|标签|
-|---|---|---|---|---|---|---|
-|0892|[surface-area-of-3d-shapes](https://leetcode.com/problems/surface-area-of-3d-shapes/)|[surface-area-of-3d-shapes](https://leetcode-cn.com/problems/surface-area-of-3d-shapes/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/geometry/SurfaceAreaOf3DShapes.java)|77.35% 100.00%|Math|
-|0963|[minimum-area-rectangle-ii](https://leetcode.com/problems/minimum-area-rectangle-ii/)|[minimum-area-rectangle-ii](https://leetcode-cn.com/problems/minimum-area-rectangle-ii/)|Medium+|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/geometry/MinimumAreaRectangleII.java)|52.63% 100.00%|Geometry|
-|1401|[circle-and-rectangle-overlapping](https://leetcode.com/problems/circle-and-rectangle-overlapping/)|[circle-and-rectangle-overlapping](https://leetcode-cn.com/problems/circle-and-rectangle-overlapping/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/geometry/CircleAndRectangleOverlapping.java)|100.00% 100.00%|Geometry|
-
-### Stack
-暂无总结
-
-|题号|题目（官网）|题目（中国）|难度|代码|结果|标签|
-|---|---|---|---|---|---|---|
-|0020|[valid-parentheses](https://leetcode.com/problems/valid-parentheses/)|[valid-parentheses](https://leetcode-cn.com/problems/valid-parentheses/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/stack/ValidParentheses.java)|98.69% 99.98%|Stack|
-|0394|[decode-string](https://leetcode.com/problems/decode-string/)|[decode-string](https://leetcode-cn.com/problems/decode-string/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/stack/DecodeString.java)|100.00% 100.00%|Stack,String|
-
 ### Matrix
 暂无总结
 
@@ -463,4 +320,128 @@ README 文件通过[此类](https://github.com/Fanlu91/FanluLeetcode/blob/master
 |0867|[transpose-matri](https://leetcode.com/problems/transpose-matrix)|[transpose-matri](https://leetcode-cn.com/problems/transpose-matrix)|Easy-|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/matrix/TransposeMatrix.java)|100.00% 99.81%|Matrix|
 |0985|[reshape-the-matrix](https://leetcode.com/problems/reshape-the-matrix/)|[reshape-the-matrix](https://leetcode-cn.com/problems/reshape-the-matrix/)|Easy-|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/matrix/ReshapeTheMatrix.java)|100.00% 100.00%|Matrix|
 |0999|[available-captures-for-rook](https://leetcode.com/problems/available-captures-for-rook/)|[available-captures-for-rook](https://leetcode-cn.com/problems/available-captures-for-rook/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/matrix/AvailableCapturesForRook.java)|100.00% 99.95%|Matrix|
+
+### Two Pointers
+暂无总结
+
+|题号|题目（官网）|题目（中国）|难度|代码|结果|标签|
+|---|---|---|---|---|---|---|
+|0003|[longest-substring-without-repeating-characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)|[longest-substring-without-repeating-characters](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/twopointers/LongestSubstringWithoutRepeatingCharacters.java)|99.83% 80.19%|Two Pointers|
+|0011|[container-with-most-water](https://leetcode.com/problems/container-with-most-water/)|[container-with-most-water](https://leetcode-cn.com/problems/container-with-most-water/)|medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/twopointers/ContainerWithMostWater.java)|71.02% 7.14%|Two Pointers|
+|0015|[3sum](https://leetcode.com/problems/3sum/)|[3sum](https://leetcode-cn.com/problems/3sum/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/twopointers/ThreeSum.java)|98.79% 91.35%|Two Pointers|
+|0088|[merge-sorted-array](https://leetcode.com/problems/merge-sorted-array/)|[merge-sorted-array](https://leetcode-cn.com/problems/merge-sorted-array/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/twopointers/MergSortedArray.java)|100.00% 5.24%|Two Pointers|
+|0141|[linked-list-cycle](https://leetcode.com/problems/linked-list-cycle/)|[linked-list-cycle](https://leetcode-cn.com/problems/linked-list-cycle/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/twopointers/LinkedListCycle.java)|100.00%  99.88%|Two Pointers|
+|0142|[linked-list-cycle-ii](https://leetcode.com/problems/linked-list-cycle-ii/)|[linked-list-cycle-ii](https://leetcode-cn.com/problems/linked-list-cycle-ii/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/twopointers/LinkedListCycleII.java)|100.00% 5.04%|Two Pointers|
+
+### Bit Manipulation
+暂无总结
+
+|题号|题目（官网）|题目（中国）|难度|代码|结果|标签|
+|---|---|---|---|---|---|---|
+|0136|[single-number](https://leetcode.com/problems/single-number/)|[single-number](https://leetcode-cn.com/problems/single-number/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/bitmanipulation/SingleNumber.java)|100% 100%|Bit Manipulation|
+|0137|[single-number-ii](https://leetcode.com/problems/single-number-ii/)|[single-number-ii](https://leetcode-cn.com/problems/single-number-ii/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/bitmanipulation/SingleNumberII.java)|100% 100%|Bit Manipulation|
+|0191|[number-of-1-bits](https://leetcode.com/problems/number-of-1-bits/)|[number-of-1-bits](https://leetcode-cn.com/problems/number-of-1-bits/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/bitmanipulation/NumberOf1Bits.java)|100% 100%|Bit Manipulation|
+|0260|[single-number-iii](https://leetcode.com/problems/single-number-iii/)|[single-number-iii](https://leetcode-cn.com/problems/single-number-iii/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/bitmanipulation/SingleNumberIII.java)|100% 16.67%|Bit Manipulation|
+|0371|[sum-of-two-integers](https://leetcode.com/problems/sum-of-two-integers/)|[sum-of-two-integers](https://leetcode-cn.com/problems/sum-of-two-integers/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/bitmanipulation/SumOfTwoIntegers.java)|100% 8.00%|Bit Manipulation|
+|0397|[integer-replacement](https://leetcode.com/problems/integer-replacement/)|[integer-replacement](https://leetcode-cn.com/problems/integer-replacement/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/bitmanipulation/IntegerReplacement.java)|100% 8.00%|Bit Manipulation|
+
+### Depth-First Search
+暂无总结
+
+|题号|题目（官网）|题目（中国）|难度|代码|结果|标签|
+|---|---|---|---|---|---|---|
+|0112|[path-sum](https://leetcode.com/problems/path-sum/)|[path-sum](https://leetcode-cn.com/problems/path-sum/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/depthfirstsearch/PathSum.java)|100.00% 6.52%|Depth-First Search|
+|0113|[path-sum-ii](https://leetcode.com/problems/path-sum-ii/)|[path-sum-ii](https://leetcode-cn.com/problems/path-sum-ii/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/depthfirstsearch/PathSumII.java)|65.46% 5.26%|Depth-First Search|
+|0113|[path-sum-ii](https://leetcode.com/problems/path-sum-ii/)|[path-sum-ii](https://leetcode-cn.com/problems/path-sum-ii/)|Hard|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/depthfirstsearch/BinaryTreeMaximumPathSum.java)|99.67% 1ms 7.69%|Depth-First Search|
+|0129|[sum-root-to-leaf-numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/)|[sum-root-to-leaf-numbers](https://leetcode-cn.com/problems/sum-root-to-leaf-numbers/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/depthfirstsearch/SumRootToLeafNumbers.java)|100.00% 87.92%|Depth-First Search|
+|0257|[binary-tree-paths](https://leetcode.com/problems/binary-tree-paths/)|[binary-tree-paths](https://leetcode-cn.com/problems/binary-tree-paths/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/depthfirstsearch/BinaryTreePaths.java)|93.46% 37.08%|Depth-First Search|
+
+### Minimax
+暂无总结
+
+|题号|题目（官网）|题目（中国）|难度|代码|结果|标签|
+|---|---|---|---|---|---|---|
+|0292|[nim-game](https://leetcode.com/problems/nim-game/)|[nim-game](https://leetcode-cn.com/problems/nim-game/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/minimax/NimGame.java)|100.00% 100.00%|Minimax|
+|0375|[guess-number-higher-or-lower-ii](https://leetcode.com/problems/guess-number-higher-or-lower-ii/)|[guess-number-higher-or-lower-ii](https://leetcode-cn.com/problems/guess-number-higher-or-lower-ii/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/minimax/GuessNumberHigherOrLowerII.java)|99.47% 5.41%|Minimax|
+|0486|[predict-the-winner](https://leetcode.com/problems/predict-the-winner/)|[predict-the-winner](https://leetcode-cn.com/problems/predict-the-winner/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/minimax/PredictTheWinner.java)|100.00% 5.45%|Minimax|
+|0877|[stone-game](https://leetcode.com/problems/stone-game/)|[stone-game](https://leetcode-cn.com/problems/stone-game/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/minimax/StoneGame.java)|100.00% 100.00%|Minimax|
+|1140|[stone-game-ii](https://leetcode.com/problems/stone-game-ii/)|[stone-game-ii](https://leetcode-cn.com/problems/stone-game-ii/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/minimax/StoneGameII.java)|100.00% 100.00%|Minimax|
+
+### Sliding Window
+暂无总结
+
+|题号|题目（官网）|题目（中国）|难度|代码|结果|标签|
+|---|---|---|---|---|---|---|
+|0076|[minimum-window-substring](https://leetcode.com/problems/minimum-window-substring/)|[minimum-window-substring](https://leetcode-cn.com/problems/minimum-window-substring/)|Hard|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/slidingwindow/MinimumWindowSubstring.java)|42.34% 13.33%|Sliding Window|
+|0239|[sliding-window-maximum](https://leetcode.com/problems/sliding-window-maximum/)|[sliding-window-maximum](https://leetcode-cn.com/problems/sliding-window-maximum/)|Hard|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/slidingwindow/SlidingWindowMaximum.java)|39.53% 6.67%|Sliding Window|
+|0424|[longest-repeating-character-replacement](https://leetcode.com/problems/longest-repeating-character-replacement/)|[longest-repeating-character-replacement](https://leetcode-cn.com/problems/longest-repeating-character-replacement/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/slidingwindow/LongestRepeatingCharacterReplacement.java)|33.67% 100.00%|Sliding Window|
+|0567|[permutation-in-string](https://leetcode.com/problems/permutation-in-string/)|[permutation-in-string](https://leetcode-cn.com/problems/permutation-in-string/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/slidingwindow/PermutationInString.java)|58.10% 18.75%|Sliding Window|
+
+### Divide & Conquer
+暂无总结
+
+|题号|题目（官网）|题目（中国）|难度|代码|结果|标签|
+|---|---|---|---|---|---|---|
+|0023|[merge-k-sorted-lists](https://leetcode.com/problems/merge-k-sorted-lists/)|[merge-k-sorted-lists](https://leetcode-cn.com/problems/merge-k-sorted-lists/)|Hard|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/divideandconquer/MergeKSortedLists.java)|84.07% 48.81%|Divide & Conquer|
+|0215|[kth-largest-element-in-an-array](https://leetcode.com/problems/kth-largest-element-in-an-array/)|[kth-largest-element-in-an-array](https://leetcode-cn.com/problems/kth-largest-element-in-an-array/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/divideandconquer/KthLargestElementInAnArray.java)|99.87% 5.15%|Divide & Conquer, Heap|
+|0241|[different-ways-to-add-parentheses](https://leetcode.com/problems/different-ways-to-add-parentheses/)|[different-ways-to-add-parentheses](https://leetcode-cn.com/problems/different-ways-to-add-parentheses/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/divideandconquer/DifferentWaysToAddParentheses.java)|100% 100%|Divide & Conquer|
+
+### Greedy
+暂无总结
+
+|题号|题目（官网）|题目（中国）|难度|代码|结果|标签|
+|---|---|---|---|---|---|---|
+|0053|[maximum-subarray](https://leetcode.com/problems/maximum-subarray/)|[maximum-subarray](https://leetcode-cn.com/problems/maximum-subarray/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/greedy/MaximumSubarray.java)|100.00% 99.53%|Greedy, DP|
+|0392|[is-subsequence](https://leetcode.com/problems/is-subsequence/)|[is-subsequence](https://leetcode-cn.com/problems/is-subsequence/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/greedy/IsSubsequence.java)|100.00% 100.00%|Greedy|
+|0751|[ip-to-cidr](https://leetcode.com/problems/ip-to-cidr/)|[ip-to-cidr](https://leetcode-cn.com/problems/ip-to-cidr/)|Easy+|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/greedy/IPToCIDR.java)|100.00% 100.00%|Greedy|
+
+### Geometry
+暂无总结
+
+|题号|题目（官网）|题目（中国）|难度|代码|结果|标签|
+|---|---|---|---|---|---|---|
+|0892|[surface-area-of-3d-shapes](https://leetcode.com/problems/surface-area-of-3d-shapes/)|[surface-area-of-3d-shapes](https://leetcode-cn.com/problems/surface-area-of-3d-shapes/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/geometry/SurfaceAreaOf3DShapes.java)|77.35% 100.00%|Math|
+|0963|[minimum-area-rectangle-ii](https://leetcode.com/problems/minimum-area-rectangle-ii/)|[minimum-area-rectangle-ii](https://leetcode-cn.com/problems/minimum-area-rectangle-ii/)|Medium+|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/geometry/MinimumAreaRectangleII.java)|52.63% 100.00%|Geometry|
+|1401|[circle-and-rectangle-overlapping](https://leetcode.com/problems/circle-and-rectangle-overlapping/)|[circle-and-rectangle-overlapping](https://leetcode-cn.com/problems/circle-and-rectangle-overlapping/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/geometry/CircleAndRectangleOverlapping.java)|100.00% 100.00%|Geometry|
+
+### Tree
+暂无总结
+
+|题号|题目（官网）|题目（中国）|难度|代码|结果|标签|
+|---|---|---|---|---|---|---|
+|0589|[n-ary-tree-preorder-traversal](https://leetcode.com/problems/n-ary-tree-preorder-traversal/)|[n-ary-tree-preorder-traversal](https://leetcode-cn.com/problems/n-ary-tree-preorder-traversal/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/tree/NaryTreePreorderTraversal.java)|100.00% 17.07%|Tree|
+
+### String Match
+暂无总结
+
+|题号|题目（官网）|题目（中国）|难度|代码|结果|标签|
+|---|---|---|---|---|---|---|
+|0758|[bold-words-in-string](https://leetcode.com/problems/bold-words-in-string/)|[bold-words-in-string](https://leetcode-cn.com/problems/bold-words-in-string/)|Easy +|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/stringmatch/BoldWordsInString.java)|96.18% 100.00%|String Match|
+
+### Details
+暂无总结
+
+|题号|题目（官网）|题目（中国）|难度|代码|结果|标签|
+|---|---|---|---|---|---|---|
+|1360|[number-of-days-between-two-dates](https://leetcode.com/problems/number-of-days-between-two-dates/)|[number-of-days-between-two-dates](https://leetcode-cn.com/problems/number-of-days-between-two-dates/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/details/NumberOfDaysBetweenTwoDates.java)|100% 100%|Details|
+
+### Greatest Common Divisor
+暂无总结
+
+|题号|题目（官网）|题目（中国）|难度|代码|结果|标签|
+|---|---|---|---|---|---|---|
+|1071|[greatest-common-divisor-of-strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/)|[greatest-common-divisor-of-strings](https://leetcode-cn.com/problems/greatest-common-divisor-of-strings/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/gcd/GreatestCommonDivisorOfStrings.java)|97.81% 100.00%|Greatest Common Divisor|
+
+### Concurrency
+暂无总结
+
+|题号|题目（官网）|题目（中国）|难度|代码|结果|标签|
+|---|---|---|---|---|---|---|
+|1114|[print-in-order](https://leetcode.com/problems/print-in-order/)|[print-in-order](https://leetcode-cn.com/problems/print-in-order/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/concurrency/PrintInOrder.java)|100% 100%|Concurrency|
+
+### Recursion
+暂无总结
+
+|题号|题目（官网）|题目（中国）|难度|代码|结果|标签|
+|---|---|---|---|---|---|---|
 

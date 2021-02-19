@@ -1,4 +1,4 @@
-# 定义
+## 定义
 
 **链表**不需要连续的内存空间，通过指针将一组零散的内存串联起来使用。内存块称为链表的**结点**，为了将结点串起来，结点除了存储数据data外，还需要记录下一个结点的地址，这个记录下一个结点地址的指针叫做**后继指针next**。（即结点由数据域和指针域构成）
 
@@ -9,7 +9,7 @@
 
 单链表只有一个方向，尾结点指向空地址。循环链表是一种特殊的单链表，即尾结点的后继指针指向头结点。
 
-双向链表比单链表多一个前驱指针prev，指向前面结点的地址。支持双向遍历。
+双向链表比单链表多一个前驱指针pre，指向前面结点的地址。支持双向遍历。
 
 当然相应的也有双向循环链表。
 
@@ -68,7 +68,7 @@ head 表示头结点指针，指向第一个结点，head == null表示是空链
 引入哨兵结点，不管链表是否为空，head指针都指向一个哨兵结点，我们把这种链表叫做带头链表。
 
 
-# 数组与链表的取舍
+## 数组与链表的取舍
 
 实际开发当中，不能简单的用复杂度分析来决定使用哪种数据结构。
 
@@ -80,7 +80,7 @@ head 表示头结点指针，指向第一个结点，head == null表示是空链
 对内存的使用要求苛刻应多使用数组，链表除了需要额外的存储空间去存放指针，频繁的插入删除还会导致频繁的内存申请和释放，造成内存随便，触发gc。
 
 
-## Java ArrayList
+### Java ArrayList
 
 ArrayList 最大的优势就是可以将很多数组操作的细节封装起来。还有一个优势支持动态扩容。
 
@@ -121,9 +121,9 @@ address = base_address + ( i * n + j) * type_size
 ```
 
 
-# 必须掌握的编程问题
+## 必须掌握的编程问题
 
-## 一些技巧
+### 一些技巧
 
 1. 理解指针或引用的含义
    含义：将某个变量（对象）赋值给指针（引用），实际上就是就是将这个变量（对象）的地址赋值给指针（引用）。
@@ -145,7 +145,61 @@ address = base_address + ( i * n + j) * type_size
 6. 多写多练，没有捷径
    孰能生巧，不管是什么算法，只有经过反复的练习，才能信手拈来。
 
+### 链表翻转
+
+#### 基本翻转
+
+首先把握好链表数据结构的三个关键指针 pre cur next。
+
+两个Node翻转这件事本身很简单，不要想复杂了，把要反转的节点`cur`指向其前一个节点`pre`就行，是很简单的操作（下2）。至此**翻转已经完成**。
+
+问题在于这样操作后，节点cure原本的指向cur.next会被覆盖，如果不存下来无法继续遍历链表，所以需要在操作前保存后一个原本的指针到next（下1），保存之后才能让指针继续前进并继续翻转（下3）。
+
+
+
+```java
+public ListNode reverseList(ListNode head) {
+  if (head == null || head.next == null)
+    return head;
+  ListNode pre = null, cur = head, next;
+
+  while (cur != null) {
+    next = cur.next;    // 1. save next pointer
+    cur.next = pre;     // 2. reverse current node
+    // 3. advance current and prev
+    pre = cur;
+    cur = next;
+
+  }
+  // from the last iteration, pre pointed to current node which does not have a next,
+  // it means pre is the new head
+  return pre;
+}
+```
+
+#### 递归解
+
+递归到链表的结尾处开始翻转。开始翻转时，可以认为当前节点cur之后的节点已经完成了翻转，需要做的是把cur.next节点的next指向cur，并把cur.next置空。
+
+```java
+public ListNode reverseListRecursive(ListNode cur) {
+  if (cur == null || cur.next == null)
+    return cur;
+
+  ListNode newHead = reverseListRecursive(cur.next);
+  //reverse current cur
+  cur.next.next = cur;
+  cur.next = null;
+  return newHead;
+}
+```
+
+
+
+
+
 java 反转链表的操作：
+
 ```
 Collections.reverse(list);
 ```

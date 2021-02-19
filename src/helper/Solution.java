@@ -22,7 +22,11 @@ public class Solution {
     }
 
     private String getFourDigitId() {
-        return String.format("%04d", Integer.valueOf(id));
+        try {
+            return String.format("%04d", Integer.valueOf(id));
+        } catch (NumberFormatException e) {
+            return id;
+        }
     }
 
     @Override

@@ -4,7 +4,7 @@ package unionfind;
 // Author : Fanlu Hai | https://github.com/Fanlu91/FanluLeetcode
 // Date   : 2020-01-01
 // Topic  : Union Find
-// Level  : medium
+// Level  : Medium
 // Other  :
 // Tips   :
 // Result : 100.00% 16.67%

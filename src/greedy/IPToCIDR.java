@@ -18,13 +18,13 @@ public class IPToCIDR {
     // 41.89% 23 ms 100.00%
     public List<String> ipToCIDR(String ip, int n) {
         long start = ipToLong(ip);
-        List<String> ans = new ArrayList();
+        List<String> ans = new ArrayList<>();
 
         while (n > 0) {
             int mask = Math.max(33 - bitLength(Long.lowestOneBit(start)),
                     33 - bitLength(n));
             ans.add(longToIP(start) + "/" + mask);
-            start += 1 << (32 - mask);
+            start += 1L << (32 - mask);
             n -= 1 << (32 - mask);
         }
         return ans;
@@ -33,7 +33,7 @@ public class IPToCIDR {
     private long ipToLong(String ip) {
         long ans = 0;
         for (String x : ip.split("\\.")) {
-            ans = 256 * ans + Integer.valueOf(x);
+            ans = 256 * ans + Integer.parseInt(x);
         }
         return ans;
     }
@@ -55,13 +55,23 @@ public class IPToCIDR {
     }
 
     // 100.00% 2 ms 100.00%
+
+    /**
+     *
+     * ip 地址本身就是一个32位的二进制数
+     * 题目描述中n 小于1000，所以使用32位的int表示地址即可，即使计算过程中高位溢出，也不影响低位的运算（0，1判断）。
+     * @param ip
+     * @param n
+     * @return
+     */
     public List<String> ipToCIDR1(String ip, int n) {
 //        public List<String> ipToCIDR (String ip,int n){
         int start = toInt(ip);//将ip转化为整数
         List<String> ans = new ArrayList<>();
         while (n > 0) {
             int trailingZeros = Integer.numberOfTrailingZeros(start);
-            int mask = 0,bitsInCIDR = 1;
+            System.out.println(trailingZeros);
+            int mask = 0, bitsInCIDR = 1;
             //计算mask
             while (bitsInCIDR < n && mask < trailingZeros) {
                 bitsInCIDR <<= 1;
