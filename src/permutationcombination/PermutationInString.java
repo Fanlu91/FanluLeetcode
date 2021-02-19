@@ -1,4 +1,4 @@
-package slidingwindow;
+package permutationcombination;
 
 // Source : https://leetcode.com/problems/permutation-in-string/
 // Id     : 567

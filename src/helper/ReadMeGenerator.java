@@ -57,19 +57,20 @@ public class ReadMeGenerator {
             put("binarytree", "Binary Tree");
             put("matrix", "Matrix");
             put("morristraversal", "Morris Traversal");
+            put("permutationcombination", "Permutation & Combination");
         }
     };
 
     final public static String readme = String.join("\n",
             "# FanluLeetcode ",
             "",
-            "Leetcode 解题记录。根据题目的标签进行了题目的归档和解题方法总结。",
-            "- 题号： 四位数字方便搜索定位",
+            "Leetcode 解题记录。根据题目的场景/标签归档，并以此位单位归纳总结。",
+            "- 题号：四位数字方便搜索定位。",
             "- 总结：当前标签/主题相关的理论知识及解题套路和心得总结",
             "- 地址：包括leetcode.com 和 leetcode-cn.com",
-            "- 难度：作者对题目难度的定义，有明显差距的会在官方给定难度等级之上通过`+`,`-`进行标记",
-            "- 代码：`Java`解法的代码，一般会包含最符合题意的解及效率最高解。并会给出每种解的排名数据反馈",
-            "- 结果：最优解的排名反馈数据",
+            "- 难度：作者对题目难度的定义，会在官方给定难度等级之上通过`+`,`-`进行标记",
+            "- 代码：`Java`解法的代码，一般会包含最符合题意的解及效率最高解。并给出每种解的提交数据反馈。",
+            "- 结果：最优解的提交反馈数据",
             "- 标签：相关标签，一般是最优或者最直观解法使用的算法思想",
             " ",
             " ",
@@ -124,7 +125,7 @@ public class ReadMeGenerator {
                 File readmeFile2 = new File(o2.toAbsolutePath() + "/README.md");
                 if (readmeFile2.length() != readmeFile1.length())
                     return (int) (readmeFile2.length() - readmeFile1.length());
-                else{
+                else {
                     return Objects.requireNonNull(d2.listFiles()).length - Objects.requireNonNull(d1.listFiles()).length;
                 }
             }

@@ -14,14 +14,13 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class SpiralMatrix {
-    // 0 r , 1 d , 2 l , 3 u
-    int direction = 0;
 
-    // 100.00% 99.54%
+    // O(M*N)
+    // 100.00% 85.61%
     public List<Integer> spiralOrder(int[][] matrix) {
-
+        int direction = 0;
         List<Integer> res = new LinkedList<>();
-        if (matrix.length == 0)
+        if (matrix == null || matrix.length == 0 || matrix[0].length == 0)
             return res;
 
         int row = 0, column = 0, preRow = 0, preColumn = 0;
@@ -58,6 +57,43 @@ public class SpiralMatrix {
         }
         return res;
     }
+
+    /**
+     * 不使用额外的visited
+     *
+     * 而是不断缩小上下左右边界遍历
+     * @param matrix
+     * @return
+     */
+    // 100.00% 93.27%
+    public List<Integer> spiralOrderO1(int[][] matrix) {
+//    public List<Integer> spiralOrder(int[][] matrix) {
+        List<Integer> res = new LinkedList<>();
+        if (matrix == null || matrix.length == 0 || matrix[0].length == 0)
+            return res;
+        int l = 0, r = matrix[0].length - 1, t = 0, b = matrix.length - 1, x = 0;
+
+        while (true) {
+            for (int i = l; i <= r; i++)
+                res.add(matrix[t][i]); // left to right.
+            if (++t > b)
+                break;
+            for (int i = t; i <= b; i++)
+                res.add(matrix[i][r]); // top to bottom.
+            if (l > --r)
+                break;
+            for (int i = r; i >= l; i--)
+                res.add(matrix[b][i]); // right to left.
+            if (t > --b)
+                break;
+            for (int i = b; i >= t; i--)
+                res.add(matrix[i][l]); // bottom to top.
+            if (++l > r)
+                break;
+        }
+        return res;
+    }
+
 
     public static void main(String[] args) {
         SpiralMatrix s = new SpiralMatrix();
