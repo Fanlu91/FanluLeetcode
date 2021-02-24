@@ -4,8 +4,10 @@ package linkedlist;
 // Author : Fanlu Hai | https://github.com/Fanlu91/FanluLeetcode
 // Date   : 2019-05-29
 // Topic  : Linked list
+// Level  : Easy-
 // Other  : This is certainly not the most exciting problem I guess. Learned something from it though.
 // Tips   :
+// Links  :
 // Result : 100% 100%
 
 public class DeleteNodeInALinkedList {

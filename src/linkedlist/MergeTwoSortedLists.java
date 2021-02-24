@@ -3,10 +3,11 @@ package linkedlist;
 // Id     : 21
 // Author : Fanlu Hai | https://github.com/Fanlu91/FanluLeetcode
 // Date   : 2019-05-29
-// Topic  : Linked List
+// Topic  : Linked List, Recursion
 // Level  : Easy
 // Other  :
 // Tips   :
+// Links  : Must
 // Result : 100.00% 79.05%
 
 public class MergeTwoSortedLists {
@@ -19,28 +20,24 @@ public class MergeTwoSortedLists {
             return l2;
         if (l2 == null)
             return l1;
-
-        ListNode sentinel = new ListNode(-1);
-        ListNode tmp = sentinel;
+        ListNode sentinel = new ListNode(-1), cur = sentinel;
         while (true) {
             if (l1.val < l2.val) {
-                tmp.next = l1;
-                tmp = tmp.next;
-                if (l1.next != null) { // if l1 is the last node
-                    l1 = l1.next;
-                } else {
-                    tmp.next = l2;
+                cur.next = l1;
+                cur = l1;
+                if (l1.next == null) { // if l1 is the last node
+                    cur.next = l2;
                     break;
                 }
+                l1 = l1.next;
             } else {
-                tmp.next = l2;
-                tmp = tmp.next;
-                if (l2.next != null) {
-                    l2 = l2.next;
-                } else {
-                    tmp.next = l1;
+                cur.next = l2;
+                cur = l2;
+                if (l2.next == null) {
+                    cur.next = l1;
                     break;
                 }
+                l2 = l2.next;
             }
         }
         return sentinel.next;
@@ -52,13 +49,14 @@ public class MergeTwoSortedLists {
             return l2;
         if (l2 == null)
             return l1;
+
         if (l1.val < l2.val) {
             l1.next = mergeTwoLists(l1.next, l2);
             return l1;
+        } else {
+            l2.next = mergeTwoLists(l1, l2.next);
+            return l2;
         }
-
-        l2.next = mergeTwoLists(l1, l2.next);
-        return l2;
     }
 
     class ListNode {

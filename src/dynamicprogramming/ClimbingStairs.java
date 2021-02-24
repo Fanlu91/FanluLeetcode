@@ -58,8 +58,8 @@ public class ClimbingStairs {
      */
     // 100.00% 5.26%
     public int climbStairs(int n) {
-        if (n <= 1) {
-            return n;
+        if (n < 2) {
+            return 1;
         }
 
         int a = 1, b = 2;

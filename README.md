@@ -1,12 +1,12 @@
 # FanluLeetcode 
 
-Leetcode 解题记录。根据题目的标签进行了题目的归档和解题方法总结。
-- 题号： 四位数字方便搜索定位
+Leetcode 解题记录。根据题目的场景/标签归档，并以此位单位归纳总结。
+- 题号：四位数字方便搜索定位。
 - 总结：当前标签/主题相关的理论知识及解题套路和心得总结
 - 地址：包括leetcode.com 和 leetcode-cn.com
-- 难度：作者对题目难度的定义，有明显差距的会在官方给定难度等级之上通过`+`,`-`进行标记
-- 代码：`Java`解法的代码，一般会包含最符合题意的解及效率最高解。并会给出每种解的排名数据反馈
-- 结果：最优解的排名反馈数据
+- 难度：作者对题目难度的定义，会在官方给定难度等级之上通过`+`,`-`进行标记
+- 代码：`Java`解法的代码，一般会包含最符合题意的解及效率最高解。并给出每种解的提交数据反馈。
+- 结果：最优解的提交反馈数据
 - 标签：相关标签，一般是最优或者最直观解法使用的算法思想
  
  
@@ -20,15 +20,15 @@ README 文件通过[此类](https://github.com/Fanlu91/FanluLeetcode/blob/master
 |---|---|---|---|---|---|---|
 |Offer22|[lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof](https://leetcode.com/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/)|[lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof](https://leetcode-cn.com/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/linkedlist/KthFromEnd.java)|100.00% 85.78%|Double Pointers|
 |0002|[add-two-numbers](https://leetcode.com/problems/add-two-numbers/)|[add-two-numbers](https://leetcode-cn.com/problems/add-two-numbers/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/linkedlist/AddTwoNumbers.java)|94.51% 90.73%|Linked list|
-|0021|[merge-two-sorted-lists](https://leetcode.com/problems/merge-two-sorted-lists/)|[merge-two-sorted-lists](https://leetcode-cn.com/problems/merge-two-sorted-lists/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/linkedlist/MergeTwoSortedLists.java)|100.00% 79.05%|Linked List|
+|0021|[merge-two-sorted-lists](https://leetcode.com/problems/merge-two-sorted-lists/)|[merge-two-sorted-lists](https://leetcode-cn.com/problems/merge-two-sorted-lists/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/linkedlist/MergeTwoSortedLists.java)|100.00% 79.05%|Linked List, Recursion|
 |0083|[remove-duplicates-from-sorted-list](https://leetcode.com/problems/remove-duplicates-from-sorted-list/)|[remove-duplicates-from-sorted-list](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/)|null|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/linkedlist/RemoveDuplicatesFromSortedList.java)|100.00% 99.97%|Linked list|
 |0092|[reverse-linked-list-ii](https://leetcode.com/problems/reverse-linked-list-ii/)|[reverse-linked-list-ii](https://leetcode-cn.com/problems/reverse-linked-list-ii/)|null|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/linkedlist/ReverseLinkedListII.java)|100.00% 100.00%|Linked list|
 |0109|[convert-sorted-list-to-binary-search-tree](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/)|[convert-sorted-list-to-binary-search-tree](https://leetcode-cn.com/problems/convert-sorted-list-to-binary-search-tree/)|null|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/linkedlist/ConvertSortedListToBinarySearchTree.java)|97.35% 100.00%|Linked list , Binary Tree|
 |0142|[linked-list-cycle-ii](https://leetcode.com/problems/linked-list-cycle-ii/)|[linked-list-cycle-ii](https://leetcode-cn.com/problems/linked-list-cycle-ii/)|null|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/linkedlist/PalindromeLinkedList.java)|96.51% 99.89%|Linked list|
-|0160|[intersection-of-two-linked-lists](https://leetcode.com/problems/intersection-of-two-linked-lists/)|[intersection-of-two-linked-lists](https://leetcode-cn.com/problems/intersection-of-two-linked-lists/)|null|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/linkedlist/IntersectionOfTwoLinkedLists.java)|97.33%  53.55%|Linked list|
+|0160|[intersection-of-two-linked-lists](https://leetcode.com/problems/intersection-of-two-linked-lists/)|[intersection-of-two-linked-lists](https://leetcode-cn.com/problems/intersection-of-two-linked-lists/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/linkedlist/IntersectionOfTwoLinkedLists.java)|100.00%  22.65%|Linked list|
 |0203|[remove-linked-list-elements](https://leetcode.com/problems/remove-linked-list-elements/)|[remove-linked-list-elements](https://leetcode-cn.com/problems/remove-linked-list-elements/)|null|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/linkedlist/RemoveLinkedListElements.java)|99.37% 99.72%|Linked list|
 |0206|[reverse-linked-list](https://leetcode.com/problems/reverse-linked-list/)|[reverse-linked-list](https://leetcode-cn.com/problems/reverse-linked-list/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/linkedlist/ReverseLinkedList.java)|100.00% 99.87%|Double Pointers, Recursive|
-|0237|[delete-node-in-a-linked-list](https://leetcode.com/problems/delete-node-in-a-linked-list/)|[delete-node-in-a-linked-list](https://leetcode-cn.com/problems/delete-node-in-a-linked-list/)|null|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/linkedlist/DeleteNodeInALinkedList.java)|100% 100%|Linked list|
+|0237|[delete-node-in-a-linked-list](https://leetcode.com/problems/delete-node-in-a-linked-list/)|[delete-node-in-a-linked-list](https://leetcode-cn.com/problems/delete-node-in-a-linked-list/)|Easy-|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/linkedlist/DeleteNodeInALinkedList.java)|100% 100%|Linked list|
 |0445|[add-two-numbers-ii](https://leetcode.com/problems/add-two-numbers-ii/)|[add-two-numbers-ii](https://leetcode-cn.com/problems/add-two-numbers-ii/)|null|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/linkedlist/AddTwoNumbersII.java)|99.96% 74.91%|Linked list|
 |0707|[design-linked-list](https://leetcode.com/problems/design-linked-list/)|[design-linked-list](https://leetcode-cn.com/problems/design-linked-list/)|null|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/linkedlist/MyLinkedList.java)|80.06% 88.98%|Linked list|
 |0725|[split-linked-list-in-parts](https://leetcode.com/problems/split-linked-list-in-parts/)|[split-linked-list-in-parts](https://leetcode-cn.com/problems/split-linked-list-in-parts/)|null|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/linkedlist/SplitLinkedListInParts.java)|100.00%  100.00%|Linked list|
@@ -236,6 +236,25 @@ README 文件通过[此类](https://github.com/Fanlu91/FanluLeetcode/blob/master
 |0637|[average-of-levels-in-binary-tree](https://leetcode.com/problems/average-of-levels-in-binary-tree/)|[average-of-levels-in-binary-tree](https://leetcode-cn.com/problems/average-of-levels-in-binary-tree/)|null|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/breadthfirstsearch/AverageOfLevelsInBinaryTree.java)|99.18% 24.76%|Breadth First Search|
 |0752|[open-the-lock](https://leetcode.com/problems/open-the-lock/)|[open-the-lock](https://leetcode-cn.com/problems/open-the-lock/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/breadthfirstsearch/OpenTheLock.java)|100% 83.33%|Breadth First Search|
 
+### Permutation & Combination
+[主题总结](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/permutationcombination/README.md)
+
+|题号|题目（官网）|题目（中国）|难度|代码|结果|标签|
+|---|---|---|---|---|---|---|
+|0031|[next-permutation](https://leetcode.com/problems/next-permutation/)|[next-permutation](https://leetcode-cn.com/problems/next-permutation/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/permutationcombination/NextPermutation.java)|100% 66%|Greedy|
+|0039|[combination-sum](https://leetcode.com/problems/combination-sum/)|[combination-sum](https://leetcode-cn.com/problems/combination-sum/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/permutationcombination/CombinationSum.java)|77.47% 86.63%|combination|
+|0040|[combination-sum-ii](https://leetcode.com/problems/combination-sum-ii/)|[combination-sum-ii](https://leetcode-cn.com/problems/combination-sum-ii/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/permutationcombination/CombinationSumII.java)|40.55% 53.43%|combination|
+|0046|[permutations](https://leetcode.com/problems/permutations/)|[permutations](https://leetcode-cn.com/problems/permutations/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/permutationcombination/Permutations.java)|96.75% 5.14%|Backtracking|
+|0047|[permutations-ii](https://leetcode.com/problems/permutations-ii/)|[permutations-ii](https://leetcode-cn.com/problems/permutations-ii/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/permutationcombination/PermutationsII.java)|100.00% 17.50%|Backtracking|
+|0077|[combinations](https://leetcode.com/problems/combinations/)|[combinations](https://leetcode-cn.com/problems/combinations/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/permutationcombination/Combinations.java)|93.17% 74.09%|Backtracking|
+|0078|[subsets](https://leetcode.com/problems/subsets/)|[subsets](https://leetcode-cn.com/problems/subsets/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/permutationcombination/Subsets.java)|82.14% 5.24%|combination|
+|0090|[subsets-ii](https://leetcode.com/problems/subsets-ii/)|[subsets-ii](https://leetcode-cn.com/problems/subsets-ii/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/permutationcombination/SubsetsII.java)|100.00% 24.48%|combination|
+|lcof38|[zi-fu-chuan-de-pai-lie-lcof](https://leetcode.com/problems/zi-fu-chuan-de-pai-lie-lcof/)|[zi-fu-chuan-de-pai-lie-lcof](https://leetcode-cn.com/problems/zi-fu-chuan-de-pai-lie-lcof/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/permutationcombination/StringPermutation.java)|99.28% 49.61%|Backtracking|
+|0060|[permutation-sequence](https://leetcode.com/problems/permutation-sequence/)|[permutation-sequence](https://leetcode-cn.com/problems/permutation-sequence/)|Hard|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/permutationcombination/PermutationSequence.java)|57.64% 43.94%|Math|
+|0216|[combination-sum-iii](https://leetcode.com/problems/combination-sum-iii/)|[combination-sum-iii](https://leetcode-cn.com/problems/combination-sum-iii/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/permutationcombination/CombinationSumIII.java)|46.43% 42.73%|Backtracking|
+|0377|[combination-sum-iv](https://leetcode.com/problems/combination-sum-iv/)|[combination-sum-iv](https://leetcode-cn.com/problems/combination-sum-iv/)|Medium-|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/permutationcombination/CombinationSumIV.java)|99.56% 51.40%|DP|
+|0567|[permutation-in-string](https://leetcode.com/problems/permutation-in-string/)|[permutation-in-string](https://leetcode-cn.com/problems/permutation-in-string/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/permutationcombination/PermutationInString.java)|58.10% 18.75%|Sliding Window|
+
 ### Graph
 [主题总结](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/graph/README.md)
 
@@ -249,6 +268,7 @@ README 文件通过[此类](https://github.com/Fanlu91/FanluLeetcode/blob/master
 |题号|题目（官网）|题目（中国）|难度|代码|结果|标签|
 |---|---|---|---|---|---|---|
 |0054|[spiral-matrix](https://leetcode.com/problems/spiral-matrix/)|[spiral-matrix](https://leetcode-cn.com/problems/spiral-matrix/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/matrix/SpiralMatrix.java)|100.00% 99.54%|Matrix|
+|0200|[number-of-islands](https://leetcode.com/problems/number-of-islands/)|[number-of-islands](https://leetcode-cn.com/problems/number-of-islands/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/matrix/NumberOfIslands.java)|91.40% 15.30%|dfs|
 |0289|[game-of-life](https://leetcode.com/problems/game-of-life/)|[game-of-life](https://leetcode-cn.com/problems/game-of-life/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/matrix/GameOfLife.java)|100.00% 91.85%|Matrix|
 |0695|[max-area-of-island](https://leetcode.com/problems/max-area-of-island/)|[max-area-of-island](https://leetcode-cn.com/problems/max-area-of-island/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/matrix/MaxAreaOfIsland.java)|82.11% 91.14%|Matrix, Back tracking|
 |0766|[toeplitz-matrix](https://leetcode.com/problems/toeplitz-matrix/)|[toeplitz-matrix](https://leetcode-cn.com/problems/toeplitz-matrix/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/matrix/ToeplitzMatrix.java)|100.00% 73.60%|Matrix|
@@ -306,6 +326,9 @@ README 文件通过[此类](https://github.com/Fanlu91/FanluLeetcode/blob/master
 |0067|[add-binary](https://leetcode.com/problems/add-binary/)|[add-binary](https://leetcode-cn.com/problems/add-binary/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/string/AddBinary.java)|97.15% 5.12%|String|
 |0125|[valid-palindrome](https://leetcode.com/problems/valid-palindrome/)|[valid-palindrome](https://leetcode-cn.com/problems/valid-palindrome/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/string/ValidPalindrome.java)|100% 100%|String|
 |0205|[isomorphic-strings](https://leetcode.com/problems/isomorphic-strings/)|[isomorphic-strings](https://leetcode-cn.com/problems/isomorphic-strings/)|Easy-|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/string/IsomorphicStrings.java)|81.95% 34.68%|String|
+|0344|[reverse-string](https://leetcode.com/problems/reverse-string/)|[reverse-string](https://leetcode-cn.com/problems/reverse-string/)|Easy-|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/string/ReverseString.java)|100.00% 18.74%|String|
+|0415|[add-strings](https://leetcode.com/problems/add-strings/)|[add-strings](https://leetcode-cn.com/problems/add-strings/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/string/AddStrings.java)|99.62% 26.75%|Math|
+|0541|[reverse-string-ii](https://leetcode.com/problems/reverse-string-ii/)|[reverse-string-ii](https://leetcode-cn.com/problems/reverse-string-ii/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/string/ReverseStringII.java)|100.00% 25.50%|String|
 |0680|[valid-palindrome-ii](https://leetcode.com/problems/valid-palindrome-ii/)|[valid-palindrome-ii](https://leetcode-cn.com/problems/valid-palindrome-ii/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/string/ValidPalindromeII.java)|99.68% 94.44%|String|
 
 ### Two Pointers
@@ -375,15 +398,6 @@ README 文件通过[此类](https://github.com/Fanlu91/FanluLeetcode/blob/master
 |0023|[merge-k-sorted-lists](https://leetcode.com/problems/merge-k-sorted-lists/)|[merge-k-sorted-lists](https://leetcode-cn.com/problems/merge-k-sorted-lists/)|Hard|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/divideandconquer/MergeKSortedLists.java)|84.07% 48.81%|Divide & Conquer|
 |0215|[kth-largest-element-in-an-array](https://leetcode.com/problems/kth-largest-element-in-an-array/)|[kth-largest-element-in-an-array](https://leetcode-cn.com/problems/kth-largest-element-in-an-array/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/divideandconquer/KthLargestElementInAnArray.java)|99.87% 5.15%|Divide & Conquer, Heap|
 |0241|[different-ways-to-add-parentheses](https://leetcode.com/problems/different-ways-to-add-parentheses/)|[different-ways-to-add-parentheses](https://leetcode-cn.com/problems/different-ways-to-add-parentheses/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/divideandconquer/DifferentWaysToAddParentheses.java)|100% 100%|Divide & Conquer|
-
-### Permutation
-暂无总结
-
-|题号|题目（官网）|题目（中国）|难度|代码|结果|标签|
-|---|---|---|---|---|---|---|
-|0046|[permutations](https://leetcode.com/problems/permutations/)|[permutations](https://leetcode-cn.com/problems/permutations/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/permutation/Permutations.java)|77.46% 5.02%|Backtracking|
-|0047|[permutations-ii](https://leetcode.com/problems/permutations-ii/)|[permutations-ii](https://leetcode-cn.com/problems/permutations-ii/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/permutation/PermutationsII.java)|100.00% 17.50%|Backtracking|
-|0567|[permutation-in-string](https://leetcode.com/problems/permutation-in-string/)|[permutation-in-string](https://leetcode-cn.com/problems/permutation-in-string/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/permutation/PermutationInString.java)|58.10% 18.75%|Sliding Window|
 
 ### Sliding Window
 暂无总结

@@ -4,6 +4,11 @@
 
 第一个和最后一个结点是比较特殊的，分别是头结点和尾结点。头结点用来记录链表的基地址；尾结点的后继指针指向空地址null。
 
+```java
+cur.next = node; // 建立指向 
+cur = node; // 移动指针
+```
+考察对引用（指针）的理解。
 
 ## Singly/Doubly/Circular
 
@@ -46,8 +51,6 @@ A sentinel node is a dummy node that goes at the front of a list.
 In a doubly-linked list, the sentinel node points to the first and last elements of the list. 
 
 单链表在插入和删除时，需要修改**前驱结点的后继指针**，这就形成了“邻居依赖”，链表中第一个元素没有前驱结点，如果没有特殊处理在插入和删除第一个结点时，就会出错。
-
-
 
 链表 第一个结点及最后一个结点的插入和删除操作都要做特殊处理
 
