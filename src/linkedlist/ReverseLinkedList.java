@@ -7,8 +7,8 @@ package linkedlist;
 // Topic  : Double Pointers, Recursive
 // Level  : Easy
 // Other  :
-// Tips   :
-// Links  : Must
+// Tips   : Must
+// Links  :
 // Result : 100.00% 99.87%
 
 public class ReverseLinkedList {

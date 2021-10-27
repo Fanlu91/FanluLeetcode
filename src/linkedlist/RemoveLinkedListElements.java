@@ -5,6 +5,7 @@ package linkedlist;
 // Author : Fanlu Hai | https://github.com/Fanlu91/FanluLeetcode
 // Date   : 2019-05-29
 // Topic  : Linked list
+// Level  : Easy-
 // Other  :
 // Tips   :
 // Result : 99.37% 99.72%
@@ -14,17 +15,11 @@ public class RemoveLinkedListElements {
         if (head == null)
             return null;
 
-        if (head.next == null) {
-            return head.val == val ? null : head;
-        }
-
-
         // use sentinel and its next as head
         ListNode sentinel = new ListNode(-1);
         sentinel.next = head;
 
         ListNode tmp = sentinel;
-
         while (tmp.next != null) {
             if (tmp.next.val == val) {
                 tmp.next = tmp.next.next;

@@ -108,7 +108,6 @@ public class AddTwoNumbers {
                 }
             }
         } else {
-
             if (l1 == null)
                 return l2;
             if (l2 == null)

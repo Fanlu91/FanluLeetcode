@@ -6,7 +6,7 @@ package linkedlist;
 // Topic  : Linked list
 // Level  : Easy-
 // Other  : This is certainly not the most exciting problem I guess. Learned something from it though.
-// Tips   :
+// Tips   : skip
 // Links  :
 // Result : 100% 100%
 

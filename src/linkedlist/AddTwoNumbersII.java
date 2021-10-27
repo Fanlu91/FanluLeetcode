@@ -7,6 +7,7 @@ import java.util.Stack;
 // Author : Fanlu Hai | https://github.com/Fanlu91/FanluLeetcode
 // Date   : 2019-06-04
 // Topic  : Linked list
+// Level  : Medium
 // Other  :
 // Tips   :
 // Result : 99.96% 74.91%
@@ -14,14 +15,8 @@ public class AddTwoNumbersII {
 
     // 70.60% 80.13%
     public ListNode addTwoNumbersOrigin(ListNode l1, ListNode l2) {
-        // below code did not save time
-        // but consumed more space
-        /**
-         if (l1 == null)
-         return l2;
-         if (l2 == null)
-         return l1;
-         **/
+        // below code did not save time but consumed more space
+
         Stack<Integer> s1 = new Stack();
         Stack<Integer> s2 = new Stack();
 

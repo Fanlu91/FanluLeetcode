@@ -5,29 +5,26 @@ package linkedlist;
 // Author : Fanlu Hai | https://github.com/Fanlu91/FanluLeetcode
 // Date   : 2019-05-31
 // Topic  : Linked list
-// Other  :
+// Level  : Medium
+// Other  : After 206
 // Tips   :
 // Result : 100.00% 100.00%
 
 public class ReverseLinkedListII {
 
     // 100.00% 100.00%
-    public ListNode reverseBetween(ListNode head, int m, int n) {
-
+    public ListNode reverseBetween(ListNode head, int left, int right) {
         // skip if there are less than two nodes of nothing to reverse.
-        if (head == null || head.next == null || n == m) {
+        if (head == null || head.next == null || right == left) {
             return head;
         }
-
-        //  keep track of the start of the list
-        ListNode preHead = new ListNode(-1);
-        preHead.next = head;
+        ListNode sentinel = new ListNode(-1);
+        sentinel.next = head;
 
         //  keep track of the node and its next node where reverse starts in order to link afterward
-        ListNode preReverseNode = preHead, firstReverseNode;
-        for (int i = 1; i < m; i++) {
+        ListNode preReverseNode = sentinel, firstReverseNode;
+        for (int i = 1; i < left; i++)
             preReverseNode = preReverseNode.next;
-        }
 
         ListNode cur, pre = null, next = null;
         cur = preReverseNode.next;
@@ -35,27 +32,55 @@ public class ReverseLinkedListII {
 
         // start to reverse
         // in order to do that between x nodes, we need to change "next pointer" x +1 times.
-        n = n - m + 1;
+        int n = right - left + 1;
         for (int i = 0; i < n; i++) {
-            // 1. save next pointer
             next = cur.next;
-            // 2. reverse current node
             cur.next = pre;
-            // 3. advance current and prev
+            pre = cur;
+            cur = next;
+        }
+        // preReverseNode is the node before reversed nodes
+        // firstReverseNode is the first node reversed which means it is the tail of the reversed link
+        preReverseNode.next = pre;
+        firstReverseNode.next = next;
+
+        return sentinel.next;
+    }
+
+
+    // 重新手写
+    public ListNode reverseBetween1(ListNode head, int left, int right) {
+//    public ListNode reverseBetween(ListNode head, int left, int right) {
+        if (head == null || head.next == null || right == left) {
+            return head;
+        }
+        ListNode sentinel = new ListNode(-1);
+        sentinel.next = head;
+
+        ListNode PreReverse = sentinel;
+        int size = right - left + 1;
+
+        while (left != 1) {
+            left--;
+            PreReverse = PreReverse.next;
+        }
+
+        ListNode firstReverseNode = PreReverse.next;
+        ListNode pre = null, cur = firstReverseNode, next = null;
+
+        while (size > 0) {
+            size--;
+            next = cur.next;
+            cur.next = pre;
             pre = cur;
             cur = next;
         }
 
-        // preReverseNode is the node before reversed nodes
-        // firstReverseNode is the first node reversed which means it is the tail of the reversed link
-        //
-        // after reversing using the function above
-        // pre points to the last node reversed which means it is the head of the reversed link
-        // next points to the node after reversed link
-        preReverseNode.next = pre;
         firstReverseNode.next = next;
+        PreReverse.next = pre;
 
-        return preHead.next;
+        return sentinel.next;
+
     }
 
     class ListNode {
