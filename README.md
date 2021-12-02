@@ -9,6 +9,8 @@ Leetcode 解题记录。根据题目的场景/标签归档，并以此位单位�
 - 结果：最优解的提交反馈数据
 - 标签：相关标签，一般是最优或者最直观解法使用的算法思想
  
+目前正在探索使用Obisidian整理题解。后面有成熟的实践后，会更新。
+ 
  
 ### Helper
 README 文件通过[此类](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/helper/ReadMeGenerator.java)生成。
@@ -410,6 +412,12 @@ README 文件通过[此类](https://github.com/Fanlu91/FanluLeetcode/blob/master
 |0076|[minimum-window-substring](https://leetcode.com/problems/minimum-window-substring/)|[minimum-window-substring](https://leetcode-cn.com/problems/minimum-window-substring/)|Hard|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/slidingwindow/MinimumWindowSubstring.java)|42.34% 13.33%|Sliding Window|
 |0239|[sliding-window-maximum](https://leetcode.com/problems/sliding-window-maximum/)|[sliding-window-maximum](https://leetcode-cn.com/problems/sliding-window-maximum/)|Hard|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/slidingwindow/SlidingWindowMaximum.java)|39.53% 6.67%|Sliding Window|
 |0424|[longest-repeating-character-replacement](https://leetcode.com/problems/longest-repeating-character-replacement/)|[longest-repeating-character-replacement](https://leetcode-cn.com/problems/longest-repeating-character-replacement/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/slidingwindow/LongestRepeatingCharacterReplacement.java)|33.67% 100.00%|Sliding Window|
+
+### null
+暂无总结
+
+|题号|题目（官网）|题目（中国）|难度|代码|结果|标签|
+|---|---|---|---|---|---|---|
 
 ### Greedy
 暂无总结
