@@ -14,8 +14,6 @@ public class MergeTwoSortedLists {
     // 100.00% 56.90%
     public ListNode mergeTwoLists2(ListNode l1, ListNode l2) {
 //    public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
-        if (l1 == null && l2 == null)
-            return null;
         if (l1 == null)
             return l2;
         if (l2 == null)
@@ -53,10 +51,45 @@ public class MergeTwoSortedLists {
         if (l1.val < l2.val) {
             l1.next = mergeTwoLists(l1.next, l2);
             return l1;
-        } else {
+        } else { // 这里可以省掉else，不过带上代码可读性更强
             l2.next = mergeTwoLists(l1, l2.next);
             return l2;
         }
+    }
+
+    // rewrite
+    public ListNode mergeTwoLists3(ListNode l1, ListNode l2) {
+//    public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
+        if (l1 == null)
+            return l2;
+        if (l2 == null)
+            return l1;
+
+/*        ListNode sentinel = new ListNode(-1), cur = null;
+        if (l1.val > l2.val) {
+            cur = l2;
+            l2 = l2.next;
+        } else {
+            cur = l1;
+            l1 = l1.next;
+        }
+        sentinel.next = cur;*/
+
+        // cur = sentinel 就替代了上面的代码
+        ListNode sentinel = new ListNode(-1), cur = sentinel;
+
+        while (l1 != null && l2 != null) {
+            if (l1.val > l2.val) {
+                cur.next = l2;
+                l2 = l2.next;
+            } else {
+                cur.next = l1;
+                l1 = l1.next;
+            }
+            cur = cur.next;
+        }
+        cur.next = l1 == null ? l2 : l1;
+        return sentinel.next;
     }
 
     class ListNode {

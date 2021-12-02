@@ -57,15 +57,15 @@ public class ReverseLinkedListII {
         ListNode sentinel = new ListNode(-1);
         sentinel.next = head;
 
-        ListNode PreReverse = sentinel;
+        ListNode preReverse = sentinel;
         int size = right - left + 1;
 
         while (left != 1) {
             left--;
-            PreReverse = PreReverse.next;
+            preReverse = preReverse.next;
         }
 
-        ListNode firstReverseNode = PreReverse.next;
+        ListNode firstReverseNode = preReverse.next;
         ListNode pre = null, cur = firstReverseNode, next = null;
 
         while (size > 0) {
@@ -77,10 +77,9 @@ public class ReverseLinkedListII {
         }
 
         firstReverseNode.next = next;
-        PreReverse.next = pre;
+        preReverse.next = pre;
 
         return sentinel.next;
-
     }
 
     class ListNode {

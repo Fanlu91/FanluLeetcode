@@ -81,9 +81,8 @@ In a doubly-linked list, the sentinel node points to the first and last elements
 对内存的使用要求苛刻应多使用数组，链表除了需要额外的存储空间去存放指针，频繁的插入删除还会导致频繁的内存申请和释放，造成内存随便，触发gc。
 
 
-## 必须掌握的编程问题
 
-### 一些技巧
+## 一些技巧
 
 1. 理解指针或引用的含义
    含义：将某个变量（对象）赋值给指针（引用），实际上就是就是将这个变量（对象）的地址赋值给指针（引用）。
@@ -104,6 +103,8 @@ In a doubly-linked list, the sentinel node points to the first and last elements
 5. 画图举例，辅助思考
 6. 多写多练，没有捷径
    孰能生巧，不管是什么算法，只有经过反复的练习，才能信手拈来。
+
+
 
 ### 链表翻转
 
@@ -137,6 +138,8 @@ public ListNode reverseList(ListNode head) {
 }
 ```
 
+
+
 #### 递归解
 
 递归到链表的结尾处开始翻转。开始翻转时，可以认为当前节点cur之后的节点已经完成了翻转，需要做的是把cur.next节点的next指向cur，并把cur.next置空。
@@ -168,9 +171,11 @@ Collections.reverse(list);
 
 
 
-单链表反
+## 必须掌握的链表问题清单
 
-转链表中环的检测
+单链表翻转  206 92
+
+转链表中环的检测 （双指针）
 
 两个有序的链表合并
 

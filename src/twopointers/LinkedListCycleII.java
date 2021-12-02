@@ -5,7 +5,7 @@ package twopointers;
 // Date   : 2019-05-29
 // Topic  : Two Pointers
 // Level  : Medium
-// Other  :
+// Other  : After 141
 // Tips   :
 // Result : 100.00% 5.04%
 
@@ -22,16 +22,15 @@ public class LinkedListCycleII {
         ListNode fast = head, slow = head;
 
         while (fast != null && fast.next != null) {
-
             fast = fast.next.next;
             slow = slow.next;
 
             if (fast == slow) {
                 // by now, fast has run twice the distance than slow
                 // the distance consist :
-                // a. head to the start point of cycle
-                // b. start to current point
-                // c. extra distance fast run
+                // a = head to the start point of cycle
+                // b = start to current point
+                // c = extra distance fast run
                 // a + b + c= 2 (a+b)
 
                 // lets assume d = c - b, which represents the extra distance fast run till the start of cycle

@@ -73,6 +73,8 @@ public class ReadMeGenerator {
             "- 结果：最优解的提交反馈数据",
             "- 标签：相关标签，一般是最优或者最直观解法使用的算法思想",
             " ",
+            "目前正在探索使用Obisidian整理题解。后面有成熟的实践，将会更新。",
+            " ",
             " ",
             "");
 
@@ -169,20 +171,33 @@ public class ReadMeGenerator {
 
             List<Solution> solutionList = new LinkedList<>();
             Files.walk(packagePath).filter(Files::isRegularFile)
-                    .filter(f -> f.toString().endsWith(".java")).forEach(path -> {
+                    .filter(f -> f.toString().endsWith(".java")).forEach(filePath -> {
+                String fileName = filePath.getFileName().toString().substring(0, filePath.getFileName().toString().length() - 5);
+                File obisidianNote = new File(filePath.toAbsolutePath().toString().replace(".java", ".md"));
+                /**
+                 * 如果没有obisidianNote， 创建文件
+                 */
+//                System.out.println(obisidianNote.toString());
+                if (!obisidianNote.exists()) {
+                    try {
+                        obisidianNote.createNewFile();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
                 Solution solution = new Solution();
                 solution.solutionPath = "[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src"
-                        + path.toString().split("src")[1].trim() + ")";
+                        + filePath.toString().split("src")[1].trim() + ")";
 
                 List<String> list = null;
                 try {
-                    list = Files.lines(path)
+                    list = Files.lines(filePath)
                             .filter(line -> line.matches("^//[ ].*"))
                             .collect(Collectors.toList());
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
-                System.out.println("processing  " + path);
+                System.out.println("processing  " + filePath);
                 assert list != null;
                 list.forEach(line -> {
                             if (line.contains("Id"))

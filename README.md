@@ -13,13 +13,6 @@ Leetcode 解题记录。根据题目的场景/标签归档，并以此位单位�
 ### Helper
 README 文件通过[此类](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/helper/ReadMeGenerator.java)生成。
 
-### Heap
-[主题总结](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/heap/README.md)
-
-|题号|题目（官网）|题目（中国）|难度|代码|结果|标签|
-|---|---|---|---|---|---|---|
-|0703|[kth-largest-element-in-a-stream](https://leetcode.com/problems/kth-largest-element-in-a-stream/)|[kth-largest-element-in-a-stream](https://leetcode-cn.com/problems/kth-largest-element-in-a-stream/)|null|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/heap/KthLargestElementInAStream.java)|99.55% 64.02%|Heap|
-
 ### Linked List
 [主题总结](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/linkedlist/README.md)
 
@@ -40,6 +33,13 @@ README 文件通过[此类](https://github.com/Fanlu91/FanluLeetcode/blob/master
 |0707|[design-linked-list](https://leetcode.com/problems/design-linked-list/)|[design-linked-list](https://leetcode-cn.com/problems/design-linked-list/)|null|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/linkedlist/MyLinkedList.java)|80.06% 88.98%|Linked list|
 |0725|[split-linked-list-in-parts](https://leetcode.com/problems/split-linked-list-in-parts/)|[split-linked-list-in-parts](https://leetcode-cn.com/problems/split-linked-list-in-parts/)|null|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/linkedlist/SplitLinkedListInParts.java)|100.00%  100.00%|Linked list|
 |0876|[middle-of-the-linked-list](https://leetcode.com/problems/middle-of-the-linked-list/)|[middle-of-the-linked-list](https://leetcode-cn.com/problems/middle-of-the-linked-list/)|null|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/linkedlist/MiddleOfTheLinkedList.java)|100.00% 100.00%|Linked list|
+
+### Heap
+[主题总结](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/heap/README.md)
+
+|题号|题目（官网）|题目（中国）|难度|代码|结果|标签|
+|---|---|---|---|---|---|---|
+|0703|[kth-largest-element-in-a-stream](https://leetcode.com/problems/kth-largest-element-in-a-stream/)|[kth-largest-element-in-a-stream](https://leetcode-cn.com/problems/kth-largest-element-in-a-stream/)|null|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/heap/KthLargestElementInAStream.java)|99.55% 64.02%|Heap|
 
 ### Dynamic Programming
 [主题总结](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/dynamicprogramming/README.md)
@@ -354,7 +354,7 @@ README 文件通过[此类](https://github.com/Fanlu91/FanluLeetcode/blob/master
 |0015|[3sum](https://leetcode.com/problems/3sum/)|[3sum](https://leetcode-cn.com/problems/3sum/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/twopointers/ThreeSum.java)|98.79% 91.35%|Two Pointers|
 |0019|[remove-nth-node-from-end-of-list](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)|[remove-nth-node-from-end-of-list](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/)|Medium-|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/twopointers/RemoveNthNodeFromEndOfList.java)|100.00% 94.24%|Two Pointers|
 |0042|[trapping-rain-water](https://leetcode.com/problems/trapping-rain-water/)|[trapping-rain-water](https://leetcode-cn.com/problems/trapping-rain-water/)|Hard|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/twopointers/TrappingRainWater.java)|99.95% 19.88%|DP|
-|0088|[merge-sorted-array](https://leetcode.com/problems/merge-sorted-array/)|[merge-sorted-array](https://leetcode-cn.com/problems/merge-sorted-array/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/twopointers/MergSortedArray.java)|100.00% 5.24%|Two Pointers|
+|0088|[merge-sorted-array](https://leetcode.com/problems/merge-sorted-array/)|[merge-sorted-array](https://leetcode-cn.com/problems/merge-sorted-array/)|Easy-|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/twopointers/MergSortedArray.java)|100.00% 73.09%|Two Pointers|
 |0141|[linked-list-cycle](https://leetcode.com/problems/linked-list-cycle/)|[linked-list-cycle](https://leetcode-cn.com/problems/linked-list-cycle/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/twopointers/LinkedListCycle.java)|100.00%  99.88%|Two Pointers|
 |0142|[linked-list-cycle-ii](https://leetcode.com/problems/linked-list-cycle-ii/)|[linked-list-cycle-ii](https://leetcode-cn.com/problems/linked-list-cycle-ii/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/twopointers/LinkedListCycleII.java)|100.00% 5.04%|Two Pointers|
 
