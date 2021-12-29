@@ -1,4 +1,4 @@
-## 定义
+# 定义
 
 **链表**不需要连续的内存空间，通过指针将一组零散的内存串联起来使用。内存块称为链表的**结点**，为了将结点串起来，结点除了存储数据data外，还需要记录下一个结点的地址，这个记录下一个结点地址的指针叫做**后继指针next**。
 
@@ -14,7 +14,7 @@ cur = node; // 移动指针
 
 
 
-## Singly/Doubly/Circular
+# Singly/Doubly/Circular
 
 单链表只有一个方向，尾结点指向空地址。循环链表是一种特殊的单链表，即尾结点的后继指针指向头结点。
 
@@ -47,7 +47,7 @@ java中的LinkedHashMap就用到了双向链表。
 
 > 除删除和插入，对于有序链表，双向链表在查找时更具优势，可以选择向前还是向后找。
 
-## Sentinel Node 哨兵结点
+# Sentinel Node 哨兵结点
 
 A sentinel is a dummy object that allows us to simplify boundary conditions.
 
@@ -58,7 +58,7 @@ In a doubly-linked list, the sentinel node points to the first and last elements
 
 链表 第一个结点及最后一个结点的插入和删除操作都要做特殊处理
 
-### 引入哨兵解决边界问题
+## 引入哨兵解决边界问题
 
 引入哨兵结点，不管链表是否为空，head指针都一直指向这个结点 这种带哨兵的链表称为**带头链表**。哨兵结点是不存储数据的。
 
@@ -69,7 +69,7 @@ In a doubly-linked list, the sentinel node points to the first and last elements
 
 
 
-## 数组与链表的取舍
+# 数组与链表的取舍
 
 实际开发当中，不能简单的用复杂度分析来决定使用哪种数据结构。
 
@@ -159,15 +159,11 @@ public ListNode reverseListRecursive(ListNode cur) {
 
 
 
-
-
 java 反转链表的操作：
 
 ```
 Collections.reverse(list);
 ```
-
-
 
 
 

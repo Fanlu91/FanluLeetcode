@@ -151,8 +151,8 @@ public class ReadMeGenerator {
              * 如果没有readme， 创建空文件
              * 如果readme为空，提示暂无总结
              */
-            if (!readmeFile.exists())
-                readmeFile.createNewFile();
+//            if (!readmeFile.exists())
+//                readmeFile.createNewFile();
             String summary = "暂无总结";
             if (readmeFile.length() != 0) {
                 summary = "[主题总结](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/"

@@ -1,0 +1,153 @@
+{
+  "main": {
+    "id": "88f884e21afc3f23",
+    "type": "split",
+    "children": [
+      {
+        "id": "10367f3c56a622b3",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "knowledge/algorithm/A-twopointers.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "bec28234a35e327d",
+    "type": "split",
+    "children": [
+      {
+        "id": "7dbd5a5982a0b6e6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "46f79a74e0c597da",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "1a6fc1a451795506",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 251
+  },
+  "right": {
+    "id": "04001f8f8bbf5beb",
+    "type": "split",
+    "children": [
+      {
+        "id": "63303e48104174f1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3e965d4cbcb08dce",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "knowledge/algorithm/A-twopointers.md",
+                "options": {
+                  "collapse-filter": false,
+                  "search": "",
+                  "localJumps": 2,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 0.8870197064003543,
+                  "close": true
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "c8cdc87e5bdf1cb5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "20c3d756029adf47",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "knowledge/algorithm/A-twopointers.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "14e5261e922f0994",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "knowledge/algorithm/A-twopointers.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 242
+  },
+  "active": "10367f3c56a622b3",
+  "lastOpenFiles": [
+    "knowledge/algorithm/A-twopointers.md",
+    "knowledge/algorithm/A-greedy.md",
+    "src/binarysearch/TwoSumIIInputArrayIsSorted.md",
+    "knowledge/guideToObsidianNotes.md",
+    "knowledge/thinking/T-缩减搜索空间.md",
+    "knowledge/algorithm/A-binarysearch.md",
+    "knowledge/dataStructure/D-binarytree.md",
+    "knowledge/basics/vocabulary.md",
+    "knowledge/basics/JavaDetails.md",
+    "knowledge/T.md"
+  ]
+}

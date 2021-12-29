@@ -1,20 +1,20 @@
-## Array
+# 特点
 
-### 特点
+一种线性表（Linear List），一组连续的内存空间，来存储一组相同类型的数据。
+- 这样的好处是能够随机访问，带来的问题使得部分操纵需要搬运数据
 
-一种线性表（Linear List）
 
 - 链表、队列、栈等也是线性表结构。
 - 二叉树、堆、图 是非线性结构，数据之间并不是简单的前后关系
 
-一组连续的内存空间，来存储一组相同类型的数据。
 
-- 这样的好处是能够随机访问，带来的问题使得部分操纵需要搬运数据
+# java技巧
+构建数组并且放入初始化的内容
+```java
+new int[]{a,b};
+```
 
-
-
-### 编程
-
+## 二维数组
 java 二维数组 先行后列
 
 ```java
@@ -22,15 +22,36 @@ int a[][] = new int[3][4]; //3行 4列
 int lenY = a.length; // 3
 ```
 
-indices = indexes
 
 
+## 数组和ArrayList
+
+ArrayList 最大的优势就是可以将很多数组操作的细节封装起来。还有一个优势，就是支持动态扩容，当然最好在创建 ArrayList 的时候事先指定数据大小。
+
+相对来说更应使用数组而不是ArrayList的场景：
+
+1. ArrayList不能存储基本类型，比如 int、long，需要封装为 Integer、Long类，Autoboxing、Unboxing 会有一定的性能消耗。追求性能应使用数组
+2. 如果事先已知数据的大小，使用数组十分简便，arrayList的大部分方法并不会用到。
+3. 表示多维数据时，数组更加直观
+4. 业务开发使用容器省时省力使用ArrayList就足够了。如果是做底层，则要考虑使用数组而不是容器。
 
 
+### 使用数组初始化 ArrayList 
+```java
+//int[] tmp = new int[len];
+Integer[] tmp = new Integer[len];
 
-### 典型问题
+booked = new HashSet<>();
 
-#### **为什么大多数语言数组下标要从0开始？**
+booked.addAll(Arrays.asList(tmp));
+// use Integer[]  instead of int[]
+// as Arrays.asList(int[]) will internally consider int[] as a single element.
+```
+
+
+# 典型问题
+
+## 为什么大多数语言数组下标要从0开始？
 
 从内存模型可知，下标的实际含义是偏移（offset）。
 
@@ -52,51 +73,11 @@ btw二维数组寻址对于m*n的数组 a [ i ][ j ] (i < m,j < n)
 address = base_address + ( i * n + j) * type_size
 ```
 
-
-
-#### 数组和ArrayList
-
-ArrayList 最大的优势就是可以将很多数组操作的细节封装起来。还有一个优势，就是支持动态扩容，当然最好在创建 ArrayList 的时候事先指定数据大小。
-
-相对来说更应使用数组而不是ArrayList的场景：
-
-1.ArrayList不能存储基本类型，比如 int、long，需要封装为 Integer、Long类，Autoboxing、Unboxing 会有一定的性能消耗。追求性能应使用数组
-
-2.如果事先已知数据的大小，使用数组十分简便，arrayList的大部分方法并不会用到。
-
-3.表示多维数据时，数组更加直观
-
-
-
-业务开发使用容器省时省力，使用ArrayList就足够了。如果是做底层，则要考虑使用数组而不是容器。
-
-
-
-
-```java
-//int[] tmp = new int[len];
-Integer[] tmp = new Integer[len];
-
-booked = new HashSet<>();
-
-
-booked.addAll(Arrays.asList(tmp));
-// use Integer[]  instead of int[]
-// as Arrays.asList(int[]) will internally consider int[] as a single element.
-```
-
-
-
-
-
-
-
-#### 数组和链表
+## 数组和链表
 
 **链表**通过指针将一组零散的内存串联起来使用。内存块称为链表的**结点**，为了将结点串起来，结点除了存储数据data外，还需要记录下一个结点的地址，这个记录下一个结点地址的指针叫做**后继指针**next。（即结点由数据域和指针域构成）
 
 第一个和最后一个结点是比较特殊的，分别是**头结点**和**尾结点**。头结点用来记录**链表的基地址**；尾结点的后继指针指向空地址null。
-
 
 
 单链表只有一个方向。循环链表是一种特殊的单链表，即尾结点的后继指针指向头结点。

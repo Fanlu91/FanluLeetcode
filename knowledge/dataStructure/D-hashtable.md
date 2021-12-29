@@ -6,7 +6,7 @@
 
 散列表的两个核心问题是散列函数设计和散列冲突解决
 
-## 散列函数
+# 散列函数
 
 hash（key）三点基本设计要求
 
@@ -34,3 +34,18 @@ hash（key）三点基本设计要求
 
 要简单一些。散列表中，每个位置（桶 bucket/槽slot）会对应一个链表，所有散列值相同的元素存放在相同槽位对应的链表中。 
 incomplete
+
+
+
+# java 技巧
+
+map更新key的方法，可以用merge、compute 代替put
+```java
+
+map1.put(a + b, map1.getOrDefault(a + b, 0) + 1);
+
+// map.merge(key, msg, String::concat)
+map1.merge(a + b, 1, Integer::sum);
+map1.compute(a + b, (k, v) -> v == null ? 1 : v + 1);
+
+```

@@ -5,7 +5,7 @@ package twopointers;
 // Author : Fanlu Hai | https://github.com/Fanlu91/FanluLeetcode
 // Date   : 2020-01-01
 // Topic  : Two Pointers
-// Level  : Medium
+// Level  : Medium+
 // Other  :
 // Tips   :
 // Result : 98.79% 91.35%
@@ -16,7 +16,7 @@ import java.util.List;
 
 public class ThreeSum {
     // 98.79% 22 ms 91.35%
-    public List<List<Integer>> threeSum(int[] nums) {
+    public List<List<Integer>> threeSum1(int[] nums) {
         if (nums.length < 3)
             return new LinkedList<>();
         Arrays.sort(nums);
@@ -110,4 +110,50 @@ public class ThreeSum {
             ans.add(Arrays.asList(0, 0, 0));
         return ans;
     }
+
+    // 更易读易的写法
+    // 详细解释请见题解
+    public List<List<Integer>> threeSum(int[] nums) {
+        if (nums.length < 3)
+            return new LinkedList<>();
+        Arrays.sort(nums);
+        List<List<Integer>> ans = new LinkedList<List<Integer>>();
+        // 若修改题目，sum不为0，此方法通用
+        int sum = 0;
+
+        for (int a = 0; a < nums.length - 2; a++) {
+            // nums[a] 大于sum，结束
+            if (nums[a] > sum)
+                return ans;
+            // a需要和上一次枚举的数不相同
+            if (a != 0 && nums[a] == nums[a - 1]) {
+                continue;
+            }
+            int target = sum - nums[a];
+
+            // 枚举b和c
+            // c对应的指针初始指向数组的最右端
+            int c = nums.length - 1;
+            for (int b = a + 1; b < nums.length - 1; b++) {
+                // 需要和上一次枚举的数不相同
+                if (b != a + 1 && nums[b] == nums[b - 1]) {
+                    continue;
+                }
+                // 需要保证 b 的指针在 c 的指针的左侧
+                while (b < c && nums[b] + nums[c] > target) {
+                    c--;
+                }
+                // 如果指针重合，随着 b 后续的增加
+                // 就不会有满足 a+b+c=0 并且 b<c 的 c 了，可以退出循环
+                if (b == c) {
+                    break;
+                }
+                if (nums[b] + nums[c] == target) {
+                    ans.add(Arrays.asList(nums[a], nums[b], nums[c]));
+                }
+            }
+        }
+        return ans;
+    }
+
 }

@@ -10,6 +10,10 @@ package greedy;
 // Links  :
 // Result : 100.00% 100.00%
 
+import java.net.Inet4Address;
+import java.net.InetAddress;
+import java.net.UnknownHostException;
+import java.nio.ByteBuffer;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -55,7 +59,6 @@ public class IPToCIDR {
     }
 
     // 100.00% 2 ms 100.00%
-
     /**
      *
      * ip 地址本身就是一个32位的二进制数
@@ -70,7 +73,6 @@ public class IPToCIDR {
         List<String> ans = new ArrayList<>();
         while (n > 0) {
             int trailingZeros = Integer.numberOfTrailingZeros(start);
-            System.out.println(trailingZeros);
             int mask = 0, bitsInCIDR = 1;
             //计算mask
             while (bitsInCIDR < n && mask < trailingZeros) {
@@ -93,12 +95,19 @@ public class IPToCIDR {
         final int WORD_SIZE = 8;
         StringBuilder buffer = new StringBuilder();
         for (int i = 3; i >= 0; --i) {
+            // 取出每一个字节
             buffer.append(((number >> (i * WORD_SIZE)) & 255));
             buffer.append(".");
         }
         buffer.setLength(buffer.length() - 1);
         buffer.append("/").append(range);
         return buffer.toString();
+    }
+
+    private String intToIpAddress(int intRepresentation) throws UnknownHostException {
+        InetAddress i = InetAddress.getByName(String.valueOf(intRepresentation));
+        String ip = i.getHostAddress();
+        return ip;
     }
 
     private int toInt(String ip) {
@@ -109,5 +118,16 @@ public class IPToCIDR {
             sum += Integer.parseInt(str);
         }
         return sum;
+    }
+
+    private int ipAddressToInt(String ip) throws UnknownHostException {
+        Inet4Address inet4Address = (Inet4Address) Inet4Address.getByName(ip);
+        int intRepresentation = ByteBuffer.wrap(inet4Address.getAddress()).getInt();
+        return intRepresentation;
+    }
+
+    public static void main(String[] args) throws UnknownHostException {
+        IPToCIDR ipToCIDR = new IPToCIDR();
+        System.out.println(ipToCIDR.intToIpAddress(89234));
     }
 }
