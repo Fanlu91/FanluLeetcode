@@ -3,5 +3,7 @@
   "newFileLocation": "root",
   "attachmentFolderPath": "assets",
   "showLineNumber": true,
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "legacyEditor": false,
+  "livePreview": true
 }

@@ -9,8 +9,9 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "knowledge/algorithm/A-twopointers.md",
-            "mode": "source"
+            "file": "knowledge/guideToObsidianNotes.md",
+            "mode": "source",
+            "source": false
           }
         }
       }
@@ -68,7 +69,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "knowledge/algorithm/A-twopointers.md",
+                "file": "knowledge/guideToObsidianNotes.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -109,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "knowledge/algorithm/A-twopointers.md",
+                "file": "knowledge/guideToObsidianNotes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "knowledge/algorithm/A-twopointers.md"
+                "file": "knowledge/guideToObsidianNotes.md"
               }
             }
           }
@@ -135,19 +136,19 @@
       }
     ],
     "direction": "horizontal",
-    "width": 242
+    "width": 402
   },
   "active": "10367f3c56a622b3",
   "lastOpenFiles": [
-    "knowledge/algorithm/A-twopointers.md",
-    "knowledge/algorithm/A-greedy.md",
-    "src/binarysearch/TwoSumIIInputArrayIsSorted.md",
     "knowledge/guideToObsidianNotes.md",
-    "knowledge/thinking/T-缩减搜索空间.md",
+    "knowledge/algorithm/A-greedy.md",
+    "knowledge/algorithm/A-dynamicprogramming.md",
+    "knowledge/algorithm/A-divideandconquer.md",
+    "knowledge/algorithm/A-bitmanipulation.md",
+    "knowledge/algorithm/A-bfs.md",
+    "knowledge/algorithm/A-backtracking.md",
     "knowledge/algorithm/A-binarysearch.md",
-    "knowledge/dataStructure/D-binarytree.md",
-    "knowledge/basics/vocabulary.md",
-    "knowledge/basics/JavaDetails.md",
-    "knowledge/T.md"
+    "knowledge/algorithm/A-unionfind.md",
+    "knowledge/algorithm/A-twopointers.md"
   ]
 }

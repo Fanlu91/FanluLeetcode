@@ -1,13 +1,17 @@
-## `matrix[row][column]` 
+# 先行后列
+`matrix[row][column]`
 
-### column & row 边界条件
+`matrix[2][3]` 第3行第4列
+
+# column & row 边界条件
 
 - `column == matrix[0].length || column == -1`
 - `row == -1 || row == matrix.length`
 
 
+## java技巧
 
-### 记录访问过的位置
+## 记录访问过的位置
 
 ```java
 boolean[][] visited = new boolean[matrix.length][matrix[0].length];
@@ -16,7 +20,7 @@ boolean[][] visited = new boolean[matrix.length][matrix[0].length];
 
 
 
-### 向四个方向遍历
+## 向四个方向遍历
 
 ```java
 // 0 r , 1 d , 2 l , 3 u

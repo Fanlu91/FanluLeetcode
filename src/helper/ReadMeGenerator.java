@@ -15,7 +15,7 @@ import java.util.stream.Stream;
 /***
  * This is a readme generator.
  * What it mainly does is walking through all java files to get information
- * sorts all of them by some order(id as for now)
+ * sorts all of them by some order, id as for now
  * finally creates the index table.
  */
 public class ReadMeGenerator {
@@ -73,7 +73,7 @@ public class ReadMeGenerator {
             "- 结果：最优解的提交反馈数据",
             "- 标签：相关标签，一般是最优或者最直观解法使用的算法思想",
             " ",
-            "目前正在探索使用Obisidian整理题解。后面有成熟的实践，将会更新。",
+            "目前正在探索使用[Obisidian整理题解](https://github.com/Fanlu91/FanluLeetcode/blob/master/knowledge/guideToObsidianNotes.md)，逐渐提供比代码本身更有信息量的内容。",
             " ",
             " ",
             "");
@@ -83,7 +83,9 @@ public class ReadMeGenerator {
             add("a");
             add("b");
         }};*/
-        Set<String> set = Stream.of("designpattern", "helper", "jianzhioffer", "concurrent", "sql", "assets").collect(Collectors.toSet());
+        Set<String> set = Stream
+                .of("designpattern", "helper", "jianzhioffer", "concurrent", "sql", "assets")
+                .collect(Collectors.toSet());
 
         String packagePath = path.toAbsolutePath().toString();
         for (String s : set) {
@@ -128,7 +130,7 @@ public class ReadMeGenerator {
                 if (readmeFile2.length() != readmeFile1.length())
                     return (int) (readmeFile2.length() - readmeFile1.length());
                 else {
-                    return Objects.requireNonNull(d2.listFiles()).length - Objects.requireNonNull(d1.listFiles()).length;
+                    return Objects.requireNonNull(d1.listFiles()).length - Objects.requireNonNull(d2.listFiles()).length;
                 }
             }
         });
@@ -145,15 +147,16 @@ public class ReadMeGenerator {
             System.out.println(wordMap.get(packagePath.getFileName().toString()) + " " + packagePath.getFileName().toString());
 
             stringBuilder.append("### ").append(wordMap.get(packagePath.getFileName().toString())).append("\n");
-            File readmeFile = new File(packagePath.toAbsolutePath() + "/README.md");
 
-            /**
-             * 如果没有readme， 创建空文件
-             * 如果readme为空，提示暂无总结
-             */
+             File readmeFile = new File(packagePath.toAbsolutePath() + "/README.md");
+
+//            /**
+//             * 如果没有readme， 创建空文件
+//             * 如果readme为空，提示暂无总结
+//             */
 //            if (!readmeFile.exists())
 //                readmeFile.createNewFile();
-            String summary = "暂无总结";
+            String summary = "总结调整中，草稿内容请参考[这里](https://github.com/Fanlu91/FanluLeetcode/tree/master/knowledge)";
             if (readmeFile.length() != 0) {
                 summary = "[主题总结](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/"
                         + packagePath.getFileName().toString()
@@ -172,53 +175,53 @@ public class ReadMeGenerator {
             List<Solution> solutionList = new LinkedList<>();
             Files.walk(packagePath).filter(Files::isRegularFile)
                     .filter(f -> f.toString().endsWith(".java")).forEach(filePath -> {
-                String fileName = filePath.getFileName().toString().substring(0, filePath.getFileName().toString().length() - 5);
-                File obisidianNote = new File(filePath.toAbsolutePath().toString().replace(".java", ".md"));
-                /**
-                 * 如果没有obisidianNote， 创建文件
-                 */
+                        String fileName = filePath.getFileName().toString().substring(0, filePath.getFileName().toString().length() - 5);
+                        File obisidianNote = new File(filePath.toAbsolutePath().toString().replace(".java", ".md"));
+                        /**
+                         * 如果没有obisidianNote， 创建文件
+                         */
 //                System.out.println(obisidianNote.toString());
-                if (!obisidianNote.exists()) {
-                    try {
-                        obisidianNote.createNewFile();
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
-                }
-                Solution solution = new Solution();
-                solution.solutionPath = "[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src"
-                        + filePath.toString().split("src")[1].trim() + ")";
-
-                List<String> list = null;
-                try {
-                    list = Files.lines(filePath)
-                            .filter(line -> line.matches("^//[ ].*"))
-                            .collect(Collectors.toList());
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-                System.out.println("processing  " + filePath);
-                assert list != null;
-                list.forEach(line -> {
-                            if (line.contains("Id"))
-                                solution.id = line.split(" : ")[1].trim();
-                            else if (line.contains("Topic")) {
-                                String topic = line.split(" : ")[1].trim();
-                                solution.topic = wordMap.getOrDefault(topic, topic);
-                            } else if (line.contains("Level")) {
-                                solution.level = line.split(" : ")[1].trim();
-                            } else if (line.contains("Source")) {
-                                String sourceUri = line.split(" : ")[1].split("problems/")[1].trim();
-                                solution.source = "[" + sourceUri.substring(0, sourceUri.length() - 1) + "]("
-                                        + line.split(" : ")[1].trim() + ")";
-                            } else if (line.contains("Result")) {
-                                solution.result = line.split(" : ")[1].trim();
-                                // Result is mandatory for a solution to be add on the table.
-                                solutionList.add(solution);
+                        if (!obisidianNote.exists()) {
+                            try {
+                                obisidianNote.createNewFile();
+                            } catch (IOException e) {
+                                e.printStackTrace();
                             }
                         }
-                );
-            });
+                        Solution solution = new Solution();
+                        solution.solutionPath = "[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src"
+                                + filePath.toString().split("src")[1].trim() + ")";
+
+                        List<String> list = null;
+                        try {
+                            list = Files.lines(filePath)
+                                    .filter(line -> line.matches("^//[ ].*"))
+                                    .collect(Collectors.toList());
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+                        System.out.println("processing  " + filePath);
+                        assert list != null;
+                        list.forEach(line -> {
+                                    if (line.contains("Id"))
+                                        solution.id = line.split(" : ")[1].trim();
+                                    else if (line.contains("Topic")) {
+                                        String topic = line.split(" : ")[1].trim();
+                                        solution.topic = wordMap.getOrDefault(topic, topic);
+                                    } else if (line.contains("Level")) {
+                                        solution.level = line.split(" : ")[1].trim();
+                                    } else if (line.contains("Source")) {
+                                        String sourceUri = line.split(" : ")[1].split("problems/")[1].trim();
+                                        solution.source = "[" + sourceUri.substring(0, sourceUri.length() - 1) + "]("
+                                                + line.split(" : ")[1].trim() + ")";
+                                    } else if (line.contains("Result")) {
+                                        solution.result = line.split(" : ")[1].trim();
+                                        // Result is mandatory for a solution to be add on the table.
+                                        solutionList.add(solution);
+                                    }
+                                }
+                        );
+                    });
 
             /**
              * solution 按 id 排序

@@ -5,13 +5,13 @@ package twopointers;
 // Author : Fanlu Hai | https://github.com/Fanlu91/FanluLeetcode
 // Date   : 2020-01-01
 // Topic  : Two Pointers
-// Level  : medium
+// Level  : medium-
 // Other  :
 // Tips   : slant: slope
 // Result : 71.02% 7.14%
 
 public class ContainerWithMostWater {
-    // 17.56% 444 ms 24.28%
+    // 444 ms
     public int maxArea(int[] height) {
         int res = 0, area = 0;
         for (int i = 0; i < height.length; i++) {
@@ -23,19 +23,35 @@ public class ContainerWithMostWater {
         return res;
     }
 
-    // 71.02% 4 ms 7.14%
-    public int maxArea1(int[] height) {
+    // 4ms
+    public int maxArea2(int[] height) {
 //    public int maxArea(int[] height) {
-        int left = 0, right = height.length - 1, res = 0, area = 0;
-
+        int res = 0, left = 0, right = height.length - 1;
         while (left < right) {
-            area = Math.min(height[left], height[right]) * (right - left);
-            res = Math.max(res, area);
-            if (height[left] < height[right])
+            res = Math.max(res, (right - left) * Math.min(height[left], height[right]));
+            if (height[left] <= height[right])
                 left++;
-            else // 大于或等于的情况都可以
-                right++;
+            else
+                right--;
+        }
+
+        return res;
+    }
+
+    // 1ms
+    public int maxArea3(int[] height) {
+//    public int maxArea(int[] height) {
+        int res = 0, h = 0, left = 0, right = height.length - 1;
+        while (left < right) {
+            h = Math.min(height[left], height[right]);
+            res = Math.max(res, (right - left) * h);
+            while (height[left] <= h && left < right)
+                left++;
+            while (height[right] <= h && left < right) {
+                right--;
+            }
         }
         return res;
     }
 }
+

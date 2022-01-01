@@ -1,22 +1,51 @@
 {
-  "collapse-filter": true,
+  "collapse-filter": false,
   "search": "",
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
-  "collapse-color-groups": true,
-  "colorGroups": [],
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "path:knowledge/algorithm",
+      "color": {
+        "a": 1,
+        "rgb": 14048348
+      }
+    },
+    {
+      "query": "path:knowledge/dataStructure",
+      "color": {
+        "a": 1,
+        "rgb": 6084212
+      }
+    },
+    {
+      "query": "path:knowledge/basics",
+      "color": {
+        "a": 1,
+        "rgb": 2237723
+      }
+    },
+    {
+      "query": "path:knowledge/thinking",
+      "color": {
+        "a": 1,
+        "rgb": 13948508
+      }
+    }
+  ],
   "collapse-display": true,
   "showArrow": false,
   "textFadeMultiplier": 0,
   "nodeSizeMultiplier": 1,
   "lineSizeMultiplier": 1,
-  "collapse-forces": true,
-  "centerStrength": 0.518713248970312,
-  "repelStrength": 10,
+  "collapse-forces": false,
+  "centerStrength": 0.790017361111111,
+  "repelStrength": 13.2024572649573,
   "linkStrength": 1,
-  "linkDistance": 250,
-  "scale": 0.3938910826123905,
-  "close": false
+  "linkDistance": 158,
+  "scale": 0.5592362993393165,
+  "close": true
 }
