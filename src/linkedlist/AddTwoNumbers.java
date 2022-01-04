@@ -12,125 +12,92 @@ package linkedlist;
 // Result : 94.51% 90.73%
 public class AddTwoNumbers {
 
-    // Time Limit Exceeded
-    public ListNode addTwoNumbersTooSlow(ListNode l1, ListNode l2) {
-        if (l1 == null)
-            return l2;
-        if (l2 == null)
-            return l1;
+    // 2 ms
+    public ListNode addTwoNumbers1(ListNode l1, ListNode l2) {
+//    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+        int carry = 0;
+        ListNode sentinel = new ListNode(-1);
+        ListNode cur = sentinel, pre = null;
+        while (l1 != null && l2 != null) {
+            int tmp = l1.val + l2.val + carry;
+            carry = tmp > 9 ? 1 : 0;
+            cur.next = new ListNode(tmp % 10);
 
-        boolean ifCarry = false;
-        int bitSum = l1.val + l2.val;
-
-        if (bitSum > 9) {
-            bitSum -= 10;
-            ifCarry = true;
-        }
-
-        ListNode head = new ListNode(bitSum);
-        ListNode node = head;
-        ListNode zero = new ListNode(0);
-
-        while (l1.next != null || l2.next != null) {
-            if (l1.next == null)
-                l1.next = zero;
-
-            if (l2.next == null)
-                l2.next = zero;
-
+            cur = cur.next;
             l1 = l1.next;
             l2 = l2.next;
-
-            bitSum = ifCarry ? 1 + l1.val + l2.val : l1.val + l2.val;
-
-            if (bitSum > 9) {
-                bitSum -= 10;
-                ifCarry = true;
-            } else {
-                ifCarry = false;
-            }
-            node.next = new ListNode(bitSum);
-            node = node.next;
         }
 
-        if (ifCarry)
-            node.next = new ListNode(1);
+        if (l1 == null)
+            cur.next = l2;
+        else
+            cur.next = l1;
 
+        pre = cur;
+        cur = cur.next;
 
-        return head;
-    }
-
-    // 94.51% 90.73%
-    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-        return addTwoNumbers(l1, l2, false);
-    }
-
-    public ListNode addTwoNumbers(ListNode l1, ListNode l2, boolean isCarry) {
-
-        if (isCarry) {
-            if (l1 == null) {
-                if (l2 == null) {
-                    return new ListNode(1);
-                } else {
-                    if (l2.val != 9) {
-                        l2.val = l2.val + 1;
-                        isCarry = false;
-                    } else {
-                        isCarry = true;
-                        l2.val = 0;
-                        l2.next = addTwoNumbers(null, l2.next, isCarry);
-                    }
-                    return l2;
-                }
+        while (carry == 1 && cur != null) {
+            if (cur.val == 9) {
+                cur.val = 0;
+                carry = 1;
+                pre = cur;
+                cur = cur.next;
             } else {
-                if (l2 == null) {
-                    if (l1.val != 9) {
-                        l1.val = l1.val + 1;
-                        isCarry = false;
-                    } else {
-                        isCarry = true;
-                        l1.val = 0;
-                        l1.next = addTwoNumbers(null, l1.next, isCarry);
-                    }
-                    return l1;
-                } else {
-
-                    int sum = l1.val + l2.val + 1;
-                    if (sum > 9) {
-                        isCarry = true;
-                        sum -= 10;
-                    } else {
-                        isCarry = false;
-                    }
-                    ListNode node = new ListNode(sum);
-                    node.next = addTwoNumbers(l1.next, l2.next, isCarry);
-                    return node;
-                }
+                cur.val = cur.val + 1;
+                carry = 0;
             }
-        } else {
-            if (l1 == null)
-                return l2;
-            if (l2 == null)
-                return l1;
-            int sum = l1.val + l2.val;
-
-            if (sum > 9) {
-                isCarry = true;
-                sum -= 10;
-            } else {
-                isCarry = false;
-            }
-            ListNode node = new ListNode(sum);
-            node.next = addTwoNumbers(l1.next, l2.next, isCarry);
-
-            return node;
         }
+
+        if (carry == 1)
+            pre.next = new ListNode(1);
+
+        return sentinel.next;
     }
 
+    // 2ms
+    public ListNode addTwoNumbers2(ListNode l1, ListNode l2) {
+//    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+        ListNode result = new ListNode();
+        ListNode cur = result, pre = new ListNode();
+        boolean carry = false;
+
+        while (l1 != null || l2 != null || carry) {
+            int val = 0;
+            if (l1 != null) {
+                val += l1.val;
+                l1 = l1.next;
+            }
+            if (l2 != null) {
+                val += l2.val;
+                l2 = l2.next;
+            }
+            if (carry) {
+                val++;
+                carry = false;
+            }
+            if (val > 9) {
+                val = val % 10;
+                carry = true;
+            }
+            cur.val = val;
+            pre = cur;
+            ListNode next = new ListNode();
+            cur.next = next;
+            cur = cur.next;
+        }
+        if (pre != null) {
+            pre.next = null;
+        }
+        return result;
+    }
 
     class ListNode {
         int val;
         ListNode next;
+
+        ListNode() {
+
+        }
 
         ListNode(int x) {
             val = x;

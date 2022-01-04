@@ -7,10 +7,13 @@ quadruplets 四胞胎
 
 slant the container 倾斜容器
 
+_palindromic_ 回文
+
+
 # BTW
 
   
-btw 我有一个记录自己代码/ 题解的小仓库
+btw 我有一个记录自己代码/ 题解的仓库
 
 
 https://github.com/Fanlu91/FanluLeetcode

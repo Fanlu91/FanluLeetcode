@@ -130,7 +130,7 @@ public class ReadMeGenerator {
                 if (readmeFile2.length() != readmeFile1.length())
                     return (int) (readmeFile2.length() - readmeFile1.length());
                 else {
-                    return Objects.requireNonNull(d1.listFiles()).length - Objects.requireNonNull(d2.listFiles()).length;
+                    return Objects.requireNonNull(d2.listFiles()).length - Objects.requireNonNull(d1.listFiles()).length;
                 }
             }
         });
