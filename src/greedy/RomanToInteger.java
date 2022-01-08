@@ -1,4 +1,4 @@
-package math;
+package greedy;
 
 // Source : https://leetcode.com/problems/roman-to-integer/
 // Id     : 13
@@ -8,11 +8,12 @@ package math;
 // Level  : Easy
 // Other  :
 // Tips   :
-// Result : 75.64% 100.00%
+// Result : 94.96% 94.49%
 public class RomanToInteger {
-    // 75.64% 4ms 100.00%
+    // 3ms
     public int romanToInt(String s) {
         int res = 0;
+        // nice one
         s += 0;
         for (int i = 0; i < s.length(); i++) {
             if (s.charAt(i) == 'C') {
@@ -25,7 +26,6 @@ public class RomanToInteger {
                 } else {
                     res += 100;
                 }
-
             } else if (s.charAt(i) == 'X') {
                 if (s.charAt(i + 1) == 'L') {
                     res += 40;
@@ -36,7 +36,6 @@ public class RomanToInteger {
                 } else {
                     res += 10;
                 }
-
             } else if (s.charAt(i) == 'I') {
                 if (s.charAt(i + 1) == 'V') {
                     res += 4;
@@ -56,8 +55,46 @@ public class RomanToInteger {
                 res += 50;
             else if (s.charAt(i) == 'V')
                 res += 5;
-
         }
         return res;
+    }
+
+    // 4ms
+    public int romanToInt1(String s) {
+//    public int romanToInt(String s) {
+        int sum = 0;
+        int pre = getValue(s.charAt(0));
+        for (int i = 1; i < s.length(); i++) {
+            int num = getValue(s.charAt(i));
+            if (pre < num) {
+                sum -= pre;
+            } else {
+                sum += pre;
+            }
+            pre = num;
+        }
+        sum += pre;
+        return sum;
+    }
+
+    private int getValue(char ch) {
+        switch (ch) {
+            case 'I':
+                return 1;
+            case 'V':
+                return 5;
+            case 'X':
+                return 10;
+            case 'L':
+                return 50;
+            case 'C':
+                return 100;
+            case 'D':
+                return 500;
+            case 'M':
+                return 1000;
+            default:
+                return 0;
+        }
     }
 }

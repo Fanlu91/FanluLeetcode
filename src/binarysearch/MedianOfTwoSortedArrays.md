@@ -11,7 +11,7 @@
 ### 1 定义分割线
 
 “中位数被用来将一个集合划分为两个长度相等的子集”，因此可以定义分割线，aMid 的左边和 bMid 的左边组合成「左半部分」，他们的右边分别组合成「右半部分」。
-- 定义 `aMid = (0 + A.length) / 2`，奇数情况下aMid就是中位数，偶数时aMid 和 aMid-1构成中位数
+- 定义 `aMid = (0 + A.length) / 2`，要考虑[[T-parity]]，奇数情况下aMid就是中位数，偶数时aMid 和 aMid-1构成中位数
 - bMid 并不用二分计算，而是通过aMid的位置推导出来，`bMid = (A.length + B.length + 1) / 2 - aMid`。同样的，奇数情况下bMid就是中位数，偶数时bMid 和 bMid-1构成中位数
 	- 为什么另一半是Mid -1而不是Mid + 1，主要因为运算时是先加1再整除
 
@@ -37,7 +37,6 @@ right = Math.min(B[bMid], A[aMid]); // 两个中的较小值
 2. `bMid == 0` ，表示 B 数组的值比较大，B分割左移到不能再左移，中位数的左侧应落在 A 数组`left = A[aMid - 1];`
 3. `aMid == A.length`，A分割右移到不能再右移，中位数的右侧应落在 B 数组中`right = B[bMid];
 4. `bMid == B.length`，B分割右移到不能再右移，中位数的右侧应落在 A 数组中``right = A[bMid]`
-
 
 
 ```java

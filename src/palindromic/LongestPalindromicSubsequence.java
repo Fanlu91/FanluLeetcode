@@ -1,4 +1,4 @@
-package dynamicprogramming;
+package palindromic;
 
 // Source : https://leetcode.com/problems/longest-palindromic-subsequence/
 // Id     : 516
@@ -72,18 +72,16 @@ public class LongestPalindromicSubsequence {
 
             int maxSoFar = 0;
             for (int j = i - 1; j >= 0; --j) {
-
                 int prev = dp[j];
-
                 if (str[i] == str[j]) {
                     dp[j] = maxSoFar + 2;
                 }
-
                 maxSoFar = Math.max(prev, maxSoFar);
             }
         }
 
-        for (int i : dp) max = Math.max(max, i);
+        for (int i : dp)
+            max = Math.max(max, i);
         return max;
     }
 

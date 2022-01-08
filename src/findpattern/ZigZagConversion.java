@@ -1,4 +1,4 @@
-package string;
+package findpattern;
 
 // Source : https://leetcode.com/problems/zigzag-conversion/
 // Id     : 6
@@ -8,20 +8,22 @@ package string;
 // Level  : Medium
 // Other  :
 // Tips   :
-// Result : 94.85% 93.46%
+// Result : 99.87% 93.46%
 
 public class ZigZagConversion {
-    // 30.79% 18 ms 34.85%
+
 
     /**
      * 0 1 2 3 4 5 6 7 8 9 10
      * 0 1 2 3 2 1 0 1 2 3 2
+     *
      * @param s
      * @param numRows
      * @return
      */
+    // 14 ms
     public String convert(String s, int numRows) {
-        if (numRows < 2)
+        if (numRows >= s.length() || numRows == 1)
             return s;
 
         String[] stringRows = new String[numRows];
@@ -54,7 +56,7 @@ public class ZigZagConversion {
     // 94.85% 4ms 93.46%
     public String convertImprove(String s, int numRows) {
 //    public String convert(String s, int numRows) {
-        if (numRows < 2)
+        if (numRows >= s.length() || numRows == 1)
             return s;
 
         StringBuilder sb = new StringBuilder();

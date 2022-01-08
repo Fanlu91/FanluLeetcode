@@ -53,15 +53,15 @@ public class ReverseInteger {
     // 100.00% 1ms 11.11%
     public int reverseImprove(int x) {
 //    public int reverse(int x) {
-        int result = 0;
+        int result = 0, tmp = 0, tail = 0;
         while (x != 0) {
-            int tail = x % 10;
-            int newResult = result * 10 + tail;
-            // check overflow
-            if ((newResult - tail) / 10 != result) {
+            tail = x % 10;
+            tmp = result * 10 + tail;
+            // if overflow return 0
+            if ((tmp - tail) / 10 != result) {
                 return 0;
             }
-            result = newResult;
+            result = tmp;
             x /= 10;
         }
         return result;

@@ -1,1 +1,3 @@
+#detail
+
 [[A-math]]

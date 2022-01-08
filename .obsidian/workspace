@@ -6,14 +6,80 @@
       {
         "id": "5d1bba83fac0ba47",
         "type": "leaf",
+        "dimension": 71.1734693877551,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "knowledge/basics/vocabulary.md",
+            "file": "src/twopointers/ThreeSum.md",
             "mode": "source",
             "source": false
           }
-        }
+        },
+        "group": "924f6ecb1139c4f7"
+      },
+      {
+        "id": "8ca9c57935cf4fc8",
+        "type": "split",
+        "dimension": 28.826530612244895,
+        "children": [
+          {
+            "id": "c945b7de2719a02d",
+            "type": "leaf",
+            "dimension": 47.35729386892177,
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "src/twopointers/ThreeSum.md",
+                "options": {
+                  "collapse-filter": false,
+                  "search": "",
+                  "localJumps": 2,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 0.8441008559588353,
+                  "close": true
+                }
+              }
+            },
+            "group": "924f6ecb1139c4f7"
+          },
+          {
+            "id": "2e383a532c4d7ef2",
+            "type": "leaf",
+            "dimension": 52.64270613107822,
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "src/twopointers/ThreeSum.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            },
+            "group": "924f6ecb1139c4f7"
+          }
+        ],
+        "direction": "horizontal"
       }
     ],
     "direction": "vertical"
@@ -55,7 +121,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "knowledge/basics/vocabulary.md",
+                "file": "src/twopointers/ThreeSum.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -90,7 +156,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "knowledge/basics/vocabulary.md"
+                "file": "src/twopointers/ThreeSum.md"
               }
             }
           }
@@ -98,7 +164,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 251
+    "width": 217
   },
   "right": {
     "id": "04001f8f8bbf5beb",
@@ -110,15 +176,15 @@
   },
   "active": "5d1bba83fac0ba47",
   "lastOpenFiles": [
-    "knowledge/basics/vocabulary.md",
-    "knowledge/guideToObsidianNotes.md",
-    "src/binarysearch/MedianOfTwoSortedArrays.md",
-    "src/slidingwindow/LongestSubstringWithoutRepeatingCharacters.md",
+    "src/twopointers/ThreeSum.md",
+    "src/greedy/RomanToInteger.md",
+    "src/greedy/IntegerToRoman.md",
+    "knowledge/algorithm/A-greedy.md",
+    "knowledge/basics/JavaDetails.md",
+    "knowledge/basics/design.md",
     "knowledge/thinking/T-substring.md",
-    "src/slidingwindow/LongestRepeatingCharacterReplacement.md",
-    "src/substring/LongestSubstringWithoutRepeatingCharacters.md",
-    "src/twopointers/LongestSubstringWithoutRepeatingCharacters.md",
-    "src/linkedlist/AddTwoNumbers.md",
-    "knowledge/dataStructure/D-linkedlist.md"
+    "src/twopointers/ContainerWithMostWater.md",
+    "src/stringmatch/RegularExpressionMatching.md",
+    "src/palindromic/PalindromeNumber.md"
   ]
 }

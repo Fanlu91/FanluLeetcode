@@ -5,13 +5,13 @@ package string;
 // Author : Fanlu Hai | https://github.com/Fanlu91/FanluLeetcode
 // Date   : 2019-11-05
 // Topic  : String
-// Level  : Easy
+// Level  : Easy-
 // Other  :
 // Tips   :
 // Result : 74.35% 100%
 
 public class LongestCommonPrefix {
-    // 74.35% 1ms 100%
+    // 1ms
     public String longestCommonPrefix(String[] strs) {
         String res = "";
         if (strs.length == 0)
@@ -23,6 +23,29 @@ public class LongestCommonPrefix {
                     return res;
             }
             res += strs[0].charAt(i);
+        }
+        return res;
+    }
+
+    // 1ms
+    public String longestCommonPrefix1(String[] strs) {
+//    public String longestCommonPrefix(String[] strs) {
+        if (strs == null || strs.length == 0)
+            return "";
+        String res = strs[0];
+
+        if (strs.length == 1)
+            return res;
+
+        for (int i = 1; i < strs.length; i++) {
+            if (res.length() == 0)
+                return "";
+            for (int j = 0; j < res.length(); j++) {
+                if (j == strs[i].length() || res.charAt(j) != strs[i].charAt(j)) {
+                    res = res.substring(0, j);
+                    break;
+                }
+            }
         }
         return res;
     }

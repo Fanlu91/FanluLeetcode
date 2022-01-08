@@ -1,4 +1,4 @@
-package dynamicprogramming;
+package palindromic;
 // Source : https://leetcode.com/problems/palindromic-substrings/
 // Id     : 647
 // Author : Fanlu Hai | https://github.com/Fanlu91/FanluLeetcode
