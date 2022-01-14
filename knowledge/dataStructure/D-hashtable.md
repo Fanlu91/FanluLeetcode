@@ -7,9 +7,6 @@
 散列表的两个核心问题是散列函数设计和散列冲突解决。
 
 
-使用hashmap前，应该先考虑使用数组是否可以解决问题。性能角度来看，hashmap并不应该是第一选择。
-
-
 # 散列函数
 
 hash（key）三点基本设计要求
@@ -39,10 +36,28 @@ hash（key）三点基本设计要求
 要简单一些。散列表中，每个位置（桶 bucket/槽slot）会对应一个链表，所有散列值相同的元素存放在相同槽位对应的链表中。 
 incomplete
 
+# 若可以用数组代替
 
+使用hashmap前，其实应该先考虑使用数组是否可以解决问题。性能角度来看，hashmap并不应该是第一选择。
+数组的优势还在于，其key可以是有序的，这在一些场景下能够提供额外的帮助。
 
 # java 技巧
+map初始化内容
+```java
+Map<Character, Character[]> map = new HashMap<Character, Character[]>() {  
+	{  
+		put('2', new Character[]{'a', 'b', 'c'});  
+		put('3', new Character[]{'d', 'e', 'f'});  
+		put('4', new Character[]{'g', 'h', 'i'});  
+		put('5', new Character[]{'j', 'k', 'l'});  
+		put('6', new Character[]{'m', 'n', 'o'});  
+		put('7', new Character[]{'p', 'q', 'r', 's'});  
+		put('8', new Character[]{'t', 'u', 'v'});  
+		put('9', new Character[]{'w', 'x', 'y', 'z'});  
+	}  
+};
 
+```
 map更新key的方法，可以用merge、compute 代替put
 ```java
 
@@ -53,3 +68,4 @@ map1.merge(a + b, 1, Integer::sum);
 map1.compute(a + b, (k, v) -> v == null ? 1 : v + 1);
 
 ```
+

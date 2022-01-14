@@ -16,7 +16,7 @@
 
 ## 主干思想
 本质上来说还是3个变量的遍历，凑数。
-1. 通过排序划分出了边界 `0 | a | b | c | length-1` 
+1. 通过排序划分出了边界 `0 | a | b | c | length - 1` 
 2. 每次固定其中的n - 1个条件，即2个条件，每次变某一个条件去试，在这里试的(id)范围是
 ```less
  a  [0 - length-3]
@@ -64,50 +64,55 @@ public List<List<Integer>> threeSum(int[] nums) {
 
 ```java
 public List<List<Integer>> threeSum(int[] nums) {
-        if (nums.length < 3)
-            return new LinkedList<>();
-        Arrays.sort(nums);
-        List<List<Integer>> ans = new LinkedList<List<Integer>>();
-        // 若修改题目，sum不为0，此方法通用
-        int sum = 0;
+	if (nums.length < 3)
+		return new LinkedList<>();
+	Arrays.sort(nums);
+	List<List<Integer>> ans = new LinkedList<List<Integer>>();
+	// 若修改题目，sum不为0，此方法通用
+	int sum = 0;
 
-        for (int a = 0; a < nums.length - 2; a++) {
-            // nums[a] 大于sum，结束
-            if (nums[a] > sum)
-                return ans;
-            // a需要和上一次枚举的数不相同
-            if (a != 0 && nums[a] == nums[a - 1]) {
-                continue;
-            }
-            int target = sum - nums[a];
+	for (int a = 0; a < nums.length - 2; a++) {
+		// nums[a] 大于sum，结束
+		if (nums[a] > sum)
+			return ans;
+		// a需要和上一次枚举的数不相同
+		if (a != 0 && nums[a] == nums[a - 1]) {
+			continue;
+		}
+		int target = sum - nums[a];
 
-            // 枚举b和c
-            // c对应的指针初始指向数组的最右端
-            int c = nums.length - 1;
-            for (int b = a + 1; b < nums.length-1; b++) {
-                // 需要和上一次枚举的数不相同
-                if (b != a + 1 && nums[b] == nums[b - 1]) {
-                    continue;
-                }
-                // 需要保证 b 的指针在 c 的指针的左侧
-                while (b < c && nums[b] + nums[c] > target) {
-                    c--;
-                }
-                // 如果指针重合，随着 b 后续的增加
-                // 就不会有满足 a+b+c=0 并且 b<c 的 c 了，可以退出循环
-                if (b == c) {
-                    break;
-                }
-                if (nums[b] + nums[c] == target) {
-                    ans.add(Arrays.asList(nums[a], nums[b], nums[c]));
-                }
-            }
-        }
-        return ans;
-    }
+		// 枚举b和c
+		// c对应的指针初始指向数组的最右端
+		int c = nums.length - 1;
+		for (int b = a + 1; b < nums.length-1; b++) {
+			// 需要和上一次枚举的数不相同
+			if (b != a + 1 && nums[b] == nums[b - 1]) {
+				continue;
+			}
+			// 需要保证 b 的指针在 c 的指针的左侧
+			while (b < c && nums[b] + nums[c] > target) {
+				c--;
+			}
+			// 如果指针重合，随着 b 后续的增加
+			// 就不会有满足 a+b+c=0 并且 b<c 的 c 了，可以退出循环
+			if (b == c) {
+				break;
+			}
+			if (nums[b] + nums[c] == target) {
+				ans.add(Arrays.asList(nums[a], nums[b], nums[c]));
+			}
+		}
+	}
+	return ans;
+}
 ```
 
-# 一些思考点
+# 一些细节
+
+## 循环过程中指针初始位置的定义
+一个细节，代码中`int c = nums.length - 1;` 对`c`的定义是在`b`循环外的，潜在的含义是c的位置经过一轮迭代后，随着`b`的继续增大，其实并不需要回退到最后，而是接着上一次循环时的位置继续尝试向左就行。
+这点优化其实对于效率的提升是很重要的，可以理解为直接降低了一个数量级。
+
 
 [[JavaDetails#使用范围尽量准确 a b 与 a b]]
 

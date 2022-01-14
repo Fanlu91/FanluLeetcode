@@ -19,7 +19,7 @@ import java.util.stream.Stream;
  * finally creates the index table.
  */
 public class ReadMeGenerator {
-    final public static HashMap<String, String> wordMap = new HashMap<String, String>() {
+    final public static Map<String, String> wordMap = new HashMap<String, String>() {
         {
             put("tree", "Tree");
             put("design", "Design");

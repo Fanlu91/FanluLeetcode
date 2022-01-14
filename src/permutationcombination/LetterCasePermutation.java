@@ -1,4 +1,4 @@
-package backtracking;
+package permutationcombination;
 // Source : https://leetcode.com/problems/letter-case-permutation/
 // Id     : 784
 // Author : Fanlu Hai | https://github.com/Fanlu91/FanluLeetcode

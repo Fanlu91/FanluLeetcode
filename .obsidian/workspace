@@ -4,36 +4,30 @@
     "type": "split",
     "children": [
       {
-        "id": "5d1bba83fac0ba47",
+        "id": "ab9b4142f88bcd90",
         "type": "leaf",
-        "dimension": 71.1734693877551,
+        "dimension": 72.59010896898575,
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "src/twopointers/ThreeSum.md",
-            "mode": "source",
-            "source": false
-          }
+          "type": "empty",
+          "state": {}
         },
-        "group": "924f6ecb1139c4f7"
+        "group": "5124d1e8523b8729"
       },
       {
-        "id": "8ca9c57935cf4fc8",
+        "id": "d16408e112055eb3",
         "type": "split",
-        "dimension": 28.826530612244895,
+        "dimension": 27.40989103101425,
         "children": [
           {
-            "id": "c945b7de2719a02d",
+            "id": "b3a8180aba212498",
             "type": "leaf",
-            "dimension": 47.35729386892177,
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "src/twopointers/ThreeSum.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
-                  "localJumps": 2,
+                  "localJumps": 3,
                   "localBacklinks": true,
                   "localForelinks": true,
                   "localInterlinks": false,
@@ -52,21 +46,19 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.8441008559588353,
+                  "scale": 0.6425372093234997,
                   "close": true
                 }
               }
             },
-            "group": "924f6ecb1139c4f7"
+            "group": "5124d1e8523b8729"
           },
           {
-            "id": "2e383a532c4d7ef2",
+            "id": "d136e0076e2da3da",
             "type": "leaf",
-            "dimension": 52.64270613107822,
             "state": {
               "type": "backlink",
               "state": {
-                "file": "src/twopointers/ThreeSum.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -76,7 +68,16 @@
                 "unlinkedCollapsed": true
               }
             },
-            "group": "924f6ecb1139c4f7"
+            "group": "5124d1e8523b8729"
+          },
+          {
+            "id": "6e586470f288f1c4",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            },
+            "group": "5124d1e8523b8729"
           }
         ],
         "direction": "horizontal"
@@ -121,7 +122,6 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "src/twopointers/ThreeSum.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -155,9 +155,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "src/twopointers/ThreeSum.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -169,22 +167,45 @@
   "right": {
     "id": "04001f8f8bbf5beb",
     "type": "split",
-    "children": [],
+    "children": [
+      {
+        "id": "d3813023a1e78ef2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "09e5d081ffe8db9a",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
     "direction": "horizontal",
     "width": 298,
     "collapsed": true
   },
-  "active": "5d1bba83fac0ba47",
+  "active": "ab9b4142f88bcd90",
   "lastOpenFiles": [
-    "src/twopointers/ThreeSum.md",
-    "src/greedy/RomanToInteger.md",
-    "src/greedy/IntegerToRoman.md",
-    "knowledge/algorithm/A-greedy.md",
+    "src/divideandconquer/MergeKSortedLists.md",
+    "knowledge/thinking/T-merge.md",
+    "src/findpattern/GenerateParentheses.md",
+    "src/merge/MergeTwoSortedLists.md",
+    "knowledge/algorithm/A-recursion.md",
+    "src/backtracking/GenerateParentheses.md",
     "knowledge/basics/JavaDetails.md",
-    "knowledge/basics/design.md",
-    "knowledge/thinking/T-substring.md",
-    "src/twopointers/ContainerWithMostWater.md",
-    "src/stringmatch/RegularExpressionMatching.md",
-    "src/palindromic/PalindromeNumber.md"
+    "src/stack/ValidParentheses.md",
+    "src/fastslowpointers/RemoveNthNodeFromEndOfList.md",
+    "knowledge/algorithm/A-fastslowpointers.md"
   ]
 }

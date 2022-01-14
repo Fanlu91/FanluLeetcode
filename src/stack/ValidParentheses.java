@@ -58,6 +58,36 @@ public class ValidParentheses {
             }
         }
 
-        return stack.isEmpty() ? true : false;
+        return stack.isEmpty();
+    }
+
+    public boolean isValid1(String s) {
+//    public boolean isValid(String s) {
+        Stack<Character> stack = new Stack<>();
+        for (char c : s.toCharArray()) {
+            if (c == '(' || c == '{' || c == '[')
+                stack.push(c);
+            else {
+                if (stack.isEmpty())
+                    return false;
+                char a = stack.pop();
+
+                switch (a) {
+                    case '(':
+                        if (c != ')')
+                            return false;
+                        break;
+                    case '{':
+                        if (c != '}')
+                            return false;
+                        break;
+                    case '[':
+                        if (c != ']')
+                            return false;
+                        break;
+                }
+            }
+        }
+        return stack.isEmpty();
     }
 }

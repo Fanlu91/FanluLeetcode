@@ -1,4 +1,4 @@
-package linkedlist;
+package merge;
 // Source : https://leetcode.com/problems/merge-two-sorted-lists/
 // Id     : 21
 // Author : Fanlu Hai | https://github.com/Fanlu91/FanluLeetcode
@@ -92,9 +92,34 @@ public class MergeTwoSortedLists {
         return sentinel.next;
     }
 
+    // practice
+    public ListNode mergeTwoLists4(ListNode list1, ListNode list2) {
+//    public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
+        ListNode sentinel = new ListNode(), cur = sentinel;
+        while (list1 != null && list2 != null) {
+            if (list1.val > list2.val) {
+                cur.next = list2;
+                cur = list2;
+                list2 = list2.next;
+            } else {
+                cur.next = list1;
+                cur = list1;
+                list1 = list1.next;
+            }
+        }
+        if (list1 == null)
+            cur.next = list2;
+        if (list2 == null)
+            cur.next = list1;
+        return sentinel.next;
+    }
+
     class ListNode {
         int val;
         ListNode next;
+
+        ListNode() {
+        }
 
         ListNode(int x) {
             val = x;

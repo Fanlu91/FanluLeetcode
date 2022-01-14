@@ -1,4 +1,4 @@
-package twopointers;
+package fastslowpointers;
 // Source : https://leetcode.com/problems/remove-nth-node-from-end-of-list/
 // Id     : 19
 // Author : Fanlu Hai | https://github.com/Fanlu91/FanluLeetcode

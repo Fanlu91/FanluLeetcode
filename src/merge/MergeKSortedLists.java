@@ -1,4 +1,4 @@
-package divideandconquer;
+package merge;
 
 // Source : https://leetcode.com/problems/merge-k-sorted-lists/
 // Id     : 23
@@ -38,7 +38,7 @@ public class MergeKSortedLists {
      * @param lists
      * @return
      */
-    // 84.07% 3ms 48.81%
+    // 84.07% 2ms 48.81%
     public ListNode mergeKLists2(ListNode[] lists) {
 //    public ListNode mergeKLists(ListNode[] lists) {
         if (lists.length == 0)
@@ -64,6 +64,7 @@ public class MergeKSortedLists {
     }
 
     // not much of a difference
+    // 2 ms
     public ListNode mergeKLists3(ListNode[] lists) {
 //        public ListNode mergeKLists (ListNode[]lists){
         return mergesort(lists, 0, lists.length - 1);
@@ -96,6 +97,7 @@ public class MergeKSortedLists {
         l2.next = mergeTwoLists(l1, l2.next);
         return l2;
     }
+
 
     class ListNode {
         int val;

@@ -5,7 +5,7 @@ package twopointers;
 // Author : Fanlu Hai | https://github.com/Fanlu91/FanluLeetcode
 // Date   : 2020-01-01
 // Topic  : Two Pointers
-// Level  : Medium+
+// Level  : Medium
 // Other  :
 // Tips   :
 // Result : 98.79% 91.35%
@@ -154,6 +154,34 @@ public class ThreeSum {
             }
         }
         return ans;
+    }
+
+    // practice
+    public List<List<Integer>> threeSum3(int[] nums) {
+//    public List<List<Integer>> threeSum(int[] nums) {
+        if (nums.length < 3)
+            return new LinkedList<>();
+        List<List<Integer>> res = new LinkedList<>();
+        Arrays.sort(nums);
+        int sum = 0;
+
+        for (int i = 0; i < nums.length - 2; i++) {
+            if (nums[i] > sum)
+                return res;
+            if (i != 0 && nums[i] == nums[i - 1])
+                continue;
+
+            int k = nums.length - 1;
+            for (int j = i + 1; j < nums.length - 1; j++) {
+                if (j != i + 1 && nums[j] == nums[j - 1])
+                    continue;
+                while (k > j && nums[i] + nums[j] + nums[k] > sum)
+                    k--;
+                if (j != k && nums[i] + nums[j] + nums[k] == sum)
+                    res.add(Arrays.asList(nums[i], nums[j], nums[k]));
+            }
+        }
+        return res;
     }
 
 }
