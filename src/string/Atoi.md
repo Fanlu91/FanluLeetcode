@@ -1,4 +1,4 @@
-[[T-primitive&string]]
+[[T-primitivetype]]
 
 这道题目的难点在于细节较多，尤其是各种异常和溢出情况的判定。
 
@@ -119,5 +119,5 @@ class Automaton {
 ```
 
 # corner case 
-[[T-primitive&string#int取值范围 -2147483648 到 2147483647]]
+[[T-primitivetype#int取值范围 -2147483648 到 2147483647]]
 

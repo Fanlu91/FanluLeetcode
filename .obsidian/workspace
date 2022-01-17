@@ -4,83 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "ab9b4142f88bcd90",
+        "id": "4d9202c9f2c103a5",
         "type": "leaf",
-        "dimension": 72.59010896898575,
         "state": {
-          "type": "empty",
-          "state": {}
-        },
-        "group": "5124d1e8523b8729"
-      },
-      {
-        "id": "d16408e112055eb3",
-        "type": "split",
-        "dimension": 27.40989103101425,
-        "children": [
-          {
-            "id": "b3a8180aba212498",
-            "type": "leaf",
-            "state": {
-              "type": "localgraph",
-              "state": {
-                "options": {
-                  "collapse-filter": false,
-                  "search": "",
-                  "localJumps": 3,
-                  "localBacklinks": true,
-                  "localForelinks": true,
-                  "localInterlinks": false,
-                  "showTags": false,
-                  "showAttachments": false,
-                  "hideUnresolved": false,
-                  "collapse-color-groups": true,
-                  "colorGroups": [],
-                  "collapse-display": true,
-                  "showArrow": false,
-                  "textFadeMultiplier": 0,
-                  "nodeSizeMultiplier": 1,
-                  "lineSizeMultiplier": 1,
-                  "collapse-forces": true,
-                  "centerStrength": 0.518713248970312,
-                  "repelStrength": 10,
-                  "linkStrength": 1,
-                  "linkDistance": 250,
-                  "scale": 0.6425372093234997,
-                  "close": true
-                }
-              }
-            },
-            "group": "5124d1e8523b8729"
-          },
-          {
-            "id": "d136e0076e2da3da",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            },
-            "group": "5124d1e8523b8729"
-          },
-          {
-            "id": "6e586470f288f1c4",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {}
-            },
-            "group": "5124d1e8523b8729"
+          "type": "markdown",
+          "state": {
+            "file": "src/slidingwindow/LongestSubstringWithoutRepeatingCharacters.md",
+            "mode": "source",
+            "source": false
           }
-        ],
-        "direction": "horizontal"
+        }
       }
     ],
     "direction": "vertical"
@@ -92,6 +25,7 @@
       {
         "id": "7dbd5a5982a0b6e6",
         "type": "tabs",
+        "dimension": 71.7032967032967,
         "children": [
           {
             "id": "46f79a74e0c597da",
@@ -107,7 +41,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "2147483647",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -122,6 +56,7 @@
             "state": {
               "type": "localgraph",
               "state": {
+                "file": "src/slidingwindow/LongestSubstringWithoutRepeatingCharacters.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -155,14 +90,33 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "src/slidingwindow/LongestSubstringWithoutRepeatingCharacters.md"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "82fa58ec205422cf",
+        "type": "tabs",
+        "dimension": 28.296703296703296,
+        "children": [
+          {
+            "id": "086267c4eccb0405",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "src/slidingwindow/LongestSubstringWithoutRepeatingCharacters.md"
+              }
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 217
+    "width": 237
   },
   "right": {
     "id": "04001f8f8bbf5beb",
@@ -178,6 +132,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "src/slidingwindow/LongestSubstringWithoutRepeatingCharacters.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -195,17 +150,17 @@
     "width": 298,
     "collapsed": true
   },
-  "active": "ab9b4142f88bcd90",
+  "active": "4d9202c9f2c103a5",
   "lastOpenFiles": [
-    "src/divideandconquer/MergeKSortedLists.md",
-    "knowledge/thinking/T-merge.md",
-    "src/findpattern/GenerateParentheses.md",
-    "src/merge/MergeTwoSortedLists.md",
-    "knowledge/algorithm/A-recursion.md",
-    "src/backtracking/GenerateParentheses.md",
-    "knowledge/basics/JavaDetails.md",
-    "src/stack/ValidParentheses.md",
-    "src/fastslowpointers/RemoveNthNodeFromEndOfList.md",
-    "knowledge/algorithm/A-fastslowpointers.md"
+    "src/slidingwindow/LongestSubstringWithoutRepeatingCharacters.md",
+    "src/slidingwindow/LongestRepeatingCharacterReplacement.md",
+    "knowledge/algorithm/A-backtracking.md",
+    "src/slidingwindow/SlidingWindowMaximum.md",
+    "knowledge/algorithm/A-slidingwindow.md",
+    "knowledge/basics/vocabulary.md",
+    "src/math/DivideTwoIntegers.md",
+    "knowledge/thinking/T-primitivetype.md",
+    "knowledge/thinking/T-math.md",
+    "out/production/FanluLeetcode/string/Atoi.md"
   ]
 }

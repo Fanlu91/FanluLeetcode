@@ -84,6 +84,28 @@ public class MergeKSortedLists {
         return mergeTwoLists(l1, l2);
     }
 
+
+    // 另一种处理方式
+    public ListNode mergeKLists4(ListNode[] lists) {
+//    public ListNode mergeKLists(ListNode[] lists) {
+        if (lists.length == 0) {
+            return null;
+        }
+        int len = lists.length;
+        while (len != 1) {
+            int count = len % 2 == 0 ? len / 2 : len / 2 + 1;
+            for (int i = 0; i < count; i++) {
+                if (i == count - 1 && len % 2 == 1) {
+                    lists[i] = lists[2 * i];
+                } else {
+                    lists[i] = mergeTwoLists(lists[2 * i], lists[2 * i + 1]);
+                }
+            }
+            len = count;
+        }
+        return lists[0];
+    }
+
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         if (l1 == null)
             return l2;
@@ -97,7 +119,6 @@ public class MergeKSortedLists {
         l2.next = mergeTwoLists(l1, l2.next);
         return l2;
     }
-
 
     class ListNode {
         int val;

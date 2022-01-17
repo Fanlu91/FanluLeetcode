@@ -9,6 +9,9 @@ slant the container 倾斜容器
 
 _palindromic_ 回文
 
+_**quotient** = dividing_ `dividend` _by_ `divisor`
+
+concatenation，字串串接；將兩個字串的首尾相接的操作。
 
 # BTW
 

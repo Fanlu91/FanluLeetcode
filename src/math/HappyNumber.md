@@ -1,3 +1,3 @@
 #detail
 
-[[A-math]]
+[[T-math]]
