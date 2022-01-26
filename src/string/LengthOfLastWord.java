@@ -15,7 +15,7 @@ public class LengthOfLastWord {
     public int lengthOfLastWord(String s) {
         if (s.length() == 0)
             return 0;
-        System.out.println(s.length());
+
         int ans = 0;
         int index = s.length() - 1;
         while (index > 0 && s.charAt(index) == ' ')
@@ -46,5 +46,18 @@ public class LengthOfLastWord {
             index--;
         }
         return ans;
+    }
+
+    // practice
+    public int lengthOfLastWord3(String s) {
+//    public int lengthOfLastWord(String s) {
+        s = s.trim();
+        int i = s.length() - 1;
+        while (s.charAt(i) != ' ') {
+            i--;
+            if (i <= 0) // i 可能等于 - 1
+                return s.length();
+        }
+        return s.length() - i - 1;
     }
 }

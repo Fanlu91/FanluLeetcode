@@ -1,6 +1,6 @@
 package trie;
 
-// Source : https://leetcode.com/problems/add-and-search-word-data-structure-design/
+// Source : https://leetcode.com/problems/design-add-and-search-words-data-structure/
 // Id     : 211
 // Author : Fanlu Hai | https://github.com/Fanlu91/FanluLeetcode
 // Topic  : Trie
@@ -10,10 +10,10 @@ package trie;
 // Tips   :
 // Result : 100.00% 76.32%
 
-public class AddAndSearchWordDataStructureSesign {
+public class DesignAddAndSearchWordsDataStructure {
     TrieNode root;
 
-    public AddAndSearchWordDataStructureSesign() {
+    public DesignAddAndSearchWordsDataStructure() {
         root = new TrieNode();
     }
 
@@ -73,7 +73,7 @@ public class AddAndSearchWordDataStructureSesign {
     }
 
     public static void main(String[] args) {
-        AddAndSearchWordDataStructureSesign obj = new AddAndSearchWordDataStructureSesign();
+        DesignAddAndSearchWordsDataStructure obj = new DesignAddAndSearchWordsDataStructure();
 //        obj.addWord("at");
         obj.addWord("and");
 //        obj.addWord("an");

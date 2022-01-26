@@ -1,14 +1,21 @@
+#practice 
 [[A-twopointers]]
+
+简单题目绝对不能掉以轻心。
+
 ```java
 public int removeDuplicates(int[] nums) {
-	if (nums.length == 0)
-		return 0;
-	int right = 1, left = 0;
-	for (; right < nums.length; right++) {
-		if (nums[left] != nums[right]) {
-			nums[++left] = nums[right];
+	int res = 0;
+	int i = 0;
+
+	while (i < nums.length) {
+		if (nums[res] != nums[i]) {
+			// 最关键的思路在下面两行，先增加res，再移动
+			res++;
+			nums[res] = nums[i];
 		}
+		i++;
 	}
-	return left + 1;
+	return res + 1;
 }
 ```

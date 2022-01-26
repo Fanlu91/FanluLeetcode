@@ -7,6 +7,7 @@
 Character.isDigit(c);
 int value = Character.getNumericValue(c);
 
+
 ```
 
 ## 溢出
@@ -34,7 +35,7 @@ System.out.println(Math.abs(Integer.MIN_VALUE + 1));
 > Note that if the argument is equal to the value of **Integer.MIN_VALUE**, the most negative representable int value, the result is that same value, which is **negative**.
 
 ### 溢出判断
-[[Atoi#判断溢出]]
+[[Atoi#判断溢出]] 
 ```java
 int value = Character.getNumericValue(s.charAt(index));
 // 处理溢出问题

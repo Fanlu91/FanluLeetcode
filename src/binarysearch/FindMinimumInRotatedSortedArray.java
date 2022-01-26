@@ -14,10 +14,11 @@ public class FindMinimumInRotatedSortedArray {
     /**
      * after rotation，all elements on the left side is bigger than all on the right
      * so the minimum value is the **first element on the right side**
-     *
+     * <p>
      * if num[m] > num[r], it means m is on the left, move l to m + 1 to check [m+1,r];
      * if num[m] < num[r], it means m is on the right side, move r to m to check [m,r],
-     *  you should not check [m + 1, r] here as m is already on the right side ,you might skip the right element(num[m]).
+     * you should not check [m + 1, r] here as m is already on the right side ,you might skip the right element(num[m]).
+     *
      * @param nums
      * @return
      */

@@ -1,4 +1,4 @@
-package string;
+package palindromic;
 
 // Source : https://leetcode.com/problems/valid-palindrome/
 // Id     : 125

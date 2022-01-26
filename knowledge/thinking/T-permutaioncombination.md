@@ -32,4 +32,4 @@
 
 
 # 关联算法
-排列组合问题较多涉及 [[A-backtracking]]
+排列组合问题较多涉及 [[A-backtracking(dfs)]]

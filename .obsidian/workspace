@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "src/slidingwindow/LongestSubstringWithoutRepeatingCharacters.md",
+            "file": "knowledge/thinking/T-pureprogramming.md",
             "mode": "source",
             "source": false
           }
@@ -41,7 +41,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "2147483647",
+                "query": "genera",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -56,7 +56,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "src/slidingwindow/LongestSubstringWithoutRepeatingCharacters.md",
+                "file": "knowledge/thinking/T-pureprogramming.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -91,7 +91,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "src/slidingwindow/LongestSubstringWithoutRepeatingCharacters.md"
+                "file": "knowledge/thinking/T-pureprogramming.md"
               }
             }
           }
@@ -108,7 +108,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "src/slidingwindow/LongestSubstringWithoutRepeatingCharacters.md"
+                "file": "knowledge/thinking/T-pureprogramming.md"
               }
             }
           }
@@ -132,7 +132,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "src/slidingwindow/LongestSubstringWithoutRepeatingCharacters.md",
+                "file": "knowledge/thinking/T-pureprogramming.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -152,15 +152,15 @@
   },
   "active": "4d9202c9f2c103a5",
   "lastOpenFiles": [
-    "src/slidingwindow/LongestSubstringWithoutRepeatingCharacters.md",
-    "src/slidingwindow/LongestRepeatingCharacterReplacement.md",
-    "knowledge/algorithm/A-backtracking.md",
-    "src/slidingwindow/SlidingWindowMaximum.md",
-    "knowledge/algorithm/A-slidingwindow.md",
-    "knowledge/basics/vocabulary.md",
-    "src/math/DivideTwoIntegers.md",
+    "knowledge/thinking/T-pureprogramming.md",
+    "src/binarysearch/FindMinimumInRotatedSortedArrayII.md",
+    "src/binarysearch/FindMinimumInRotatedSortedArray.md",
     "knowledge/thinking/T-primitivetype.md",
-    "knowledge/thinking/T-math.md",
-    "out/production/FanluLeetcode/string/Atoi.md"
+    "knowledge/dataStructure/D-array.md",
+    "knowledge/basics/刷题思路.md",
+    "knowledge/basics/vocabulary.md",
+    "knowledge/basics/JavaDetails.md",
+    "knowledge/basics/design.md",
+    "knowledge/basics/collections.md"
   ]
 }

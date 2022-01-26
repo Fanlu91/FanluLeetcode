@@ -10,11 +10,15 @@ package twopointers;
 // Tips   :
 // Result : 100% 99.47%
 
+import java.util.HashSet;
+
 public class RemoveDuplicatesFromSortedArray {
     // 97.75% 1ms 75.00%
     public int removeDuplicates(int[] nums) {
         if (nums.length < 2)
             return nums.length;
+
+        new HashSet<>().toArray(new Integer[]{});
 
         int pointer = 0;
         for (int i = 1; i < nums.length; i++) {
@@ -26,20 +30,22 @@ public class RemoveDuplicatesFromSortedArray {
         return pointer + 1;
     }
 
+    // best
     // 100% 99.47%
     public int removeDuplicatesImprove(int[] nums) {
 //    public int removeDuplicates(int[] nums) {
-        int pointer = 0;
-        int index = 0;
+        int res = 0;
+        int i = 0;
 
-        while (index < nums.length) {
-            if (nums[pointer] == nums[index]) {
-                index++;
-            } else {
-                nums[++pointer] = nums[index++];
+        while (i < nums.length) {
+            if (nums[res] != nums[i]) {
+                // 最关键的思路在下面两行，先增加res，再移动
+                res++;
+                nums[res] = nums[i];
             }
+            i++;
         }
-        return pointer + 1;
+        return res + 1;
     }
 
     // practice
@@ -54,5 +60,22 @@ public class RemoveDuplicatesFromSortedArray {
             }
         }
         return left + 1;
+    }
+
+    // practice
+    public int removeDuplicates3(int[] nums) {
+//    public int removeDuplicates(int[] nums) {
+        if (nums.length < 2)
+            return nums.length;
+        int res = 1;
+        int i = 1;
+        while (i < nums.length) {
+            if (nums[i] != nums[i - 1]) {
+                nums[res] = nums[i];
+                res++;
+            }
+            i++;
+        }
+        return res;
     }
 }

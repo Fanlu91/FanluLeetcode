@@ -25,7 +25,7 @@ public class PalindromeNumber {
         return x == tmp || x == tmp / 10;
     }
 
-    // 4ms
+    // 5 ms
     public boolean isPalindrome1(int x) {
 //    public boolean isPalindrome(int x) {
         if (x < 0)
@@ -37,5 +37,23 @@ public class PalindromeNumber {
             num /= 10;
         }
         return cur == x;
+    }
+
+    // practice
+    // 8ms
+    public boolean isPalindrome2(int x) {
+//    public boolean isPalindrome(int x) {
+        if (x < 0)
+            return false;
+        if (x < 10)
+            return true;
+        if (x % 10 == 0)
+            return false;
+        int tmp = 0;
+        while (tmp < x) {
+            tmp = tmp * 10 + x % 10;
+            x /= 10;
+        }
+        return x == tmp ? true : x == tmp / 10 ? true : false;
     }
 }
