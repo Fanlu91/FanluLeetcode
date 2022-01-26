@@ -1,21 +1,21 @@
-package string;
+package pureprogramming;
 // Source : https://leetcode.com/problems/reverse-words-in-a-string/
 // Id     : 151
 // Author : Fanlu Hai | https://github.com/Fanlu91/FanluLeetcode
 // Date   : 2022/1/20
-// Topic  : string 
-// Level  : Medium-
+// Topic  : pureprogramming
+// Level  : Easy
 // Other  :
 // Tips   :
 // Links  :
-// Result :
+// Result : 100.00% 16.01%
 
 public class ReverseWordsInAString {
-    // 3ms
+    // 2ms
     public String reverseWords(String s) {
         s = s.trim();
         StringBuilder sb = new StringBuilder();
-        int r = s.length() - 1, l = r;
+        int l = s.length() - 1, r = l;
         while (l > 0) {
             if (s.charAt(l) == ' ') {
                 if (l != r)
@@ -32,6 +32,8 @@ public class ReverseWordsInAString {
 
         return sb.toString();
     }
+
+
 
     public static void main(String[] args) {
         ReverseWordsInAString reverseWordsInAString = new ReverseWordsInAString();

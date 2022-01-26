@@ -1,6 +1,6 @@
 package findpattern;
-// Source : https://leetcode.com/problems/
-// Id     : 
+// Source : https://leetcode.com/problems/generate-parentheses/
+// Id     : 22
 // Author : Fanlu Hai | https://github.com/Fanlu91/FanluLeetcode
 // Date   : 2022/1/12
 // Topic  : backtracking 

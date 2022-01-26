@@ -8,7 +8,7 @@ package dynamicprogramming;
 // Other  :
 // Tips   :
 // Links  :
-// Result :
+// Result : 100% 100%%
 
 public class JumpGame {
     // 150ms

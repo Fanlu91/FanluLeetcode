@@ -58,6 +58,9 @@ public class ReadMeGenerator {
             put("matrix", "Matrix");
             put("morristraversal", "Morris Traversal");
             put("permutationcombination", "Permutation & Combination");
+            put("findpattern", "Find Pattern");
+            put("merge", "Merge");
+            put("palindromic","Palindromic");
         }
     };
 

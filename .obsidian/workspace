@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "knowledge/thinking/T-pureprogramming.md",
-            "mode": "source",
+            "file": "README.md",
+            "mode": "preview",
             "source": false
           }
         }
@@ -56,7 +56,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "knowledge/thinking/T-pureprogramming.md",
+                "file": "README.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -91,7 +91,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "knowledge/thinking/T-pureprogramming.md"
+                "file": "README.md"
               }
             }
           }
@@ -108,7 +108,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "knowledge/thinking/T-pureprogramming.md"
+                "file": "README.md"
               }
             }
           }
@@ -132,7 +132,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "knowledge/thinking/T-pureprogramming.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -152,15 +152,15 @@
   },
   "active": "4d9202c9f2c103a5",
   "lastOpenFiles": [
+    "README.md",
     "knowledge/thinking/T-pureprogramming.md",
+    "src/pureprogramming/ReverseWordsInAString.md",
     "src/binarysearch/FindMinimumInRotatedSortedArrayII.md",
     "src/binarysearch/FindMinimumInRotatedSortedArray.md",
     "knowledge/thinking/T-primitivetype.md",
     "knowledge/dataStructure/D-array.md",
     "knowledge/basics/刷题思路.md",
     "knowledge/basics/vocabulary.md",
-    "knowledge/basics/JavaDetails.md",
-    "knowledge/basics/design.md",
-    "knowledge/basics/collections.md"
+    "knowledge/basics/JavaDetails.md"
   ]
 }

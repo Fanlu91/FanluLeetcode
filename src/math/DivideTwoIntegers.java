@@ -8,7 +8,7 @@ package math;
 // Other  :
 // Tips   :
 // Links  :
-// Result :
+// Result : 88% 49%
 
 public class DivideTwoIntegers {
     // 2736 ms

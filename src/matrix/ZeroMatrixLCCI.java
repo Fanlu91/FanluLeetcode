@@ -8,7 +8,7 @@ package matrix;
 // Other  :
 // Tips   :
 // Links  :
-// Result :
+// Result : 50% 50%
 
 import java.util.HashSet;
 import java.util.Set;

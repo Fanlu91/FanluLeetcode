@@ -8,7 +8,7 @@ package math;
 // Other  :
 // Tips   :
 // Links  :
-// Result :
+// Result : 100% 100%
 
 import java.util.HashSet;
 import java.util.Set;
@@ -38,6 +38,7 @@ public class DivingBoardLCCI {
         dfs(s, l, sum + l, k - 1, set);
     }
 
+    // 1ms
     public int[] divingBoard1(int shorter, int longer, int k) {
 //    public int[] divingBoard(int shorter, int longer, int k) {
         if (k == 0)
