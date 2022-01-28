@@ -36,3 +36,26 @@ switch没有else 可以用
 switch不能以null为条件，因此如果需要处理null的情况，应该在语句之前去判断处理。
 
 [[ValidParentheses]]
+
+
+# 字符字母
+```java
+// ⼤写转⼩写
+// s.toLowerCase()
+private char toLower(char c) {
+	if (c >= 'a' && c <= 'z') return c;
+	if (c >= '0' && c <= '9') return c;
+//⼤写A~Z 65~90，⼩写a~z 97~122
+	return (char)((int)c+32);
+}
+
+
+// 判断是不是数字或字⺟
+// Character.isLetterOrDigit(c);
+private boolean isAlpha(char c) {
+	if (c >= 'a' && c <= 'z') return true;
+	if (c >= 'A' && c <= 'Z') return true;
+	if (c >= '0' && c <= '9') return true;
+	return false;
+}
+```

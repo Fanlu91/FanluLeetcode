@@ -1,8 +1,5 @@
 package heap;
 
-import binarytree.SameTree;
-
-import java.util.PriorityQueue;
 // Source : https://leetcode.com/problems/kth-largest-element-in-a-stream/
 // Id     : 703
 // Author : Fanlu Hai | https://github.com/Fanlu91/FanluLeetcode

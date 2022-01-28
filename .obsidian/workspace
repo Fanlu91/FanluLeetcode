@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "README.md",
-            "mode": "preview",
+            "file": "knowledge/basics/王争课程.md",
+            "mode": "source",
             "source": false
           }
         }
@@ -56,7 +56,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "README.md",
+                "file": "knowledge/basics/王争课程.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -91,7 +91,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "knowledge/basics/王争课程.md"
               }
             }
           }
@@ -108,7 +108,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "knowledge/basics/王争课程.md"
               }
             }
           }
@@ -132,7 +132,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "knowledge/basics/王争课程.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -152,15 +152,15 @@
   },
   "active": "4d9202c9f2c103a5",
   "lastOpenFiles": [
+    "knowledge/basics/王争课程.md",
+    "knowledge/basics/刷题思路.md",
+    "knowledge/basics/JavaDetails.md",
     "README.md",
     "knowledge/thinking/T-pureprogramming.md",
     "src/pureprogramming/ReverseWordsInAString.md",
     "src/binarysearch/FindMinimumInRotatedSortedArrayII.md",
     "src/binarysearch/FindMinimumInRotatedSortedArray.md",
     "knowledge/thinking/T-primitivetype.md",
-    "knowledge/dataStructure/D-array.md",
-    "knowledge/basics/刷题思路.md",
-    "knowledge/basics/vocabulary.md",
-    "knowledge/basics/JavaDetails.md"
+    "knowledge/dataStructure/D-array.md"
   ]
 }

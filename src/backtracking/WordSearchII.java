@@ -118,7 +118,7 @@ public class WordSearchII {
     /**
      * while focusing on the small part to "improve performance",
      * Just realised I made a big mistake, very stupid one..
-     * I use trie, or the children array, like a linked list....
+     * I use tree.trie, or the children array, like a linked list....
      * which is why it's so slow of course
      * <p>
      * never let this happen again.
