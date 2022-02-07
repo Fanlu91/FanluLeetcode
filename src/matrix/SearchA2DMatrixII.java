@@ -37,8 +37,10 @@ public class SearchA2DMatrixII {
         while (i < matrix.length && j >= 0) {
             if (matrix[i][j] == target)
                 return true;
-            else if (matrix[i][j] < target) i++;  //排除一行
-            else if (matrix[i][j] > target) j--;  //排除一列
+            else if (matrix[i][j] < target)
+                i++;  //排除一行
+            else
+                j--;  //排除一列
         }
         return false;
     }

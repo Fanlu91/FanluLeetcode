@@ -95,11 +95,12 @@ public class IntersectionOfTwoLinkedLists {
     }
 
     /**
-     * 三段距离 a b e
-     * a + e + b
+     * 三段距离 a b c
+     * a + c + b
      * =
-     * b + e + a
+     * b + c + a
      * 相遇的地方即相交
+     *
      * @param headA
      * @param headB
      * @return
@@ -123,6 +124,45 @@ public class IntersectionOfTwoLinkedLists {
         return nodeA;
     }
 
+
+    public ListNode getIntersectionNode3(ListNode headA, ListNode headB) {
+//    public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
+        // 求链表A的⻓度na
+        int na = 0;
+        ListNode pA = headA;
+        while (pA != null) {
+            na++;
+            pA = pA.next;
+        }
+        // 求链表B的⻓度nb
+        int nb = 0;
+        ListNode pB = headB;
+        while (pB != null) {
+            nb++;
+            pB = pB.next;
+        }
+        // 先让指向⻓链表的指针多⾛na-nb或nb-na步
+        pA = headA;
+        pB = headB;
+        if (na >= nb) {
+            for (int i = 0; i < na - nb; ++i) {
+                pA = pA.next;
+            }
+        } else {
+            for (int i = 0; i < nb - na; ++i) {
+                pB = pB.next;
+            }
+        }
+        // 让pA和pB同步前进
+        while (pA != null && pB != null && pA != pB) {
+            pA = pA.next;
+            pB = pB.next;
+        }
+        if (pA == null || pB == null)
+            return null;
+        else
+            return pA;
+    }
 
     class ListNode {
         int val;

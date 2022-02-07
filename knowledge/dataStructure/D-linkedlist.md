@@ -12,6 +12,13 @@ cur = node; // 移动指针
 ```
 考察对引用（指针）的理解。
 
+# 画图
+理解链表基础 必须画图，比如链表翻转等，不画图去硬想效率很低。
+
+链表相关的问题都会涉及“遍历”，通过“画图举例”确定遍历的“三要素”：
+1. 遍历的结束条件：`p==null or p.next==null`
+2. 指针的初始值：`p=head or other`
+3. 遍历的核⼼逻辑，视题目的要求而定
 
 # Singly/Doubly/Circular
 
@@ -67,107 +74,34 @@ In a doubly-linked list, the sentinel node points to the first and last elements
 
 
 
-# 数组与链表的取舍
-
+# 数组与链表使用取舍
 实际开发当中，不能简单的用复杂度分析来决定使用哪种数据结构。
 
-如数组使用的是连续内存，可以CPU缓存机制可以预读数组中的数据，访问效率更高，但是链表的离散存储对CPU的缓存机制不是很友好，无法高效预读。（CPU在从内存读取数据的时候，会先把读取到的数据加载到CPU的缓存中。而CPU每次从内存读取数据并不是只读取那个特定要访问的地址，而是读取一个数据块，并保存到CPU缓存中，然后下次访问内存数据的时候就会先从CPU缓存开始查找，如果找到就不需要再从内存中取。这样就实现了比内存访问速度更快的机制）
+如数组使用的是连续内存，可以**CPU缓存机制可以预读数组中的数据**，访问效率更高，但是链表的离散存储对CPU的缓存机制不是很友好，无法高效预读。
+- CPU在从内存读取数据的时候，会先把读取到的数据加载到CPU的缓存中。而CPU每次从内存读取数据并不是只读取那个特定要访问的地址，而是读取一个数据块，并保存到CPU缓存中，然后下次访问内存数据的时候就会先从CPU缓存开始查找，如果找到就不需要再从内存中取。这样就实现了比内存访问速度更快的机制
 
-数组的缺陷是大小固定，申请太大不一定有，申请太小扩容很麻烦。
-链表本身没有大小限制。
+**对内存的使用要求苛刻应多使用数组**，链表除了需要额外的存储空间去存放指针，频繁的插入删除还会导致频繁的内存申请和释放，造成内存随便，触发gc。
 
-对内存的使用要求苛刻应多使用数组，链表除了需要额外的存储空间去存放指针，频繁的插入删除还会导致频繁的内存申请和释放，造成内存随便，触发gc。
-
+数组的缺陷是大小固定，申请太大不一定有，申请太小扩容很麻烦，链表本身没有大小限制。
 
 
-## 一些技巧
-
-1. 理解指针或引用的含义
-   含义：将某个变量（对象）赋值给指针（引用），实际上就是就是将这个变量（对象）的地址赋值给指针（引用）。
-   示例：
-   p—>next = q; 表示p节点的后继指针存储了q节点的内存地址。
-   p—>next = p—>next—>next; 表示p节点的后继指针存储了p节点的下下个节点的内存地址。
-
-2. 警惕丢失指针和内存泄露
-   插入第一个/删除最后一个
-3. 利用哨兵简化问题
-   减少特殊情况及相应的判断
-4. 重点留意边界条件处理
+# 边界条件处理
    - **链表为空**
    - **只包含一个结点**
    - **只包含两个结点**
    - **处理头/尾结点，别在插入、删除后丢掉了头/尾**
-
-5. 画图举例，辅助思考
-6. 多写多练，没有捷径
-   孰能生巧，不管是什么算法，只有经过反复的练习，才能信手拈来。
+   - 警惕丢失指针和内存泄露。插入第一个/删除最后一个
 
 
-
-### 链表翻转
-
-#### 基本翻转
-
-首先把握好链表数据结构的三个关键指针 pre cur next。
-
-两个Node翻转这件事本身很简单，不要想复杂了，把要反转的节点`cur`指向其前一个节点`pre`就行，是很简单的操作（下2）。至此**翻转已经完成**。
-
-问题在于这样操作后，节点cure原本的指向cur.next会被覆盖，如果不存下来无法继续遍历链表，所以需要在操作前保存后一个原本的指针到next（下1），保存之后才能让指针继续前进并继续翻转（下3）。
-
-
-
-```java
-public ListNode reverseList(ListNode head) {
-  if (head == null || head.next == null)
-    return head;
-  ListNode pre = null, cur = head, next;
-
-  while (cur != null) {
-    next = cur.next;    // 1. save next pointer
-    cur.next = pre;     // 2. reverse current node
-    // 3. advance current and prev
-    pre = cur;
-    cur = next;
-
-  }
-  // from the last iteration, pre pointed to current node which does not have a next,
-  // it means pre is the new head
-  return pre;
-}
-```
-
-
-
-#### 递归解
-
-递归到链表的结尾处开始翻转。开始翻转时，可以认为当前节点cur之后的节点已经完成了翻转，需要做的是把cur.next节点的next指向cur，并把cur.next置空。
-
-```java
-public ListNode reverseListRecursive(ListNode cur) {
-  if (cur == null || cur.next == null)
-    return cur;
-
-  ListNode newHead = reverseListRecursive(cur.next);
-  //reverse current cur
-  cur.next.next = cur;
-  cur.next = null;
-  return newHead;
-}
-```
-
-
-
-java 反转链表的操作：
-
-```
-Collections.reverse(list);
-```
-
-
+特殊情况处理：是否需要对头节点、尾节点、空链表等做特殊处理
+引⼊虚拟节点：是否可以通过添加虚拟节点简化编程
 
 ## 必须掌握的链表问题清单
 
+[[ReverseLinkedList]]
 单链表翻转  206 92
+
+
 
 转链表中环的检测 （双指针）
 

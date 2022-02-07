@@ -1,1 +1,1 @@
-[[D-stack]]
+[[D-stack&queue]]

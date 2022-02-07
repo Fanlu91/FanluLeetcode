@@ -61,6 +61,8 @@ public class ReadMeGenerator {
             put("findpattern", "Find Pattern");
             put("merge", "Merge");
             put("palindromic","Palindromic");
+            put("fastslowpointers","Fast Slow Pointers");
+            put("pureprogramming","Pure Programming");
         }
     };
 

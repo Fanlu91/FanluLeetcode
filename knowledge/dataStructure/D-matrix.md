@@ -37,3 +37,50 @@ if (direction == 0) {
 }
 ```
 
+
+# 正矩阵翻转
+对于`matrix[i][j], i<n,j<m`本质上来说有4种翻转：
+## 水平方向上下翻转 
+`(i,j) - (n-i-1,j)`
+## 竖直方向左右翻转
+`(i,j) - (i,m-j-1)`
+## 对角线翻转（左上右下对角线、左下右上对角线）
+`(i,j) - (j,i)`
+
+```java
+// 水平上下翻转
+for (int i = 0; i < n / 2; i++) {
+	for (int j = 0; j < n; j++) {
+		swap(matrix[i][j], matrix[n - 1 - i][j]);
+	}
+}
+// 竖直左右翻转
+for (int j = 0; j < n / 2; j++) {
+	for (int i = 0; i < n; i++) {
+		swap(matrix[i][j], matrix[i][n - 1 - j]);
+	}
+}
+
+// 左上到右下为轴，遍历左下区域，与右上区域swap
+for (int i = 0; i < n; i++) {
+	for (int j = 0; j < i; j++) {
+		swap(matrix[i][j], matrix[j][i]);
+	}
+}
+
+// 左下到右上为轴，遍历左上区域，与右下区域swap
+for (int i = 0; i < n; i++) {
+	for (int j = 0; j < n - i; j++) {
+		swap(matrix[i][j], matrix[j][i]) ;
+	}
+}
+```
+
+# 顺时针旋转
+使用翻转实现旋转
+## 90
+上下翻转 + 左上到右下为轴对角线翻转
+## 180
+上下翻转 + 左右翻转
+## 270
+左右翻转 + 左上到右下为轴对角线翻转

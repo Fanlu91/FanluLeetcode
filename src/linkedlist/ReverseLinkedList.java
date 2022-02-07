@@ -50,6 +50,19 @@ public class ReverseLinkedList {
         return newHead;
     }
 
+    public ListNode reverseList1(ListNode head) {
+//    public ListNode reverseList(ListNode head) {
+        ListNode newHead = null, p = head;
+        while (p != null) {
+            ListNode tmp = p.next;
+            p.next = newHead;
+            newHead = p;
+            p = tmp;
+        }
+        return newHead;
+
+    }
+
     class ListNode {
         int val;
         ListNode next;

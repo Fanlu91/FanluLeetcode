@@ -48,6 +48,40 @@ public class ReverseNodesInKGroup {
     }
 
 
+    // practice
+    public ListNode reverseKGroup1(ListNode head, int k) {
+//    public ListNode reverseKGroup(ListNode head, int k) {
+        ListNode sentinel = new ListNode(-1, head);
+        ListNode p1 = sentinel, p2 = sentinel;
+        int count = 0;
+        while (p2.next != null) {
+            p2 = p2.next;
+            count++;
+            if (count == k) {
+                p2 = reverseGroup1(p1, p2.next);
+                p1 = p2;
+                count = 0;
+            }
+        }
+        return sentinel.next;
+    }
+
+    // sentinel & end nodes are not in the group
+    // return tail to be the next sentinel
+    private ListNode reverseGroup1(ListNode sentinel, ListNode end) {
+        // System.out.println(sentinel.val+" "+end.val);
+        ListNode newHead = end, cur = sentinel.next, tmp = null, tail = cur;
+        while (cur != end) {
+            tmp = cur.next;
+            cur.next = newHead;
+
+            newHead = cur;
+            cur = tmp;
+        }
+        sentinel.next = newHead;
+        return tail;
+    }
+
     class ListNode {
         int val;
         ListNode next;

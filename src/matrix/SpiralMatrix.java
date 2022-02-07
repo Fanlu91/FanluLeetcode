@@ -10,13 +10,14 @@ package matrix;
 // Tips   :
 // Result : 100.00% 99.54%
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
 public class SpiralMatrix {
 
     // O(M*N)
-    // 100.00% 85.61%
+    // 0ms
     public List<Integer> spiralOrder(int[][] matrix) {
         int direction = 0;
         List<Integer> res = new LinkedList<>();
@@ -29,7 +30,11 @@ public class SpiralMatrix {
         int size = matrix.length * matrix[0].length;
 
         for (int i = 0; i < size; ) {
-            if (column == matrix[0].length || column == -1 || row == matrix.length || row == -1 || visited[row][column]) {
+            if (column == matrix[0].length
+                    || column == -1
+                    || row == matrix.length
+                    || row == -1
+                    || visited[row][column]) {
                 row = preRow;
                 column = preColumn;
                 direction = (direction + 1) % 4;
@@ -60,8 +65,9 @@ public class SpiralMatrix {
 
     /**
      * 不使用额外的visited
-     *
+     * <p>
      * 而是不断缩小上下左右边界遍历
+     *
      * @param matrix
      * @return
      */
@@ -71,7 +77,7 @@ public class SpiralMatrix {
         List<Integer> res = new LinkedList<>();
         if (matrix == null || matrix.length == 0 || matrix[0].length == 0)
             return res;
-        int l = 0, r = matrix[0].length - 1, t = 0, b = matrix.length - 1, x = 0;
+        int l = 0, r = matrix[0].length - 1, t = 0, b = matrix.length - 1;
 
         while (true) {
             for (int i = l; i <= r; i++)
@@ -94,10 +100,45 @@ public class SpiralMatrix {
         return res;
     }
 
+    // 0ms
+    public List<Integer> spiralOrder2(int[][] matrix) {
+//    public List<Integer> spiralOrder(int[][] matrix) {
+        int m = matrix.length, n = matrix[0].length;
+        List<Integer> result = new ArrayList<>();
+        int left = 0, right = n - 1, top = 0, bottom = m - 1;
+        while (left <= right && top <= bottom) {
+            //上面左到右
+            for (int j = left; j <= right; ++j) {
+                result.add(matrix[top][j]);
+            }
+            // 右边上到下
+            for (int i = top + 1; i <= bottom; ++i) {
+                result.add(matrix[i][right]);
+            }
+            // 如果上下不为一行，说明还有底，要做右到左
+            if (top != bottom) {
+                for (int j = right - 1; j >= left; --j) {
+                    result.add(matrix[bottom][j]);
+                }
+            }
+            // 如果左右不为一列，说明还有左边，要下到上。
+            if (left != right) {
+                for (int i = bottom - 1; i > top; --i) {
+                    result.add(matrix[i][left]);
+                }
+            }
+            // 转完一圈
+            left++;
+            right--;
+            top++;
+            bottom--;
+        }
+        return result;
+    }
 
     public static void main(String[] args) {
         SpiralMatrix s = new SpiralMatrix();
-//        s.spiralOrder(new int[][]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}});
-        s.spiralOrder(new int[][]{{1}});
+        s.spiralOrder(new int[][]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}});
+//        s.spiralOrder(new int[][]{{1}});
     }
 }

@@ -1,4 +1,4 @@
-[[D-stack]]
+[[D-stack&queue]]
 
 典型栈的应用。
 

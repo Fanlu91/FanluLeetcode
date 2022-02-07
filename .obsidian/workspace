@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "knowledge/basics/王争课程.md",
-            "mode": "source",
+            "file": "README.md",
+            "mode": "preview",
             "source": false
           }
         }
@@ -41,7 +41,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "genera",
+                "query": "jump",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -56,7 +56,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "knowledge/basics/王争课程.md",
+                "file": "README.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -91,7 +91,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "knowledge/basics/王争课程.md"
+                "file": "README.md"
               }
             }
           }
@@ -108,7 +108,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "knowledge/basics/王争课程.md"
+                "file": "README.md"
               }
             }
           }
@@ -132,7 +132,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "knowledge/basics/王争课程.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,25 +142,35 @@
                 "unlinkedCollapsed": true
               }
             }
+          },
+          {
+            "id": "42d7c7181760fafc",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "README.md"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 298,
-    "collapsed": true
+    "width": 298
   },
   "active": "4d9202c9f2c103a5",
   "lastOpenFiles": [
-    "knowledge/basics/王争课程.md",
-    "knowledge/basics/刷题思路.md",
-    "knowledge/basics/JavaDetails.md",
     "README.md",
-    "knowledge/thinking/T-pureprogramming.md",
-    "src/pureprogramming/ReverseWordsInAString.md",
-    "src/binarysearch/FindMinimumInRotatedSortedArrayII.md",
-    "src/binarysearch/FindMinimumInRotatedSortedArray.md",
-    "knowledge/thinking/T-primitivetype.md",
-    "knowledge/dataStructure/D-array.md"
+    "knowledge/dataStructure/D-stack&queue.md",
+    "knowledge/basics/design.md",
+    "knowledge/basics/collections.md",
+    "src/linkedlist/ReverseNodesInKGroup.md",
+    "src/linkedlist/OddEvenLinkedList.md",
+    "src/findpattern/palindromic/PalindromeLinkedList.md",
+    "src/linkedlist/ReverseLinkedList.md",
+    "knowledge/dataStructure/D-linkedlist.md",
+    "src/findpattern/RotateImage.md"
   ]
 }

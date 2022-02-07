@@ -84,3 +84,40 @@ private ListNode reverseGroup(ListNode start, ListNode end) {
 	return pre;
 }
 ```
+
+
+再次练习时又趟了一个新坑
+要注意分组边界处理，尤其注意边界也可能被翻转移动
+```java
+public ListNode reverseKGroup(ListNode head, int k) {
+	ListNode sentinel = new ListNode(-1, head);
+	ListNode p1 = sentinel, p2 = sentinel;
+	int count = 0;
+	while (p2.next != null) {
+		p2 = p2.next;
+		count++;
+		if (count == k) {
+			p2 = reverseGroup1(p1, p2.next);
+			p1 = p2;
+			count = 0;
+		}
+	}
+	return sentinel.next;
+}
+
+// sentinel & end nodes are not in the group
+// return tail to be the next sentinel
+private ListNode reverseGroup1(ListNode sentinel, ListNode end) {
+	// System.out.println(sentinel.val+" "+end.val);
+	ListNode newHead = end, cur = sentinel.next, tmp = null, tail = cur;
+	while (cur != end) {
+		tmp = cur.next;
+		cur.next = newHead;
+
+		newHead = cur;
+		cur = tmp;
+	}
+	sentinel.next = newHead;
+	return tail;
+}
+```

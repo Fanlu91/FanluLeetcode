@@ -91,13 +91,65 @@ public class AddTwoNumbers {
         return result;
     }
 
+    // practice
+    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+        ListNode sentinel = new ListNode(), cur = sentinel;
+        int carry = 0;
+        while (true) {
+            if (l1 == null || l2 == null) {
+                if (carry == 0) {
+                    if (l1 == null) {
+                        cur.next = l2;
+                        break;
+                    }
+                    if (l2 == null) {
+                        cur.next = l1;
+                        break;
+                    }
+                } else {
+                    if (l1 == null && l2 == null) {
+                        cur.next = new ListNode(1);
+                        break;
+                    } else {
+                        ListNode tmp = l1 == null ? l2 : l1; // l1 or l2
+                        int val = tmp.val + carry;
+                        if (val > 9) {
+                            carry = 1;
+                            val = val % 10;
+                        } else {
+                            carry = 0;
+                        }
+                        cur.next = new ListNode(val);
+                        cur = cur.next;
+                        if (tmp == l1) {
+                            l1 = l1.next;
+                        } else {
+                            l2 = l2.next;
+                        }
+                    }
+                }
+            } else {
+                int val = l1.val + l2.val + carry;
+                if (val > 9) {
+                    carry = 1;
+                    val = val % 10;
+                } else {
+                    carry = 0;
+                }
+                cur.next = new ListNode(val);
+                cur = cur.next;
+                l1 = l1.next;
+                l2 = l2.next;
+            }
+        }
+        return sentinel.next;
+    }
+
     class ListNode {
         int val;
         ListNode next;
 
-        ListNode() {
-
-        }
+        ListNode() {}
 
         ListNode(int x) {
             val = x;
