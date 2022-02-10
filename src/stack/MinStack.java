@@ -1,4 +1,4 @@
-package design;
+package stack;
 
 // Source : https://leetcode.com/problems/min-stack/
 // Id     : 155

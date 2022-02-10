@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "README.md",
-            "mode": "preview",
+            "file": "knowledge/dataStructure/D-stack&queue.md",
+            "mode": "source",
             "source": false
           }
         }
@@ -41,7 +41,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "jump",
+                "query": "Charac",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -56,7 +56,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "README.md",
+                "file": "knowledge/dataStructure/D-stack&queue.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -91,7 +91,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "knowledge/dataStructure/D-stack&queue.md"
               }
             }
           }
@@ -108,7 +108,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "knowledge/dataStructure/D-stack&queue.md"
               }
             }
           }
@@ -132,7 +132,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "knowledge/dataStructure/D-stack&queue.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -149,12 +149,11 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "knowledge/dataStructure/D-stack&queue.md"
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -162,15 +161,15 @@
   },
   "active": "4d9202c9f2c103a5",
   "lastOpenFiles": [
-    "README.md",
     "knowledge/dataStructure/D-stack&queue.md",
-    "knowledge/basics/design.md",
-    "knowledge/basics/collections.md",
-    "src/linkedlist/ReverseNodesInKGroup.md",
-    "src/linkedlist/OddEvenLinkedList.md",
-    "src/findpattern/palindromic/PalindromeLinkedList.md",
-    "src/linkedlist/ReverseLinkedList.md",
-    "knowledge/dataStructure/D-linkedlist.md",
-    "src/findpattern/RotateImage.md"
+    "src/stack/DailyTemperatures.md",
+    "src/stack/MinStack.md",
+    "src/stack/SortOfStacksLCCI.md",
+    "src/stack/ValidateStackSequences.md",
+    "src/stack/RemoveAllAdjacentDuplicatesInString.md",
+    "src/stack/ValidParentheses.md",
+    "src/stack/ThreeInOneLCCI.md",
+    "src/stack/BasicCalculator.md",
+    "src/stack/BasicCalculatorII.md"
   ]
 }

@@ -1,1 +1,1 @@
-[[T-math.gcd]]
+[[T-gcd]]

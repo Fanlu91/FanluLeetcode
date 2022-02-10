@@ -1,4 +1,4 @@
-package minimax;
+package dynamicprogramming.minimax;
 
 // Source : https://leetcode.com/problems/nim-game/
 // Id     : 292

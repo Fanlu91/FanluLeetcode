@@ -1,4 +1,4 @@
-package design;
+package stack;
 // Source : https://leetcode.com/problems/implement-stack-using-queues/
 // Id     : 225
 // Author : Fanlu Hai | https://github.com/Fanlu91/FanluLeetcode

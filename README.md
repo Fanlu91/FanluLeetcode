@@ -65,16 +65,21 @@ README 文件通过[此类](https://github.com/Fanlu91/FanluLeetcode/blob/master
 |0256|[paint-house](https://leetcode.com/problems/paint-house/)|[paint-house](https://leetcode-cn.com/problems/paint-house/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/dynamicprogramming/PaintHouse.java)|98.79% 100.00%|Dynamic Programming|
 |0265|[paint-house-ii](https://leetcode.com/problems/paint-house-ii/)|[paint-house-ii](https://leetcode-cn.com/problems/paint-house-ii/)|Hard-|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/dynamicprogramming/PaintHouseII.java)|99.53% 100.00%|Dynamic Programming|
 |0276|[paint-fence](https://leetcode.com.com/problems/paint-fence/)|[paint-fence](https://leetcode-cn.com/problems/paint-fence/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/dynamicprogramming/PaintFence.java)|100% 100%|Dynamic Programming|
+|0292|[nim-game](https://leetcode.com/problems/nim-game/)|[nim-game](https://leetcode-cn.com/problems/nim-game/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/dynamicprogramming/minimax/NimGame.java)|100.00% 100.00%|Minimax|
 |0303|[range-sum-query-immutable](https://leetcode.com/problems/range-sum-query-immutable/)|[range-sum-query-immutable](https://leetcode-cn.com/problems/range-sum-query-immutable/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/dynamicprogramming/RangeSumQueryImmutable.java)|95.71% 56.10%|Dynamic Programming|
 |0309|[best-time-to-buy-and-sell-stock-with-cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/)|[best-time-to-buy-and-sell-stock-with-cooldown](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/dynamicprogramming/BestTimeToBuyAndSellStockWithCooldown.java)|100.00% 100.00%|Dynamic Programming|
 |0322|[coin-change](https://leetcode.com/problems/coin-change/)|[coin-change](https://leetcode-cn.com/problems/coin-change/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/dynamicprogramming/CoinChange.java)|99.99% 100%|Dynamic Programming|
 |0337|[house-robber-iii](https://leetcode.com/problems/house-robber-iii/)|[house-robber-iii](https://leetcode-cn.com/problems/house-robber-iii/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/dynamicprogramming/HouseRobberIII.java)|100.00% 100.00%|Dynamic Programming|
 |0338|[counting-bits](https://leetcode.com/problems/counting-bits/)|[counting-bits](https://leetcode-cn.com/problems/counting-bits/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/dynamicprogramming/CountingBits.java)|100.00% 5.88%|Dynamic Programming|
+|0375|[guess-number-higher-or-lower-ii](https://leetcode.com/problems/guess-number-higher-or-lower-ii/)|[guess-number-higher-or-lower-ii](https://leetcode-cn.com/problems/guess-number-higher-or-lower-ii/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/dynamicprogramming/minimax/GuessNumberHigherOrLowerII.java)|99.47% 5.41%|Minimax|
+|0486|[predict-the-winner](https://leetcode.com/problems/predict-the-winner/)|[predict-the-winner](https://leetcode-cn.com/problems/predict-the-winner/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/dynamicprogramming/minimax/PredictTheWinner.java)|100.00% 5.45%|Minimax|
 |0518|[coin-change-2](https://leetcode.com/problems/coin-change-2/)|[coin-change-2](https://leetcode-cn.com/problems/coin-change-2/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/dynamicprogramming/CoinChangeII.java)|100.00% 8.33%|Dynamic Programming|
 |0714|[best-time-to-buy-and-sell-stock-with-transaction-fee](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/)|[best-time-to-buy-and-sell-stock-with-transaction-fee](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/dynamicprogramming/BestTimeToBuyAndSellStockWithTransactionFee.java)|80.67% 100.00%|Dynamic Programming|
 |0746|[min-cost-climbing-stairs](https://leetcode.com/problems/min-cost-climbing-stairs/)|[min-cost-climbing-stairs](https://leetcode-cn.com/problems/min-cost-climbing-stairs/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/dynamicprogramming/MinCostClimbingStairs.java)|99.86% 100.00%|Dynamic Programming|
+|0877|[stone-game](https://leetcode.com/problems/stone-game/)|[stone-game](https://leetcode-cn.com/problems/stone-game/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/dynamicprogramming/minimax/StoneGame.java)|100.00% 100.00%|Minimax|
 |0931|[minimum-falling-path-sum](https://leetcode.com/problems/minimum-falling-path-sum/)|[minimum-falling-path-sum](https://leetcode-cn.com/problems/minimum-falling-path-sum/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/dynamicprogramming/MinimumFallingPathSum.java)|89.09% 86.67%|Dynamic Programming|
 |1025|[divisor-game](https://leetcode.com/problems/divisor-game/)|[divisor-game](https://leetcode-cn.com/problems/divisor-game/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/dynamicprogramming/DivisorGame.java)|100.00% 13.33%|Dynamic Programming|
+|1140|[stone-game-ii](https://leetcode.com/problems/stone-game-ii/)|[stone-game-ii](https://leetcode-cn.com/problems/stone-game-ii/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/dynamicprogramming/minimax/StoneGameII.java)|100.00% 100.00%|Minimax|
 |1449|[form-largest-integer-with-digits-that-add-up-to-target](https://leetcode.com/problems/form-largest-integer-with-digits-that-add-up-to-target/)|[form-largest-integer-with-digits-that-add-up-to-target](https://leetcode-cn.com/problems/form-largest-integer-with-digits-that-add-up-to-target/)|Hard|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/dynamicprogramming/FormLargestIntegerWithDigitsThatAddUpToTarget.java)|100.00% 100.00%|Dynamic Programming|
 
 ### Binary Tree
@@ -163,6 +168,25 @@ README 文件通过[此类](https://github.com/Fanlu91/FanluLeetcode/blob/master
 |0852|[peak-index-in-a-mountain-array](https://leetcode.com/problems/peak-index-in-a-mountain-array/)|[peak-index-in-a-mountain-array](https://leetcode-cn.com/problems/peak-index-in-a-mountain-array/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/binarysearch/PeakIndexInAMountainArray.java)|100.00% 5.16%|Binary Search|
 |0875|[koko-eating-bananas](https://leetcode.com/problems/koko-eating-bananas/)|[koko-eating-bananas](https://leetcode-cn.com/problems/koko-eating-bananas/)|medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/binarysearch/KokoEatingBananas.java)|67.13% 5.14%|Binary Search|
 
+### Stack
+总结调整中，草稿内容请参考[这里](https://github.com/Fanlu91/FanluLeetcode/tree/master/knowledge)
+
+|题号|题目（官网）|题目（中国）|难度|代码|结果|标签|
+|---|---|---|---|---|---|---|
+|0020|[valid-parentheses](https://leetcode.com/problems/valid-parentheses/)|[valid-parentheses](https://leetcode-cn.com/problems/valid-parentheses/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/stack/ValidParentheses.java)|98.69% 99.98%|Stack|
+|0032|[longest-valid-parentheses](https://leetcode.com/problems/longest-valid-parentheses/)|[longest-valid-parentheses](https://leetcode-cn.com/problems/longest-valid-parentheses/)|Hard|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/stack/LongestValidParentheses.java)|98.69% 99.98%|Stack|
+|0155|[min-stack](https://leetcode.com/problems/min-stack/)|[min-stack](https://leetcode-cn.com/problems/min-stack/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/stack/MinStack.java)|78.13% 14.46%|Design|
+|0225|[implement-stack-using-queues](https://leetcode.com/problems/implement-stack-using-queues/)|[implement-stack-using-queues](https://leetcode-cn.com/problems/implement-stack-using-queues/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/stack/MyStack.java)|100% 100%|Stack, Queue|
+|0394|[decode-string](https://leetcode.com/problems/decode-string/)|[decode-string](https://leetcode-cn.com/problems/decode-string/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/stack/DecodeString.java)|100.00% 100.00%|Stack,String|
+|0772|[basic-calculator-iii](https://leetcode.com/problems/basic-calculator-iii/)|[basic-calculator-iii](https://leetcode-cn.com/problems/basic-calculator-iii/)|Hard|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/stack/BasicCalculatorIII.java)|46.17% 20.92%|Stack|
+|mst03.01|[three-in-one-lcci](https://leetcode.com/problems/three-in-one-lcci/)|[three-in-one-lcci](https://leetcode-cn.com/problems/three-in-one-lcci/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/stack/ThreeInOneLCCI.java)|91.52% 5.64%|Stack|
+|mst03.05|[sort-of-stacks-lcci](https://leetcode.com/problems/sort-of-stacks-lcci/)|[sort-of-stacks-lcci](https://leetcode-cn.com/problems/sort-of-stacks-lcci/)|Medium-|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/stack/SortOfStacksLCCI.java)|99.82% 10.49%|Stack|
+|1047|[remove-all-adjacent-duplicates-in-string](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/)|[remove-all-adjacent-duplicates-in-string](https://leetcode-cn.com/problems/remove-all-adjacent-duplicates-in-string/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/stack/RemoveAllAdjacentDuplicatesInString.java)|100.00% 16.48%|Stack|
+|946,Offer31|[zhan-de-ya-ru-dan-chu-xu-lie-lcof](https://leetcode.com/problems/zhan-de-ya-ru-dan-chu-xu-lie-lcof/)|[zhan-de-ya-ru-dan-chu-xu-lie-lcof](https://leetcode-cn.com/problems/zhan-de-ya-ru-dan-chu-xu-lie-lcof/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/stack/ValidateStackSequences.java)|96.92% 10.81%|Stack|
+|227,mst16.26|[basic-calculator-ii](https://leetcode.com/problems/basic-calculator-ii/)|[basic-calculator-ii](https://leetcode-cn.com/problems/basic-calculator-ii/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/stack/BasicCalculatorII.java)|100% 23%|Stack|
+|0224|[basic-calculator](https://leetcode.com/problems/basic-calculator/)|[basic-calculator](https://leetcode-cn.com/problems/basic-calculator/)|Hard|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/stack/BasicCalculator.java)|43.08% 17.47%|Stack|
+|0739|[daily-temperatures](https://leetcode.com/problems/daily-temperatures/)|[daily-temperatures](https://leetcode-cn.com/problems/daily-temperatures/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/stack/DailyTemperatures.java)|91.69% 5.03%|Stack|
+
 ### Math
 总结调整中，草稿内容请参考[这里](https://github.com/Fanlu91/FanluLeetcode/tree/master/knowledge)
 
@@ -213,7 +237,7 @@ README 文件通过[此类](https://github.com/Fanlu91/FanluLeetcode/blob/master
 |0019|[remove-nth-node-from-end-of-list](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)|[remove-nth-node-from-end-of-list](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/)|Medium-|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/twopointers/fastslowpointers/RemoveNthNodeFromEndOfList.java)|100.00% 94.24%|Two Pointers|
 |0026|[remove-duplicates-from-sorted-array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)|[remove-duplicates-from-sorted-array](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/twopointers/RemoveDuplicatesFromSortedArray.java)|100% 99.47%|Array|
 |0027|[remove-element](https://leetcode.com/problems/remove-element/)|[remove-element](https://leetcode-cn.com/problems/remove-element/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/twopointers/RemoveElement.java)|100.00% 100.00%|Array|
-|0042|[trapping-rain-water](https://leetcode.com/problems/trapping-rain-water/)|[trapping-rain-water](https://leetcode-cn.com/problems/trapping-rain-water/)|Hard|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/twopointers/TrappingRainWater.java)|99.95% 19.88%|DP|
+|0042|[trapping-rain-water](https://leetcode.com/problems/trapping-rain-water/)|[trapping-rain-water](https://leetcode-cn.com/problems/trapping-rain-water/)|Hard|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/twopointers/TrappingRainWater.java)|99.95% 19.88%|two pointers|
 |0076|[minimum-window-substring](https://leetcode.com/problems/minimum-window-substring/)|[minimum-window-substring](https://leetcode-cn.com/problems/minimum-window-substring/)|Hard|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/twopointers/slidingwindow/MinimumWindowSubstring.java)|42.34% 13.33%|Sliding Window|
 |0088|[merge-sorted-array](https://leetcode.com/problems/merge-sorted-array/)|[merge-sorted-array](https://leetcode-cn.com/problems/merge-sorted-array/)|Easy-|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/twopointers/MergSortedArray.java)|100.00% 73.09%|Two Pointers|
 |0141|[linked-list-cycle](https://leetcode.com/problems/linked-list-cycle/)|[linked-list-cycle](https://leetcode-cn.com/problems/linked-list-cycle/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/twopointers/LinkedListCycle.java)|100.00%  99.88%|Two Pointers|
@@ -348,17 +372,6 @@ README 文件通过[此类](https://github.com/Fanlu91/FanluLeetcode/blob/master
 |0647|[palindromic-substrings](https://leetcode.com/problems/palindromic-substrings/)|[palindromic-substrings](https://leetcode-cn.com/problems/palindromic-substrings/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/findpattern/palindromic/PalindromicSubstrings.java)|99.97% 100.00%|Dynamic Programming|
 |0680|[valid-palindrome-ii](https://leetcode.com/problems/valid-palindrome-ii/)|[valid-palindrome-ii](https://leetcode-cn.com/problems/valid-palindrome-ii/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/findpattern/palindromic/ValidPalindromeII.java)|99.68% 94.44%|String|
 
-### Design
-总结调整中，草稿内容请参考[这里](https://github.com/Fanlu91/FanluLeetcode/tree/master/knowledge)
-
-|题号|题目（官网）|题目（中国）|难度|代码|结果|标签|
-|---|---|---|---|---|---|---|
-|Offer20|[biao-shi-shu-zhi-de-zi-fu-chuan-lcof](https://leetcode.com/problems/biao-shi-shu-zhi-de-zi-fu-chuan-lcof/)|[biao-shi-shu-zhi-de-zi-fu-chuan-lcof](https://leetcode-cn.com/problems/biao-shi-shu-zhi-de-zi-fu-chuan-lcof/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/design/isNumber.java)|66.54% 58.76%|Math|
-|0146|[lru-cache](https://leetcode.com/problems/lru-cache/)|[lru-cache](https://leetcode-cn.com/problems/lru-cache/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/design/LRUCache.java)|91.27% 67.29%|Design|
-|0155|[min-stack](https://leetcode.com/problems/min-stack/)|[min-stack](https://leetcode-cn.com/problems/min-stack/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/design/MinStack.java)|78.13% 14.46%|Design|
-|0225|[implement-stack-using-queues](https://leetcode.com/problems/implement-stack-using-queues/)|[implement-stack-using-queues](https://leetcode-cn.com/problems/implement-stack-using-queues/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/design/MyStack.java)|100% 100%|Stack, Queue|
-|Offer09|[yong-liang-ge-zhan-shi-xian-dui-lie-lcof](https://leetcode.com/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/)|[yong-liang-ge-zhan-shi-xian-dui-lie-lcof](https://leetcode-cn.com/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/design/CQueue.java)|69.99% 40.92%|Queue, Stack|
-
 ### Depth-First Search
 总结调整中，草稿内容请参考[这里](https://github.com/Fanlu91/FanluLeetcode/tree/master/knowledge)
 
@@ -370,17 +383,6 @@ README 文件通过[此类](https://github.com/Fanlu91/FanluLeetcode/blob/master
 |0129|[sum-root-to-leaf-numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/)|[sum-root-to-leaf-numbers](https://leetcode-cn.com/problems/sum-root-to-leaf-numbers/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/depthfirstsearch/SumRootToLeafNumbers.java)|100.00% 87.92%|Depth-First Search|
 |0257|[binary-tree-paths](https://leetcode.com/problems/binary-tree-paths/)|[binary-tree-paths](https://leetcode-cn.com/problems/binary-tree-paths/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/depthfirstsearch/BinaryTreePaths.java)|93.46% 37.08%|Depth-First Search|
 
-### Minimax
-总结调整中，草稿内容请参考[这里](https://github.com/Fanlu91/FanluLeetcode/tree/master/knowledge)
-
-|题号|题目（官网）|题目（中国）|难度|代码|结果|标签|
-|---|---|---|---|---|---|---|
-|0292|[nim-game](https://leetcode.com/problems/nim-game/)|[nim-game](https://leetcode-cn.com/problems/nim-game/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/minimax/NimGame.java)|100.00% 100.00%|Minimax|
-|0375|[guess-number-higher-or-lower-ii](https://leetcode.com/problems/guess-number-higher-or-lower-ii/)|[guess-number-higher-or-lower-ii](https://leetcode-cn.com/problems/guess-number-higher-or-lower-ii/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/minimax/GuessNumberHigherOrLowerII.java)|99.47% 5.41%|Minimax|
-|0486|[predict-the-winner](https://leetcode.com/problems/predict-the-winner/)|[predict-the-winner](https://leetcode-cn.com/problems/predict-the-winner/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/minimax/PredictTheWinner.java)|100.00% 5.45%|Minimax|
-|0877|[stone-game](https://leetcode.com/problems/stone-game/)|[stone-game](https://leetcode-cn.com/problems/stone-game/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/minimax/StoneGame.java)|100.00% 100.00%|Minimax|
-|1140|[stone-game-ii](https://leetcode.com/problems/stone-game-ii/)|[stone-game-ii](https://leetcode-cn.com/problems/stone-game-ii/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/minimax/StoneGameII.java)|100.00% 100.00%|Minimax|
-
 ### Greedy
 总结调整中，草稿内容请参考[这里](https://github.com/Fanlu91/FanluLeetcode/tree/master/knowledge)
 
@@ -391,6 +393,17 @@ README 文件通过[此类](https://github.com/Fanlu91/FanluLeetcode/blob/master
 |0053|[maximum-subarray](https://leetcode.com/problems/maximum-subarray/)|[maximum-subarray](https://leetcode-cn.com/problems/maximum-subarray/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/greedy/MaximumSubarray.java)|100.00% 99.53%|Greedy, DP|
 |0392|[is-subsequence](https://leetcode.com/problems/is-subsequence/)|[is-subsequence](https://leetcode-cn.com/problems/is-subsequence/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/greedy/IsSubsequence.java)|100.00% 100.00%|Greedy|
 |0751|[ip-to-cidr](https://leetcode.com/problems/ip-to-cidr/)|[ip-to-cidr](https://leetcode-cn.com/problems/ip-to-cidr/)|Easy+|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/greedy/IPToCIDR.java)|100.00% 100.00%|Greedy|
+
+### Minimax
+总结调整中，草稿内容请参考[这里](https://github.com/Fanlu91/FanluLeetcode/tree/master/knowledge)
+
+|题号|题目（官网）|题目（中国）|难度|代码|结果|标签|
+|---|---|---|---|---|---|---|
+|0292|[nim-game](https://leetcode.com/problems/nim-game/)|[nim-game](https://leetcode-cn.com/problems/nim-game/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/dynamicprogramming/minimax/NimGame.java)|100.00% 100.00%|Minimax|
+|0375|[guess-number-higher-or-lower-ii](https://leetcode.com/problems/guess-number-higher-or-lower-ii/)|[guess-number-higher-or-lower-ii](https://leetcode-cn.com/problems/guess-number-higher-or-lower-ii/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/dynamicprogramming/minimax/GuessNumberHigherOrLowerII.java)|99.47% 5.41%|Minimax|
+|0486|[predict-the-winner](https://leetcode.com/problems/predict-the-winner/)|[predict-the-winner](https://leetcode-cn.com/problems/predict-the-winner/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/dynamicprogramming/minimax/PredictTheWinner.java)|100.00% 5.45%|Minimax|
+|0877|[stone-game](https://leetcode.com/problems/stone-game/)|[stone-game](https://leetcode-cn.com/problems/stone-game/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/dynamicprogramming/minimax/StoneGame.java)|100.00% 100.00%|Minimax|
+|1140|[stone-game-ii](https://leetcode.com/problems/stone-game-ii/)|[stone-game-ii](https://leetcode-cn.com/problems/stone-game-ii/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/dynamicprogramming/minimax/StoneGameII.java)|100.00% 100.00%|Minimax|
 
 ### String Match
 总结调整中，草稿内容请参考[这里](https://github.com/Fanlu91/FanluLeetcode/tree/master/knowledge)
@@ -430,24 +443,6 @@ README 文件通过[此类](https://github.com/Fanlu91/FanluLeetcode/blob/master
 |0963|[minimum-area-rectangle-ii](https://leetcode.com/problems/minimum-area-rectangle-ii/)|[minimum-area-rectangle-ii](https://leetcode-cn.com/problems/minimum-area-rectangle-ii/)|Medium+|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/geometry/MinimumAreaRectangleII.java)|52.63% 100.00%|Geometry|
 |1401|[circle-and-rectangle-overlapping](https://leetcode.com/problems/circle-and-rectangle-overlapping/)|[circle-and-rectangle-overlapping](https://leetcode-cn.com/problems/circle-and-rectangle-overlapping/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/geometry/CircleAndRectangleOverlapping.java)|100.00% 100.00%|Geometry|
 
-### Stack
-总结调整中，草稿内容请参考[这里](https://github.com/Fanlu91/FanluLeetcode/tree/master/knowledge)
-
-|题号|题目（官网）|题目（中国）|难度|代码|结果|标签|
-|---|---|---|---|---|---|---|
-|0020|[valid-parentheses](https://leetcode.com/problems/valid-parentheses/)|[valid-parentheses](https://leetcode-cn.com/problems/valid-parentheses/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/stack/ValidParentheses.java)|98.69% 99.98%|Stack|
-|0032|[longest-valid-parentheses](https://leetcode.com/problems/longest-valid-parentheses/)|[longest-valid-parentheses](https://leetcode-cn.com/problems/longest-valid-parentheses/)|Hard|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/stack/LongestValidParentheses.java)|98.69% 99.98%|Stack|
-|0394|[decode-string](https://leetcode.com/problems/decode-string/)|[decode-string](https://leetcode-cn.com/problems/decode-string/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/stack/DecodeString.java)|100.00% 100.00%|Stack,String|
-
-### Pure Programming
-总结调整中，草稿内容请参考[这里](https://github.com/Fanlu91/FanluLeetcode/tree/master/knowledge)
-
-|题号|题目（官网）|题目（中国）|难度|代码|结果|标签|
-|---|---|---|---|---|---|---|
-|0151|[reverse-words-in-a-string](https://leetcode.com/problems/reverse-words-in-a-string/)|[reverse-words-in-a-string](https://leetcode-cn.com/problems/reverse-words-in-a-string/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/pureprogramming/ReverseWordsInAString.java)|100.00% 16.01%|Pure Programming|
-|1360|[number-of-days-between-two-dates](https://leetcode.com/problems/number-of-days-between-two-dates/)|[number-of-days-between-two-dates](https://leetcode-cn.com/problems/number-of-days-between-two-dates/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/pureprogramming/NumberOfDaysBetweenTwoDates.java)|100% 100%|Details|
-|mst16.04|[tic-tac-toe-lcci](https://leetcode.com/problems/tic-tac-toe-lcci/)|[tic-tac-toe-lcci](https://leetcode-cn.com/problems/tic-tac-toe-lcci/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/pureprogramming/TicTacToeLCCI.java)|75.80% 5.19%|Pure Programming|
-
 ### Tree
 总结调整中，草稿内容请参考[这里](https://github.com/Fanlu91/FanluLeetcode/tree/master/knowledge)
 
@@ -463,6 +458,7 @@ README 文件通过[此类](https://github.com/Fanlu91/FanluLeetcode/blob/master
 |0106|[construct-binary-tree-from-inorder-and-postorder-traversal](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/)|[construct-binary-tree-from-inorder-and-postorder-traversal](https://leetcode-cn.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/tree/binarytree/ConstructBinaryTreefromInorderAndPostorderTraversal.java)|74.17% 61.90%|Binary Tree|
 |0108|[convert-sorted-array-to-binary-search-tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)|[convert-sorted-array-to-binary-search-tree](https://leetcode-cn.com/problems/convert-sorted-array-to-binary-search-tree/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/tree/binarysearchtree/ConvertSortedArraytoBinarySearchTree.java)|100.00% 5.06%|Binary Search Tree|
 |0110|[balanced-binary-tree](https://leetcode.com/problems/balanced-binary-tree/)|[balanced-binary-tree](https://leetcode-cn.com/problems/balanced-binary-tree/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/tree/binarytree/BalancedBinaryTree.java)|99.69% 1ms 23.53%|Binary Tree|
+|0114|[flatten-binary-tree-to-linked-list](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/)|[flatten-binary-tree-to-linked-list](https://leetcode-cn.com/problems/flatten-binary-tree-to-linked-list/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/tree/morristraversal/FlattenBinaryTreeToLinkedList.java)|100% 99.89%|Morris Traversal|
 |0116|[populating-next-right-pointers-in-each-node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/)|[populating-next-right-pointers-in-each-node](https://leetcode-cn.com/problems/populating-next-right-pointers-in-each-node/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/tree/binarytree/PopulatingNextRightPointersInEachNode.java)|100% 100%|Binary Tree|
 |0117|[populating-next-right-pointers-in-each-node-ii](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/)|[populating-next-right-pointers-in-each-node-ii](https://leetcode-cn.com/problems/populating-next-right-pointers-in-each-node-ii/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/tree/binarytree/PopulatingNextRightPointersInEachNodeII.java)|45.96% 50.00%|Binary Tree|
 |0139|[word-break](https://leetcode.com/problems/word-break/)|[word-break](https://leetcode-cn.com/problems/word-break/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/tree/trie/WordBreak.java)|99.62% 77.20%|tree.trie|
@@ -477,6 +473,7 @@ README 文件通过[此类](https://github.com/Fanlu91/FanluLeetcode/blob/master
 |0297|[serialize-and-deserialize-binary-tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)|[serialize-and-deserialize-binary-tree](https://leetcode-cn.com/problems/serialize-and-deserialize-binary-tree/)|Hard|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/tree/binarytree/SerializeAndDeserializeBinaryTree.java)|26.24% 33.57%|Binary Tree|
 |0404|[sum-of-left-leaves](https://leetcode.com/problems/sum-of-left-leaves/)|[sum-of-left-leaves](https://leetcode-cn.com/problems/sum-of-left-leaves/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/tree/binarytree/SumOfLeftLeaves.java)|100.00% 88.90%|Binary Tree|
 |0450|[delete-node-in-a-bst](https://leetcode.com/problems/delete-node-in-a-bst/)|[delete-node-in-a-bst](https://leetcode-cn.com/problems/delete-node-in-a-bst/)|Medium+|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/tree/binarysearchtree/DeleteNodeInABST.java)|100.00% 20.00%|Binary Search Tree|
+|0501|[find-mode-in-binary-search-tree](https://leetcode.com/problems/find-mode-in-binary-search-tree/)|[find-mode-in-binary-search-tree](https://leetcode-cn.com/problems/find-mode-in-binary-search-tree/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/tree/morristraversal/FindModeInBinarySearchTree.java)|100% 100%|Morris Traversal|
 |0530|[minimum-distance-between-bst-nodes](https://leetcode.com/problems/minimum-distance-between-bst-nodes/)|[minimum-distance-between-bst-nodes](https://leetcode-cn.com/problems/minimum-distance-between-bst-nodes/)|null|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/tree/binarysearchtree/MinimumDistanceBetweenBSTNodes.java)|100.00% 52.53%|Binary Search Tree|
 |0538|[convert-bst-to-greater-tree](https://leetcode.com/problems/convert-bst-to-greater-tree/)|[convert-bst-to-greater-tree](https://leetcode-cn.com/problems/convert-bst-to-greater-tree/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/tree/binarysearchtree/ConvertBSTToGreaterTree.java)|98.33% 62.29%|Binary Search Tree|
 |0543|[diameter-of-binary-tree](https://leetcode.com/problems/diameter-of-binary-tree/)|[diameter-of-binary-tree](https://leetcode-cn.com/problems/diameter-of-binary-tree/)|Easy+|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/tree/binarytree/DiameterOfBinaryTree.java)|100.00% 23.72%|tree.binarytree|
@@ -487,6 +484,32 @@ README 文件通过[此类](https://github.com/Fanlu91/FanluLeetcode/blob/master
 |0700|[search-in-a-binary-search-tree](https://leetcode.com/problems/search-in-a-binary-search-tree/)|[search-in-a-binary-search-tree](https://leetcode-cn.com/problems/search-in-a-binary-search-tree/)|Easy-|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/tree/binarysearchtree/SearchInABinarySearchTree.java)|100.00% 9.09%|Binary Search Tree|
 |0720|[longest-word-in-dictionary](https://leetcode.com/problems/longest-word-in-dictionary/)|[longest-word-in-dictionary](https://leetcode-cn.com/problems/longest-word-in-dictionary/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/tree/trie/LongestWordInDictionary.java)|100.00% 97.61%|Trie|
 |1023|[camelcase-matching](https://leetcode.com/problems/camelcase-matching/)|[camelcase-matching](https://leetcode-cn.com/problems/camelcase-matching/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/tree/trie/CamelcaseMatching.java)|100.00% 99.58%|Trie|
+
+### Design
+总结调整中，草稿内容请参考[这里](https://github.com/Fanlu91/FanluLeetcode/tree/master/knowledge)
+
+|题号|题目（官网）|题目（中国）|难度|代码|结果|标签|
+|---|---|---|---|---|---|---|
+|Offer20|[biao-shi-shu-zhi-de-zi-fu-chuan-lcof](https://leetcode.com/problems/biao-shi-shu-zhi-de-zi-fu-chuan-lcof/)|[biao-shi-shu-zhi-de-zi-fu-chuan-lcof](https://leetcode-cn.com/problems/biao-shi-shu-zhi-de-zi-fu-chuan-lcof/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/design/isNumber.java)|66.54% 58.76%|Math|
+|0146|[lru-cache](https://leetcode.com/problems/lru-cache/)|[lru-cache](https://leetcode-cn.com/problems/lru-cache/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/design/LRUCache.java)|91.27% 67.29%|Design|
+|Offer09|[yong-liang-ge-zhan-shi-xian-dui-lie-lcof](https://leetcode.com/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/)|[yong-liang-ge-zhan-shi-xian-dui-lie-lcof](https://leetcode-cn.com/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/design/CQueue.java)|69.99% 40.92%|Queue, Stack|
+
+### Pure Programming
+总结调整中，草稿内容请参考[这里](https://github.com/Fanlu91/FanluLeetcode/tree/master/knowledge)
+
+|题号|题目（官网）|题目（中国）|难度|代码|结果|标签|
+|---|---|---|---|---|---|---|
+|0151|[reverse-words-in-a-string](https://leetcode.com/problems/reverse-words-in-a-string/)|[reverse-words-in-a-string](https://leetcode-cn.com/problems/reverse-words-in-a-string/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/pureprogramming/ReverseWordsInAString.java)|100.00% 16.01%|Pure Programming|
+|1360|[number-of-days-between-two-dates](https://leetcode.com/problems/number-of-days-between-two-dates/)|[number-of-days-between-two-dates](https://leetcode-cn.com/problems/number-of-days-between-two-dates/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/pureprogramming/NumberOfDaysBetweenTwoDates.java)|100% 100%|Details|
+|mst16.04|[tic-tac-toe-lcci](https://leetcode.com/problems/tic-tac-toe-lcci/)|[tic-tac-toe-lcci](https://leetcode-cn.com/problems/tic-tac-toe-lcci/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/pureprogramming/TicTacToeLCCI.java)|75.80% 5.19%|Pure Programming|
+
+### Morris Traversal
+总结调整中，草稿内容请参考[这里](https://github.com/Fanlu91/FanluLeetcode/tree/master/knowledge)
+
+|题号|题目（官网）|题目（中国）|难度|代码|结果|标签|
+|---|---|---|---|---|---|---|
+|0114|[flatten-binary-tree-to-linked-list](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/)|[flatten-binary-tree-to-linked-list](https://leetcode-cn.com/problems/flatten-binary-tree-to-linked-list/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/tree/morristraversal/FlattenBinaryTreeToLinkedList.java)|100% 99.89%|Morris Traversal|
+|0501|[find-mode-in-binary-search-tree](https://leetcode.com/problems/find-mode-in-binary-search-tree/)|[find-mode-in-binary-search-tree](https://leetcode-cn.com/problems/find-mode-in-binary-search-tree/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/tree/morristraversal/FindModeInBinarySearchTree.java)|100% 100%|Morris Traversal|
 
 ### Merge
 总结调整中，草稿内容请参考[这里](https://github.com/Fanlu91/FanluLeetcode/tree/master/knowledge)
@@ -511,14 +534,6 @@ README 文件通过[此类](https://github.com/Fanlu91/FanluLeetcode/blob/master
 |---|---|---|---|---|---|---|
 |0215|[kth-largest-element-in-an-array](https://leetcode.com/problems/kth-largest-element-in-an-array/)|[kth-largest-element-in-an-array](https://leetcode-cn.com/problems/kth-largest-element-in-an-array/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/divideandconquer/KthLargestElementInAnArray.java)|99.87% 5.15%|Divide & Conquer, Heap|
 |0241|[different-ways-to-add-parentheses](https://leetcode.com/problems/different-ways-to-add-parentheses/)|[different-ways-to-add-parentheses](https://leetcode-cn.com/problems/different-ways-to-add-parentheses/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/divideandconquer/DifferentWaysToAddParentheses.java)|100% 100%|Divide & Conquer|
-
-### Morris Traversal
-总结调整中，草稿内容请参考[这里](https://github.com/Fanlu91/FanluLeetcode/tree/master/knowledge)
-
-|题号|题目（官网）|题目（中国）|难度|代码|结果|标签|
-|---|---|---|---|---|---|---|
-|0114|[flatten-binary-tree-to-linked-list](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/)|[flatten-binary-tree-to-linked-list](https://leetcode-cn.com/problems/flatten-binary-tree-to-linked-list/)|Medium|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/morristraversal/FlattenBinaryTreeToLinkedList.java)|100% 99.89%|Morris Traversal|
-|0501|[find-mode-in-binary-search-tree](https://leetcode.com/problems/find-mode-in-binary-search-tree/)|[find-mode-in-binary-search-tree](https://leetcode-cn.com/problems/find-mode-in-binary-search-tree/)|Easy|[java](https://github.com/Fanlu91/FanluLeetcode/blob/master/src/morristraversal/FindModeInBinarySearchTree.java)|100% 100%|Morris Traversal|
 
 ### Concurrency
 总结调整中，草稿内容请参考[这里](https://github.com/Fanlu91/FanluLeetcode/tree/master/knowledge)

@@ -1,4 +1,4 @@
-package minimax;
+package dynamicprogramming.minimax;
 
 // Source : https://leetcode.com/problems/guess-number-higher-or-lower-ii/
 // Id     : 375

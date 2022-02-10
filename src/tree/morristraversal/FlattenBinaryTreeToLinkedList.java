@@ -1,4 +1,4 @@
-package morristraversal;
+package tree.morristraversal;
 // Source : https://leetcode.com/problems/flatten-binary-tree-to-linked-list/
 // Id     : 114
 // Author : Fanlu Hai | https://github.com/Fanlu91/FanluLeetcode

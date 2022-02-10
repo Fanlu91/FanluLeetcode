@@ -1,4 +1,4 @@
-package morristraversal;
+package tree.morristraversal;
 // Source : https://leetcode.com/problems/find-mode-in-binary-search-tree/
 // Id     : 501
 // Author : Fanlu Hai | https://github.com/Fanlu91/FanluLeetcode

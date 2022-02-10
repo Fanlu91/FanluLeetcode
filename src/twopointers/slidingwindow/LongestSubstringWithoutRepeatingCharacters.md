@@ -1,5 +1,5 @@
 # 滑动窗口
-[[A-twopointers.slidingwindow]]
+[[A-slidingwindow]]
 ## n个set
 根据题意最直接的解法应该使用set去存字符
 ```java
