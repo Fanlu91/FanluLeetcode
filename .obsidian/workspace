@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "knowledge/dataStructure/D-stack&queue.md",
+            "file": "knowledge/algorithm/A-binarysearch.md",
             "mode": "source",
             "source": false
           }
@@ -56,7 +56,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "knowledge/dataStructure/D-stack&queue.md",
+                "file": "knowledge/algorithm/A-binarysearch.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -91,7 +91,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "knowledge/dataStructure/D-stack&queue.md"
+                "file": "knowledge/algorithm/A-binarysearch.md"
               }
             }
           }
@@ -108,7 +108,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "knowledge/dataStructure/D-stack&queue.md"
+                "file": "knowledge/algorithm/A-binarysearch.md"
               }
             }
           }
@@ -132,24 +132,65 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "knowledge/dataStructure/D-stack&queue.md",
+                "file": "knowledge/algorithm/A-binarysearch.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
               }
             }
           },
+          {
+            "id": "6596ebbe6e3c0947",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "knowledge/algorithm/A-binarysearch.md",
+                "options": {
+                  "collapse-filter": false,
+                  "search": "",
+                  "localJumps": 3,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 1,
+                  "close": true
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "c75d0ddd96310285",
+        "type": "tabs",
+        "children": [
           {
             "id": "42d7c7181760fafc",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "knowledge/dataStructure/D-stack&queue.md"
+                "file": "knowledge/algorithm/A-binarysearch.md"
               }
             }
           }
@@ -161,15 +202,15 @@
   },
   "active": "4d9202c9f2c103a5",
   "lastOpenFiles": [
-    "knowledge/dataStructure/D-stack&queue.md",
-    "src/stack/DailyTemperatures.md",
-    "src/stack/MinStack.md",
-    "src/stack/SortOfStacksLCCI.md",
-    "src/stack/ValidateStackSequences.md",
-    "src/stack/RemoveAllAdjacentDuplicatesInString.md",
-    "src/stack/ValidParentheses.md",
-    "src/stack/ThreeInOneLCCI.md",
-    "src/stack/BasicCalculator.md",
-    "src/stack/BasicCalculatorII.md"
+    "knowledge/algorithm/A-binarysearch.md",
+    "knowledge/algorithm/A-bfs.md",
+    "src/sorting/ReversePairs.md",
+    "knowledge/algorithm/A-sorting.md",
+    "knowledge/dataStructure/D-heap.md",
+    "src/heap/KthLargestElementInAnArray.md",
+    "src/heap/KthLargestElementInAStream.md",
+    "src/divideandconquer/DifferentWaysToAddParentheses.md",
+    "src/sorting/SortList.md",
+    "src/sorting/InsertionSortList.md"
   ]
 }

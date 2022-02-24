@@ -1,5 +1,4 @@
 # 特点
-
 一种线性表（Linear List），一组连续的内存空间，来存储一组相同类型的数据。
 - 这样的好处是能够随机访问，带来的问题使得部分操纵需要搬运数据
 
@@ -11,7 +10,16 @@
 # java技巧
 构建数组并且放入初始化的内容
 ```java
-new int[]{a,b};
+int[] a = new int[]{1,2};
+
+// 截取
+Arrays.copyOf(a, 1);
+
+
+// simplest way to print array
+System.out.println(Arrays.toString(a));
+
+
 ```
 
 ## 二维数组
@@ -22,6 +30,14 @@ int a[][] = new int[3][4]; //3行 4列
 int lenY = a.length; // 3
 ```
 
+二维数组的排序 
+
+```java
+//        Arrays.sort(intervals);
+Arrays.sort(intervals, (a, b) -> a[0] - b[0]);
+Arrays.sort(intervals, Comparator.comparingDouble(o -> o[0]));
+```
+[[MeetingRooms]]
 
 
 ## 数组和ArrayList

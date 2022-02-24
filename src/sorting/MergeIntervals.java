@@ -1,9 +1,9 @@
-package array;
+package sorting;
 // Source : https://leetcode.com/problems/merge-intervals/
 // Id     : 56
 // Author : Fanlu Hai | https://github.com/Fanlu91/FanluLeetcode
 // Date   : 2020/8/13
-// Topic  : Array
+// Topic  : Sorting
 // Level  : Medium
 // Other  :
 // Tips   :
@@ -70,4 +70,32 @@ public class MergeIntervals {
         return Arrays.copyOf(res, index + 1);
     }
 
+
+    // 6ms
+    // practice
+    public int[][] merge2(int[][] intervals) {
+//    public int[][] merge(int[][] intervals) {
+        int n = intervals.length;
+        if (n == 1)
+            return intervals;
+        Arrays.sort(intervals, (a, b) -> a[0] - b[0]);
+        for (int i = 0; i < intervals.length - 1; i++) {
+            if (intervals[i][1] >= intervals[i + 1][0]) {
+                if (intervals[i][1] > intervals[i + 1][1])
+                    intervals[i + 1][1] = intervals[i][1];
+                n--;
+            }
+        }
+
+        int[][] res = new int[n][2];
+        int j = 0;
+        for (int i = 0; i < intervals.length; i++) {
+            res[j][0] = intervals[i][0];
+            while (i < intervals.length - 1 && intervals[i][1] >= intervals[i + 1][0])
+                i++;
+            res[j][1] = intervals[i][1];
+            j++;
+        }
+        return res;
+    }
 }
