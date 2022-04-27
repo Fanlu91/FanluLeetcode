@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "knowledge/algorithm/A-binarysearch.md",
+            "file": "src/twopointers/ThreeSum.md",
             "mode": "source",
             "source": false
           }
@@ -41,7 +41,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Charac",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -56,7 +56,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "knowledge/algorithm/A-binarysearch.md",
+                "file": "src/twopointers/ThreeSum.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -91,7 +91,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "knowledge/algorithm/A-binarysearch.md"
+                "file": "src/twopointers/ThreeSum.md"
               }
             }
           }
@@ -108,7 +108,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "knowledge/algorithm/A-binarysearch.md"
+                "file": "src/twopointers/ThreeSum.md"
               }
             }
           }
@@ -132,7 +132,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "knowledge/algorithm/A-binarysearch.md",
+                "file": "src/twopointers/ThreeSum.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -149,7 +149,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "knowledge/algorithm/A-binarysearch.md",
+                "file": "src/twopointers/ThreeSum.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -172,13 +172,14 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 1,
+                  "scale": 0.6562399596435742,
                   "close": true
                 }
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "c75d0ddd96310285",
@@ -190,7 +191,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "knowledge/algorithm/A-binarysearch.md"
+                "file": "src/twopointers/ThreeSum.md"
               }
             }
           }
@@ -202,15 +203,15 @@
   },
   "active": "4d9202c9f2c103a5",
   "lastOpenFiles": [
-    "knowledge/algorithm/A-binarysearch.md",
-    "knowledge/algorithm/A-bfs.md",
-    "src/sorting/ReversePairs.md",
-    "knowledge/algorithm/A-sorting.md",
-    "knowledge/dataStructure/D-heap.md",
-    "src/heap/KthLargestElementInAnArray.md",
-    "src/heap/KthLargestElementInAStream.md",
-    "src/divideandconquer/DifferentWaysToAddParentheses.md",
-    "src/sorting/SortList.md",
-    "src/sorting/InsertionSortList.md"
+    "src/twopointers/ThreeSum.md",
+    "src/twopointers/Foursum.md",
+    "knowledge/basics/collections.md",
+    "knowledge/basics/vocabulary.md",
+    "knowledge/basics/JavaDetails.md",
+    "knowledge/dataStructure/D-array.md",
+    "knowledge/dataStructure/D-trie.md",
+    "knowledge/dataStructure/D-orderedmap.md",
+    "knowledge/dataStructure/D-matrix.md",
+    "knowledge/dataStructure/D-linkedlist.md"
   ]
 }

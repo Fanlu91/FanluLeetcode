@@ -18,3 +18,26 @@ public int findMin(int[] nums) {
     return nums[l];
 }
 ```
+
+后续再次练习时采取了新的思路，参考[[SearchInRotatedSortedArray]]
+
+```java
+public int findMin(int[] nums) {
+	int l = 0, r = nums.length - 1, mid = -1;
+	while (l < r) {
+		mid = l + (r - l) / 2;
+		if (nums[mid] >= nums[l]) {// left side sorted 
+			if (nums[l] < nums[r])
+				return nums[l];
+			else
+				l = mid + 1;
+		} else {// right side sorted
+			r = mid;
+		}
+		// System.out.println(l+" "+r);
+	}
+	return nums[l];
+}
+```
+
+注意上面的`nums[mid] >= nums[l]` 中的=。

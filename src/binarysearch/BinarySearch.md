@@ -1,1 +1,1 @@
-[[A-binarysearch]]
+基础

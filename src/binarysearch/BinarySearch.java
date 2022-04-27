@@ -11,20 +11,16 @@ package binarysearch;
 // Result : 100.00% 5.09%
 
 public class BinarySearch {
-    public int search(int[] nums, int target) {
-        if (nums.length == 1)
-            return nums[0] == target ? 0 : -1;
-
-        int l = 0, r = nums.length - 1;
+    public int search(int[] num, int target) {
+        int l = 0, r = num.length - 1;
         while (l <= r) {
-            int m = l + (r / 2);
-
-            if (nums[m] == target)
-                return m;
-            if (nums[m] > target) {
-                r = m - 1;
+            int mid = l + (r - l) / 2;
+            if (num[mid] == target)
+                return mid;
+            if (num[mid] < target) {
+                l = mid + 1;
             } else {
-                l = m + 1;
+                r = mid - 1;
             }
         }
         return -1;

@@ -1,1 +1,1 @@
-[[A-binarysearch]]
+[[A-binarysearch]] 变种

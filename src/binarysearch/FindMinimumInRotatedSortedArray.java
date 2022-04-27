@@ -35,4 +35,25 @@ public class FindMinimumInRotatedSortedArray {
         }
         return nums[l];
     }
+
+    //practice
+    public int findMin1(int[] nums) {
+//    public int findMin(int[] nums) {
+        int l = 0, r = nums.length - 1, mid = -1;
+        while (l <= r) {
+            if (l == r)
+                return nums[l];
+            mid = l + (r - l) / 2;
+            if (nums[mid] >= nums[l]) {// left side sorted
+                if (nums[l] < nums[r])
+                    return nums[l];
+                else
+                    l = mid + 1;
+            } else {// right side sorted
+                r = mid;
+            }
+            // System.out.println(l+" "+r);
+        }
+        return -1;
+    }
 }

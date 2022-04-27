@@ -60,3 +60,24 @@ If there's a SORTED array, binary-search should come to your mind immediately
 	- left和right的更新方式，永远都只有两种`mid+1 or mid-1`
 	- 根据需要在循环中补充处理诸如`left==right`之类的特殊情况
 - 对于非确定性查找，使用前后探测法确定搜索区间
+
+基础
+[[BinarySearch]]
+
+典型二分变种
+
+# 二分的本质是二段性而非单调性
+其实并不是严格有序才能使用二分
+- 有序是一种非常好的二段性判定方式
+
+不仅只有满足 01 特性（满足/不满足）的二段性可以使用二分
+一定满足/不一定满足也可以二分，比如 [[SearchInRotatedSortedArray]]
+
+二分缩小范围时，根据想要求得的结果，着力在将不符合的区域排除掉
+- 理解l 和 r 的移动。
+
+很多二分的变体是围绕这点展开的。
+
+[[FindMinimumInRotatedSortedArray]]
+[[FindPeakElement]]
+[[MedianOfTwoSortedArrays]]

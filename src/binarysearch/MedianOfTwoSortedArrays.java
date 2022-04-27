@@ -35,6 +35,7 @@ public class MedianOfTwoSortedArrays {
                 } else {
                     left = Math.max(A[aM - 1], B[bM - 1]);
                 }
+
                 if ((A.length + B.length) % 2 == 1) {
                     return left;
                 } // 奇数的话不需要考虑右半部分
@@ -81,6 +82,46 @@ public class MedianOfTwoSortedArrays {
             result = (t1 + t2) / 2.0;
         }
         return result;
+    }
+
+    // practice
+    public double findMedianSortedArrays2(int[] A, int[] B) {
+//        public double findMedianSortedArrays(int[] A, int[] B) {
+        if (A.length > B.length)
+            return findMedianSortedArrays(B, A);
+        // make sure A is shorter
+        int al = 0, ar = A.length - 1;
+        while (true) {
+            // m 处于中间或者两个median靠后的位置
+            int am = al + (ar - al) / 2, bm = (A.length + B.length + 1) / 2 - am;
+            // System.out.println(am+" "+bm);
+            if (bm != 0 && am != A.length && A[am] < B[bm - 1]) {
+                al = am + 1;
+            } else if (am != 00 && bm != B.length && A[am - 1] > B[bm]) {
+                ar = am - 1;
+            } else {
+                // 此时 A[am]>= B[bm-1] && B[bm] >= B[am-1],或者 am == 0
+                int left = 0;
+                if (am == 0)
+                    left = B[bm - 1];
+                else if (bm == 0)
+                    left = A[am - 1];
+                else
+                    left = Math.max(A[am - 1], B[bm - 1]);
+                // 奇数的话不需要考虑右半部分
+                if ((A.length + B.length) % 2 == 1)
+                    return left;
+                int right = 0;
+                if (am == A.length) {
+                    right = B[bm];
+                } else if (bm == B.length) {
+                    right = A[am];
+                } else {
+                    right = Math.min(B[bm], A[am]);
+                }
+                return (left + right) / 2.0;
+            }
+        }
     }
 
 
